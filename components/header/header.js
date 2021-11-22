@@ -49,10 +49,9 @@ export default function Header() {
         />
       </div>
       <div className={styles.divider} />
-      <Button variant="contained" color="primary">
-        Hello World
+      <Button variant="outlined" className={styles.contactMeButton}>
+        Contact Me
       </Button>
-      <div className={styles.contactMeButton}>Contact Me</div>
     </div>
   );
 }
