@@ -1,3 +1,31 @@
+.header {
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
+}
+
 .img {
   object-fit: contain;
+}
+.logo {
+  width: 10vw;
+  background-color: aqua;
+}
+.logoPages {
+  display: flex;
+  background-color: red;
+}
+.divider {
+  width: 1px;
+  background-color: rgb(200, 201, 198);
+}
+.contactMedia {
+  display: flex;
+  width: 100px;
+  justify-content: space-between;
+}
+.mediaVectors {
+  object-fit: contain;
+
+  margin: 30px 0px;
 }
