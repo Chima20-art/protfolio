@@ -6,13 +6,16 @@
 }
 
 .img {
+  background-color: blue;
   object-fit: contain;
 }
 .backgroundColor {
+  background-color: blueviolet;
 }
 .divider {
   width: 1px;
-  background-color: rgb(200, 201, 198);
+  height: inherit;
+  background-color: rgb(8, 8, 8);
 }
 .pageButton {
   color: black;
@@ -21,14 +24,15 @@
 .mediaVectors {
   object-fit: contain;
 }
-.divider {
-  width: 1px;
-  background-color: rgb(12, 12, 12);
+.blue {
+  background-color: lightblue;
 }
 .contactMeButton {
   background-color: black;
   color: white;
   border: white;
+  height: 45px;
+  width: fit-content;
 }
 
 .contactMeButton:hover {
@@ -36,4 +40,5 @@
   border: white;
 }
 .back {
+  background-color: chartreuse;
 }
