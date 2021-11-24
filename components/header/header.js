@@ -8,10 +8,39 @@ import { styled } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 
 const useStyles = makeStyles((theme) => ({
-  header: {
-    backgroundColor: "blue",
-  },
+  header: {},
 }));
+
+const BootstrapButton = styled(Button)({
+  boxShadow: "none",
+  textTransform: "none",
+  fontSize: 16,
+  padding: "3px 3px",
+  border: "none",
+  lineHeight: 1.5,
+  backgroundColor: "none",
+
+  fontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    '"Segoe UI"',
+    "Roboto",
+    '"Helvetica Neue"',
+    "Arial",
+    "sans-serif",
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(","),
+  "&:hover": {
+    backgroundColor: "283543",
+    borderColor: "#283543",
+    boxShadow: "none",
+  },
+  "&:active": {
+    boxShadow: "none",
+  },
+});
 
 export default function Header() {
   const classes = useStyles();
@@ -52,27 +81,55 @@ export default function Header() {
           spacing={0}
           className={styles.backgroundColor}
         >
-          <Button size="small" variant="text" className={styles.pageButton}>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             Home
-          </Button>
-          <Button size="small" variant="text" className={styles.pageButton}>
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             Services
-          </Button>
-          <Button size="small" variant="text" className={styles.pageButton}>
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             About
-          </Button>
-          <Button size="small" variant="text" className={styles.pageButton}>
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             Projects
-          </Button>
-          <Button size="small" variant="text" className={styles.pageButton}>
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             Skills
-          </Button>
-          <Button size="small" variant="text" className={styles.pageButton}>
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             Contacts
-          </Button>
-          <Button size="small" variant="text" className={styles.pageButton}>
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
             Pages
-          </Button>
+          </BootstrapButton>
         </Grid>
       </Grid>
       <Grid
