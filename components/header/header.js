@@ -4,11 +4,12 @@ import styles from "./header.module.css";
 import Button from "@mui/material/Button";
 import { makeStyles } from "@mui/styles";
 import { Grid } from "@mui/material";
+import { styled } from "@mui/material/styles";
 import Divider from "@mui/material/Divider";
 
 const useStyles = makeStyles((theme) => ({
   header: {
-    backgroundColor: "red",
+    backgroundColor: "blue",
   },
 }));
 
@@ -28,7 +29,7 @@ export default function Header() {
       container
       direction="row"
       justifyContent="space-between"
-      className={styles.header}
+      className={classes.header}
     >
       <Grid item container spacing={0} className={styles.back} md={7}>
         <Grid item direction="row" justifyContent="space-between" md={4}>
@@ -51,25 +52,25 @@ export default function Header() {
           spacing={0}
           className={styles.backgroundColor}
         >
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             Home
           </Button>
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             Services
           </Button>
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             About
           </Button>
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             Projects
           </Button>
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             Skills
           </Button>
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             Contacts
           </Button>
-          <Button variant="text" className={styles.pageButton}>
+          <Button size="small" variant="text" className={styles.pageButton}>
             Pages
           </Button>
         </Grid>
@@ -85,7 +86,7 @@ export default function Header() {
         <Grid
           container
           item
-          md={2}
+          md={1.5}
           direction="row"
           justifyContent="space-around"
           alignItems="center"
@@ -94,22 +95,22 @@ export default function Header() {
         >
           <Image
             src="/instagram (1).png"
-            width={30}
-            height={30}
+            width={20}
+            height={20}
             alt="instagram"
             className={styles.mediaVectors}
           />
           <Image
             src="/facebook (1).png"
-            width={25}
-            height={25}
+            width={18}
+            height={18}
             alt="facebook"
             className={styles.mediaVectors}
           />
           <Image
             src="/linkedin-logo.png"
-            width={22}
-            height={22}
+            width={16}
+            height={16}
             alt="linkedIn"
             className={styles.mediaVectors}
           />
@@ -118,7 +119,7 @@ export default function Header() {
         <Grid
           container
           item
-          md={3}
+          md={3.5}
           justifyContent="center"
           alignItems="center"
           className={styles.blue}
