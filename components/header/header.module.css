@@ -16,6 +16,8 @@
   object-fit: contain;
 }
 .blue {
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .contactMeButton {
   background-color: black;

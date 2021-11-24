@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
 const BootstrapButton = styled(Button)({
   boxShadow: "none",
   textTransform: "none",
-  fontSize: 16,
+  fontSize: 14,
   padding: "3px 3px",
   border: "none",
   lineHeight: 1.5,
@@ -60,9 +60,10 @@ export default function Header() {
       justifyContent="space-between"
       className={classes.header}
     >
-      <Grid item container spacing={0} className={styles.back} md={7}>
-        <Grid item direction="row" justifyContent="space-between" md={4}>
+      <Grid item container spacing={0} className={styles.back} md={8}>
+        <Grid item direction="row" justifyContent="space-between" md={3}>
           <Image
+            item
             src="/Michich.png"
             width={200}
             height={70}
@@ -74,12 +75,11 @@ export default function Header() {
         <Grid
           container
           item
-          md={8}
+          md={9}
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
           spacing={0}
-          className={styles.backgroundColor}
         >
           <BootstrapButton
             size="small"
@@ -136,19 +136,22 @@ export default function Header() {
         item
         container
         direction="row"
-        md={5}
+        md={4}
         margin-right="0px"
+        alignItems="center"
         justifyContent="flex-end"
+        spacing={2}
       >
         <Grid
           container
           item
-          md={1.5}
+          md={2}
           direction="row"
-          justifyContent="space-around"
+          justifyContent="space-between"
           alignItems="center"
-          spacing={2}
+          spacing={3}
           className={styles.back}
+          margin="auto"
         >
           <Image
             src="/instagram (1).png"
@@ -176,7 +179,7 @@ export default function Header() {
         <Grid
           container
           item
-          md={3.5}
+          md={6}
           justifyContent="center"
           alignItems="center"
           className={styles.blue}
