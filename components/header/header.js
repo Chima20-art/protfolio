@@ -28,16 +28,10 @@ export default function Header() {
       container
       direction="row"
       justifyContent="space-between"
-      className={styles.back}
+      className={styles.header}
     >
       <Grid item container spacing={0} className={styles.back} md={7}>
-        <Grid
-          item
-          direction="row"
-          justifyContent="space-between"
-          md={4}
-          backgroundColor="red"
-        >
+        <Grid item direction="row" justifyContent="space-between" md={4}>
           <Image
             src="/Michich.png"
             width={200}
@@ -87,7 +81,6 @@ export default function Header() {
         md={5}
         margin-right="0px"
         justifyContent="flex-end"
-        backgroundColor="yellow"
       >
         <Grid
           container

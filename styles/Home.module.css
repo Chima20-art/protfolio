@@ -1,4 +1,11 @@
 .container {
-  max-width: 1440px;
+  width: 1140px;
   margin: auto;
+  background-color: lightcoral;
+}
+.header {
+  width: 1140px;
+  background-color: bisque;
+  display: flex;
+  justify-content: space-between;
 }
