@@ -58,12 +58,15 @@ export default function Header() {
   return (
     <Box
       md={{
+        boxShadow: 3,
+        bgcolor: "background.paper",
+        m: 1,
+        p: 1,
         display: "flex",
         alignItems: "center",
         width: "fit-content",
         border: (theme) => `1px solid ${theme.palette.divider}`,
         borderRadius: 1,
-        bgcolor: "background.paper",
         color: "text.secondary",
         "& svg": {
           m: 1.5,
@@ -80,7 +83,6 @@ export default function Header() {
         className={classes.header}
       >
         <Grid item container spacing={0} md={8}>
-          <Divider item orientation="vertical" flexItem />
           <Grid
             item
             container
@@ -90,14 +92,15 @@ export default function Header() {
           >
             <Image
               item
-              src="/Michich.png"
+              src="/Michich (3).png"
               width={200}
               height={70}
               alt="My logo"
               className={styles.img}
             />
+            <Divider item orientation="vertical" flexItem />
           </Grid>
-          <Divider item orientation="vertical" flexItem />
+
           <Grid
             container
             item
@@ -105,7 +108,7 @@ export default function Header() {
             direction="row"
             justifyContent="flex-start"
             alignItems="center"
-            spacing={0}
+            spacing={0.5}
           >
             <BootstrapButton
               size="small"
@@ -201,7 +204,7 @@ export default function Header() {
               className={styles.mediaVectors}
             />
           </Grid>
-          <Divider item orientation="vertical" variant="middle" flexItem />
+          <Divider item orientation="vertical" flexItem />
           <Grid
             container
             item
@@ -214,7 +217,6 @@ export default function Header() {
               Contact Me
             </Button>
           </Grid>
-          <Divider item orientation="vertical" flexItem />
         </Grid>
       </Grid>
 
