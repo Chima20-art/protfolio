@@ -9,14 +9,23 @@
 .title {
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
-  font-weight: 500;
+  font-weight: 530;
   font-size: 45px;
 }
 .subTitle {
   font-family: "M PLUS Code Latin", sans-serif;
   font-weight: 600;
   font-size: 45px;
+  color: #a170fd;
 }
 .content {
   margin-left: 220px;
+}
+.paragraph {
+  font-family: "M PLUS Code Latin", sans-serif;
+  line-height: 30px;
+  color: rgb(144, 151, 151);
+}
+.sTitle {
+  font-weight: 600;
 }
