@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Code+Latin:wdth,wght@100,300;102.2,381&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap");
 .contai {
-  background-image: url("/Chaimae.jpg");
+  background-image: url("/Chaimae\ \(3\).png");
   height: 800px;
   width: 1440px;
+
   background-repeat: unset;
 }
 .title {
@@ -24,7 +25,7 @@
 .paragraph {
   font-family: "M PLUS Code Latin", sans-serif;
   line-height: 30px;
-  color: rgb(144, 151, 151);
+  color: rgb(122, 126, 126);
 }
 .sTitle {
   font-weight: 600;
