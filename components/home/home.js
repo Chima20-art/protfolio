@@ -150,10 +150,18 @@ export default function Home() {
         </Grid>
       </Grid>
       <Grid container direction="row" justifyContent="center">
-        <JobCard title="khbfvdk" description="jhbfkbhr" />
-        <JobCard title="khbfvdk" description="jhbfkbhr" />
+        <JobCard
+          title="Javascript developer"
+          description="Creative websites for you."
+          MarginTop="40px"
+        />
+        <JobCard
+          title="UI/UX Designer"
+          description="Creative websites for you"
+          MarginTop="20px"
+        />
 
-        <JobCard title="khbfvdk" description="jhbfkbhr" />
+        <JobCard title="Freelancer" description="Hire me now." />
       </Grid>
     </Grid>
   );
