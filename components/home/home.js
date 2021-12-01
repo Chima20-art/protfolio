@@ -2,9 +2,8 @@ import styles from "./home.module.css";
 import Grid from "@mui/material/Grid";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
-import JobCard from "../folder/JobCard";
+import About from "../about/About";
+import JobCard from "../JobCard/JobCard";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -138,7 +137,6 @@ export default function Home() {
               </Grid>
             </Grid>
           </Grid>
-
           <Grid item container md={2} direction="row">
             <Grid item md={6}>
               <BootstrapGreenButton>Downald CV</BootstrapGreenButton>
@@ -160,9 +158,9 @@ export default function Home() {
           description="Creative websites for you"
           MarginTop="20px"
         />
-
         <JobCard title="Freelancer" description="Hire me now." />
       </Grid>
+      <About />
     </Grid>
   );
 }
