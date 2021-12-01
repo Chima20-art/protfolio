@@ -148,7 +148,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container direction="row">
+      <Grid container direction="row" justifyContent="center">
         <Grid
           container
           direction="row"
@@ -157,6 +157,57 @@ export default function Home() {
           boxShadow="3"
           borderRadius="5px"
           padding="5px"
+          marginLeft="40px"
+          marginTop="30px"
+        >
+          <Grid
+            item
+            container
+            direction="column"
+            justifyContent="center"
+            md={1}
+            width="fit-content"
+            margin="17px"
+          >
+            <CheckCircleIcon fontSize="large" />
+          </Grid>
+
+          <Grid
+            item
+            container
+            direction="column"
+            margin="auto"
+            justifyContent="center"
+            textAlign="flex-start"
+            md={8}
+          >
+            <div className={styles.cardsTitle}> Javascript developer</div>
+            <div className={styles.cardsParagraph}>
+              {" "}
+              Creative websites for you{" "}
+            </div>
+          </Grid>
+          <Grid
+            item
+            margin="auto"
+            direction="row"
+            justifyContent="center"
+            width="fit-content"
+            md={1}
+          >
+            <ArrowForwardIosIcon />
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          direction="row"
+          width="300px"
+          height="100px"
+          boxShadow="3"
+          borderRadius="5px"
+          padding="5px"
+          marginLeft="30px"
+          marginTop="15px"
         >
           <Grid
             item
@@ -204,6 +255,8 @@ export default function Home() {
           boxShadow="3"
           borderRadius="5px"
           padding="5px"
+          marginLeft="30px"
+          marginBottom="100px"
         >
           <Grid
             item
@@ -226,58 +279,8 @@ export default function Home() {
             textAlign="flex-start"
             md={8}
           >
-            <div className={styles.cardsTitle}> UI/UX Designer</div>
-            <div className={styles.cardsParagraph}>
-              {" "}
-              Creative websites for you{" "}
-            </div>
-          </Grid>
-          <Grid
-            item
-            margin="auto"
-            direction="row"
-            justifyContent="center"
-            width="fit-content"
-            md={1}
-          >
-            <ArrowForwardIosIcon />
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="row"
-          width="300px"
-          height="100px"
-          boxShadow="3"
-          borderRadius="5px"
-          padding="5px"
-        >
-          <Grid
-            item
-            container
-            direction="column"
-            justifyContent="center"
-            md={1}
-            width="fit-content"
-            margin="17px"
-          >
-            <CheckCircleIcon fontSize="large" />
-          </Grid>
-
-          <Grid
-            item
-            container
-            direction="column"
-            margin="auto"
-            justifyContent="center"
-            textAlign="flex-start"
-            md={8}
-          >
-            <div className={styles.cardsTitle}> UI/UX Designer</div>
-            <div className={styles.cardsParagraph}>
-              {" "}
-              Creative websites for you{" "}
-            </div>
+            <div className={styles.cardsTitle}> Freelancer</div>
+            <div className={styles.cardsParagraph}> You can hire me now. </div>
           </Grid>
           <Grid
             item
