@@ -4,7 +4,6 @@
   background-image: url("/Chaimae\ \(3\).png");
   height: 800px;
   width: 1440px;
-
   background-repeat: unset;
 }
 .title {
@@ -29,4 +28,17 @@
 }
 .sTitle {
   font-weight: 600;
+}
+.cardsTitle {
+  font-style: "Bebas Neue", cursive;
+  font-family: "M PLUS Code Latin", sans-serif;
+  font-weight: 530;
+  font-size: 17px;
+
+  margin-bottom: 10px;
+}
+.cardsParagraph {
+  font-family: "M PLUS Code Latin", sans-serif;
+  font-size: 14px;
+  color: rgb(122, 126, 126);
 }

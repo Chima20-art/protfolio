@@ -98,7 +98,6 @@ export default function Header() {
               alt="My logo"
               className={styles.img}
             />
-            <Divider item orientation="vertical" flexItem />
           </Grid>
 
           <Grid
@@ -204,7 +203,7 @@ export default function Header() {
               className={styles.mediaVectors}
             />
           </Grid>
-          <Divider item orientation="vertical" flexItem />
+
           <Grid
             container
             item
