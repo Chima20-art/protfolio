@@ -12,13 +12,16 @@
 .img {
   width: fit-content;
   margin: auto;
-  position: relative;
-  margin-left: 10px;
-  margin-right: 500px;
 }
 .paragraph {
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
   font-size: 16px;
   color: rgb(122, 126, 126);
+
+  line-height: 27px;
+}
+.mediaVectors {
+  object-fit: contain;
+  cursor: pointer;
 }
