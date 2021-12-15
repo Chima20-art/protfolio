@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Code+Latin:wdth,wght@100,300;102.2,381&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap");
 .contai {
-  background-image: url("/Chaimae\ \(3\).png");
+  background-image: url("/Chaimae\ \(7\).png");
   height: 800px;
   width: 1440px;
   background-repeat: unset;
@@ -16,7 +16,7 @@
   font-family: "M PLUS Code Latin", sans-serif;
   font-weight: 600;
   font-size: 45px;
-  color: #a170fd;
+  color: #ffdd04;
 }
 .content {
   margin-left: 220px;

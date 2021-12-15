@@ -1,8 +1,6 @@
 .img {
   object-fit: contain;
 }
-.backgroundColor {
-}
 .divider {
   width: 1px;
   height: inherit;
@@ -31,6 +29,4 @@
 .contactMeButton:hover {
   background-color: black;
   border: white;
-}
-.back {
 }

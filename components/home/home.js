@@ -1,5 +1,6 @@
 import styles from "./home.module.css";
 import Grid from "@mui/material/Grid";
+import Image from "next/image";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import About from "../about/About";
@@ -13,7 +14,7 @@ const BootstrapGreenButton = styled(Button)({
   border: "1px solid",
   borderColor: "rgb(174, 180, 180)",
   lineHeight: 1.5,
-  backgroundColor: "#A171FD",
+  backgroundColor: "#FFDD04",
   color: "white",
 
   fontFamily: [
@@ -30,7 +31,7 @@ const BootstrapGreenButton = styled(Button)({
   ].join(","),
   "&:hover": {
     backgroundColor: "283543",
-    backgroundColor: "#A171FD",
+    backgroundColor: "#FFDD04",
     boxShadow: "none",
   },
   "&:active": {
