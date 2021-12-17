@@ -4,19 +4,19 @@
   color: grey;
 }
 .title {
-  font-size: 36px;
+  font-size: 26px;
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
   font-weight: 530;
 }
 .img {
-  object-fit: contain;
+  width: fit-content;
   margin: auto;
 }
 .paragraph {
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
-  font-size: 16px;
+  font-size: 15px;
   color: rgb(122, 126, 126);
 
   line-height: 27px;
