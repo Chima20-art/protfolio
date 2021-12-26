@@ -5,7 +5,13 @@ import Image from "next/image";
 
 export default function Skills() {
   return (
-    <Grid container md={12} direction="row" marginTop="50px">
+    <Grid
+      container
+      md={12}
+      direction="row"
+      marginTop="50px"
+      marginBottom="50px"
+    >
       <Grid
         item
         container
@@ -13,6 +19,8 @@ export default function Skills() {
         md={6}
         paddingLeft="100px"
         paddingRight="100px"
+        backgroundColor="yellow"
+        marginBottom="50px"
       >
         <Grid container direction="row" item md={1}>
           <Divider orientation="vertical" flexItem>
@@ -65,13 +73,9 @@ export default function Skills() {
                 width="400px"
                 height="3px"
                 backgroundColor="gray"
+                marginBottom="20px"
               >
-                <Grid
-                  item
-                  width="350px"
-                  height="3px"
-                  backgroundColor="red"
-                ></Grid>
+                <Grid item width="350px" height="3px" backgroundColor="red" />
               </Grid>
             </Grid>
             <Grid container item direction="column" md={2} width="400px">
@@ -94,13 +98,15 @@ export default function Skills() {
                   width="400px"
                   height="3px"
                   backgroundColor="gray"
+                  marginBottom="20px"
                 >
                   <Grid
                     item
                     width="350px"
                     height="3px"
                     backgroundColor="red"
-                  ></Grid>
+                    marginBottom="100px"
+                  />
                 </Grid>
               </Grid>
             </Grid>
@@ -124,13 +130,9 @@ export default function Skills() {
                   width="400px"
                   height="3px"
                   backgroundColor="gray"
+                  marginBottom="20px"
                 >
-                  <Grid
-                    item
-                    width="350px"
-                    height="3px"
-                    backgroundColor="red"
-                  ></Grid>
+                  <Grid item width="350px" height="3px" backgroundColor="red" />
                 </Grid>
               </Grid>
             </Grid>
@@ -145,6 +147,8 @@ export default function Skills() {
         alignItems="center"
         justifyContent="center"
         width="fit-content"
+        backgroundColor="red"
+        marginBottom="50px"
       ></Grid>
     </Grid>
   );
