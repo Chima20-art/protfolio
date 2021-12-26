@@ -149,7 +149,58 @@ export default function Skills() {
         width="fit-content"
         backgroundColor="red"
         marginBottom="50px"
-      ></Grid>
+      >
+        <Grid
+          md={4}
+          container
+          item
+          margin="20px"
+          backgroundColor="white"
+          height="200px"
+          justifyContent="center"
+          alignContent="center"
+        >
+          1
+        </Grid>
+        <Grid
+          md={4}
+          container
+          margin="20px"
+          item
+          backgroundColor="white"
+          height="200px"
+          justifyContent="center"
+          alignContent="center"
+        >
+          2
+        </Grid>
+
+        <Grid
+          md={4}
+          container
+          item
+          margin="20px"
+          backgroundColor="white"
+          height="200px"
+          justifyContent="center"
+          alignContent="center"
+        >
+          3
+        </Grid>
+
+        <Grid
+          md={4}
+          container
+          item
+          backgroundColor="white"
+          height="200px"
+          margin="20px"
+          justifyContent="center"
+          alignContent="center"
+        >
+          4
+        </Grid>
+      </Grid>
     </Grid>
   );
 }
