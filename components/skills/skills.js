@@ -2,6 +2,9 @@ import { Grid } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import styles from "./skills.module.css";
 import Image from "next/image";
+import { Box } from "@mui/system";
+import { shadows } from "@mui/system";
+import { grey } from "@mui/material/colors";
 
 export default function Skills() {
   return (
@@ -147,7 +150,6 @@ export default function Skills() {
         alignItems="center"
         justifyContent="center"
         width="fit-content"
-        backgroundColor="red"
         marginBottom="50px"
       >
         <Grid
@@ -157,6 +159,8 @@ export default function Skills() {
           margin="20px"
           backgroundColor="white"
           height="200px"
+          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
+          borderRadius={"10px"}
           justifyContent="center"
           alignContent="center"
         >
@@ -166,8 +170,11 @@ export default function Skills() {
           md={4}
           container
           margin="20px"
+          marginTop="40px"
           item
+          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
           backgroundColor="white"
+          borderRadius={"10px"}
           height="200px"
           justifyContent="center"
           alignContent="center"
@@ -181,6 +188,8 @@ export default function Skills() {
           item
           margin="20px"
           backgroundColor="white"
+          borderRadius={"10px"}
+          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
           height="200px"
           justifyContent="center"
           alignContent="center"
@@ -193,8 +202,11 @@ export default function Skills() {
           container
           item
           backgroundColor="white"
+          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
           height="200px"
           margin="20px"
+          marginTop="40px"
+          borderRadius={"10px"}
           justifyContent="center"
           alignContent="center"
         >
