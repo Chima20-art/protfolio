@@ -22,7 +22,6 @@ export default function Skills() {
         md={6}
         paddingLeft="100px"
         paddingRight="100px"
-        backgroundColor="yellow"
         marginBottom="50px"
       >
         <Grid container direction="row" item md={1}>
@@ -38,7 +37,7 @@ export default function Skills() {
           height="fit-content"
           paddingTop="20px"
         >
-          <Grid item md={1} width="400px" className={styles.title}>
+          <Grid item md={1} width="500px" className={styles.title}>
             What my design skills included?
           </Grid>
 
@@ -46,7 +45,7 @@ export default function Skills() {
             item
             md={4}
             className={styles.paragraph}
-            width="400px"
+            width="500px"
             margin="auto"
             marginLeft="0px"
             paddingTop="20px"
@@ -63,49 +62,49 @@ export default function Skills() {
                 container
                 paddingTop="10px"
                 paddingBottom="20px"
-                width="400px"
+                width="500px"
                 direction="row"
                 justifyContent="space-between"
               >
-                <div>photohop</div>
-                <div>80%</div>
+                <div>HTML</div>
+                <div>90%</div>
               </Grid>
               <Grid
                 item
                 container
-                width="400px"
+                width="500px"
                 height="3px"
                 backgroundColor="gray"
                 marginBottom="20px"
               >
-                <Grid item width="350px" height="3px" backgroundColor="red" />
+                <Grid item width="460px" height="3px" backgroundColor="red" />
               </Grid>
             </Grid>
-            <Grid container item direction="column" md={2} width="400px">
+            <Grid container item direction="column" md={2} width="500px">
               <Grid container item direction="column">
                 <Grid
                   item
                   container
                   paddingTop="10px"
                   paddingBottom="20px"
-                  width="400px"
+                  width="500px"
                   direction="row"
                   justifyContent="space-between"
                 >
-                  <div>photohop</div>
-                  <div>80%</div>
+                  <div>CSS</div>
+                  <div>90%</div>
                 </Grid>
                 <Grid
                   item
                   container
-                  width="400px"
+                  width="500px"
                   height="3px"
                   backgroundColor="gray"
                   marginBottom="20px"
                 >
                   <Grid
                     item
-                    width="350px"
+                    width="460px"
                     height="3px"
                     backgroundColor="red"
                     marginBottom="100px"
@@ -113,29 +112,55 @@ export default function Skills() {
                 </Grid>
               </Grid>
             </Grid>
-            <Grid container item direction="column" md={2} width="400px">
+            <Grid container item direction="column" md={2} width="500px">
               <Grid container item direction="column">
                 <Grid
                   item
                   container
                   paddingTop="10px"
                   paddingBottom="20px"
-                  width="400px"
+                  width="500px"
                   direction="row"
                   justifyContent="space-between"
                 >
-                  <div>photohop</div>
+                  <div>React</div>
                   <div>80%</div>
                 </Grid>
                 <Grid
                   item
                   container
-                  width="400px"
+                  width="500px"
                   height="3px"
                   backgroundColor="gray"
                   marginBottom="20px"
                 >
-                  <Grid item width="350px" height="3px" backgroundColor="red" />
+                  <Grid item width="430px" height="3px" backgroundColor="red" />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid container item direction="column" md={2} width="500px">
+              <Grid container item direction="column">
+                <Grid
+                  item
+                  container
+                  paddingTop="10px"
+                  paddingBottom="20px"
+                  width="500px"
+                  direction="row"
+                  justifyContent="space-between"
+                >
+                  <div>Nextjs</div>
+                  <div>80%</div>
+                </Grid>
+                <Grid
+                  item
+                  container
+                  width="500px"
+                  height="3px"
+                  backgroundColor="gray"
+                  marginBottom="20px"
+                >
+                  <Grid item width="430px" height="3px" backgroundColor="red" />
                 </Grid>
               </Grid>
             </Grid>
@@ -301,7 +326,7 @@ export default function Skills() {
           marginLeft="20px"
           marginRight="20px"
           marginTop="90px"
-          backgroundColor="violet"
+          backgroundColor="white"
           height="200px"
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
           borderRadius={"10px"}
