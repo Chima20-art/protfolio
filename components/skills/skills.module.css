@@ -21,12 +21,12 @@
 
   line-height: 27px;
 }
-.paragraph {
+.paragraphCard {
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
   font-size: 13px;
   color: rgb(122, 126, 126);
-
+  padding: 0px;
   line-height: 18px;
 }
 .mediaVectors {

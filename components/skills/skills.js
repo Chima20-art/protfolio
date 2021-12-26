@@ -166,14 +166,15 @@ export default function Skills() {
           alignContent="center"
         >
           <Image
-            src="/imgbin-computer-icons-clock-time-stop-watches-NjjrXdw1DS0XYacF0zqPiCu5S.jpg"
-            width="70px"
+            md={6}
+            src="/imgbin-computer-icons-clock-time-stop-watches-NjjrXdw1DS0XYacF0zqPiCu5S-removebg-preview.png"
+            width="60px"
             height="70px"
             objectFit="contain"
             alt="logo"
             backgroundColor="red"
           />
-          <Grid item container>
+          <Grid item container md={6}>
             <Grid
               item
               container
@@ -190,7 +191,7 @@ export default function Skills() {
               justifyContent="center"
               alignItems="center"
               textAlign="center"
-              className={styles.paragraph}
+              className={styles.paragraphCard}
             >
               Fast load times and lag free interaction, my highest priority.
             </Grid>
@@ -202,6 +203,7 @@ export default function Skills() {
           item
           direction="column"
           margin="20px"
+          marginTop={"90px"}
           backgroundColor="white"
           height="200px"
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
@@ -210,14 +212,15 @@ export default function Skills() {
           alignContent="center"
         >
           <Image
-            src="/images.png"
+            md={6}
+            src="/images__1_-removebg-preview.png"
+            height="80px"
             width="70px"
-            height="70px"
             objectFit="contain"
             alt="logo"
             backgroundColor="red"
           />
-          <Grid item container>
+          <Grid item container md={6}>
             <Grid
               item
               container
@@ -225,7 +228,7 @@ export default function Skills() {
               justifyContent="center"
               className={styles.title}
             >
-              Fast
+              Intuitive
             </Grid>
             <Grid
               item
@@ -234,54 +237,9 @@ export default function Skills() {
               justifyContent="center"
               alignItems="center"
               textAlign="center"
-              className={styles.paragraph}
+              className={styles.paragraphCard}
             >
-              Fast load times and lag free interaction, my highest priority.
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <Grid
-          md={4}
-          container
-          item
-          direction="column"
-          margin="20px"
-          backgroundColor="white"
-          height="200px"
-          boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
-          borderRadius={"10px"}
-          justifyContent="space-around"
-          alignContent="center"
-        >
-          <Image
-            src="/270-2706458_responsive-web-icon-responsive-web-design.png"
-            width="70px"
-            height="70px"
-            objectFit="contain"
-            alt="logo"
-            backgroundColor="red"
-          />
-          <Grid item container>
-            <Grid
-              item
-              container
-              direction="row"
-              justifyContent="center"
-              className={styles.title}
-            >
-              Fast
-            </Grid>
-            <Grid
-              item
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              textAlign="center"
-              className={styles.paragraph}
-            >
-              Fast load times and lag free interaction, my highest priority.
+              Strong preference for easy to use, intuitive UX/UI.{" "}
             </Grid>
           </Grid>
         </Grid>
@@ -291,7 +249,9 @@ export default function Skills() {
           container
           item
           direction="column"
-          margin="20px"
+          marginLeft="20px"
+          marginRight="20px"
+          marginTop="0px"
           backgroundColor="white"
           height="200px"
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
@@ -300,14 +260,16 @@ export default function Skills() {
           alignContent="center"
         >
           <Image
-            src="/download.png"
-            width="70px"
-            height="70px"
+            md={6}
+            src="/270-2706458_responsive-web-icon-responsive-web-design-removebg-preview.png"
+            width="120px"
+            height="100px"
             objectFit="contain"
+            marginTop="0px"
             alt="logo"
             backgroundColor="red"
           />
-          <Grid item container>
+          <Grid item container md={6}>
             <Grid
               item
               container
@@ -315,7 +277,7 @@ export default function Skills() {
               justifyContent="center"
               className={styles.title}
             >
-              Fast
+              Responsive
             </Grid>
             <Grid
               item
@@ -324,9 +286,58 @@ export default function Skills() {
               justifyContent="center"
               alignItems="center"
               textAlign="center"
-              className={styles.paragraph}
+              className={styles.paragraphCard}
             >
-              Fast load times and lag free interaction, my highest priority.
+              My layouts will work on any device, big or small.
+            </Grid>
+          </Grid>
+        </Grid>
+
+        <Grid
+          md={4}
+          container
+          item
+          direction="column"
+          marginLeft="20px"
+          marginRight="20px"
+          marginTop="90px"
+          backgroundColor="violet"
+          height="200px"
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
+          borderRadius={"10px"}
+          justifyContent="space-around"
+          alignContent="center"
+        >
+          <Image
+            md={6}
+            src="/download-removebg-preview.png"
+            width="90px"
+            height="80px"
+            objectFit="contain"
+            alt="logo"
+            backgroundColor="red"
+          />
+          <Grid item container md={6}>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              className={styles.title}
+            >
+              Dynamic
+            </Grid>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+              className={styles.paragraphCard}
+            >
+              Websites don't have to be static, I love making pages come to
+              life.
             </Grid>
           </Grid>
         </Grid>
