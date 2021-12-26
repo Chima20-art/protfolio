@@ -156,61 +156,179 @@ export default function Skills() {
           md={4}
           container
           item
+          direction="column"
           margin="20px"
           backgroundColor="white"
           height="200px"
-          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
           borderRadius={"10px"}
-          justifyContent="center"
+          justifyContent="space-around"
           alignContent="center"
         >
-          1
+          <Image
+            src="/imgbin-computer-icons-clock-time-stop-watches-NjjrXdw1DS0XYacF0zqPiCu5S.jpg"
+            width="70px"
+            height="70px"
+            objectFit="contain"
+            alt="logo"
+            backgroundColor="red"
+          />
+          <Grid item container>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              className={styles.title}
+            >
+              Fast
+            </Grid>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+              className={styles.paragraph}
+            >
+              Fast load times and lag free interaction, my highest priority.
+            </Grid>
+          </Grid>
         </Grid>
         <Grid
           md={4}
           container
-          margin="20px"
-          marginTop="40px"
           item
-          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
+          direction="column"
+          margin="20px"
           backgroundColor="white"
-          borderRadius={"10px"}
           height="200px"
-          justifyContent="center"
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
+          borderRadius={"10px"}
+          justifyContent="space-around"
           alignContent="center"
         >
-          2
+          <Image
+            src="/images.png"
+            width="70px"
+            height="70px"
+            objectFit="contain"
+            alt="logo"
+            backgroundColor="red"
+          />
+          <Grid item container>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              className={styles.title}
+            >
+              Fast
+            </Grid>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+              className={styles.paragraph}
+            >
+              Fast load times and lag free interaction, my highest priority.
+            </Grid>
+          </Grid>
         </Grid>
 
         <Grid
           md={4}
           container
           item
+          direction="column"
           margin="20px"
           backgroundColor="white"
-          borderRadius={"10px"}
-          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
           height="200px"
-          justifyContent="center"
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
+          borderRadius={"10px"}
+          justifyContent="space-around"
           alignContent="center"
         >
-          3
+          <Image
+            src="/270-2706458_responsive-web-icon-responsive-web-design.png"
+            width="70px"
+            height="70px"
+            objectFit="contain"
+            alt="logo"
+            backgroundColor="red"
+          />
+          <Grid item container>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              className={styles.title}
+            >
+              Fast
+            </Grid>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+              className={styles.paragraph}
+            >
+              Fast load times and lag free interaction, my highest priority.
+            </Grid>
+          </Grid>
         </Grid>
 
         <Grid
           md={4}
           container
           item
-          backgroundColor="white"
-          boxShadow="   rgba(0, 0, 0, 0.16) 0px 1px 4px"
-          height="200px"
+          direction="column"
           margin="20px"
-          marginTop="40px"
+          backgroundColor="white"
+          height="200px"
+          boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
           borderRadius={"10px"}
-          justifyContent="center"
+          justifyContent="space-around"
           alignContent="center"
         >
-          4
+          <Image
+            src="/download.png"
+            width="70px"
+            height="70px"
+            objectFit="contain"
+            alt="logo"
+            backgroundColor="red"
+          />
+          <Grid item container>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              className={styles.title}
+            >
+              Fast
+            </Grid>
+            <Grid
+              item
+              container
+              direction="row"
+              justifyContent="center"
+              alignItems="center"
+              textAlign="center"
+              className={styles.paragraph}
+            >
+              Fast load times and lag free interaction, my highest priority.
+            </Grid>
+          </Grid>
         </Grid>
       </Grid>
     </Grid>
