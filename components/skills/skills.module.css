@@ -29,6 +29,14 @@
   padding: 0px;
   line-height: 18px;
 }
+.paragraphCardDynamic {
+  font-style: "Bebas Neue", cursive;
+  font-family: "M PLUS Code Latin", sans-serif;
+  font-size: 13px;
+  color: #fff;
+  padding: 0px;
+  line-height: 18px;
+}
 .mediaVectors {
   object-fit: contain;
   cursor: pointer;

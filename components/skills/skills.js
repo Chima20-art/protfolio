@@ -197,7 +197,6 @@ export default function Skills() {
             height="70px"
             objectFit="contain"
             alt="logo"
-            backgroundColor="red"
           />
           <Grid item container md={6}>
             <Grid
@@ -228,9 +227,9 @@ export default function Skills() {
           item
           direction="column"
           margin="20px"
-          marginTop={"90px"}
           backgroundColor="white"
           height="200px"
+          marginTop={"50px"}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
           borderRadius={"10px"}
           justifyContent="space-around"
@@ -243,7 +242,6 @@ export default function Skills() {
             width="70px"
             objectFit="contain"
             alt="logo"
-            backgroundColor="red"
           />
           <Grid item container md={6}>
             <Grid
@@ -276,7 +274,6 @@ export default function Skills() {
           direction="column"
           marginLeft="20px"
           marginRight="20px"
-          marginTop="0px"
           backgroundColor="white"
           height="200px"
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
@@ -325,45 +322,37 @@ export default function Skills() {
           direction="column"
           marginLeft="20px"
           marginRight="20px"
-          marginTop="90px"
-          backgroundColor="white"
           height="200px"
+          marginTop={"50px"}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
           borderRadius={"10px"}
-          justifyContent="space-around"
+          padding="40px"
+          justifyContent="center"
           alignContent="center"
+          backgroundColor="#212121"
         >
-          <Image
+          <Grid
             md={6}
-            src="/download-removebg-preview.png"
-            width="90px"
-            height="80px"
-            objectFit="contain"
-            alt="logo"
-            backgroundColor="red"
-          />
-          <Grid item container md={6}>
-            <Grid
-              item
-              container
-              direction="row"
-              justifyContent="center"
-              className={styles.title}
-            >
-              Dynamic
-            </Grid>
-            <Grid
-              item
-              container
-              direction="row"
-              justifyContent="center"
-              alignItems="center"
-              textAlign="center"
-              className={styles.paragraphCard}
-            >
-              Websites don't have to be static, I love making pages come to
-              life.
-            </Grid>
+            item
+            container
+            direction="row"
+            justifyContent="center"
+            className={styles.title}
+            color={"white"}
+          >
+            Dynamic
+          </Grid>
+          <Grid
+            item
+            md={6}
+            container
+            direction="row"
+            justifyContent="center"
+            alignItems="center"
+            textAlign="center"
+            className={styles.paragraphCardDynamic}
+          >
+            Websites don't have to be static, I love making pages come to life.
           </Grid>
         </Grid>
       </Grid>
