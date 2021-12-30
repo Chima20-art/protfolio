@@ -10,20 +10,14 @@ export default function Skills() {
   return (
     <Grid
       container
-      md={12}
+      md={11}
       direction="row"
-      marginTop="50px"
+      margin="auto"
+      marginTop="110px"
       marginBottom="50px"
+      justifyContent={"center"}
     >
-      <Grid
-        item
-        container
-        direction="row"
-        md={6}
-        paddingLeft="100px"
-        paddingRight="100px"
-        marginBottom="50px"
-      >
+      <Grid item container direction="row" md={5} marginBottom="50px">
         <Grid container direction="row" item md={1}>
           <Divider orientation="vertical" flexItem>
             <div className={styles.vertical}>My Skills</div>
@@ -183,17 +177,16 @@ export default function Skills() {
         </Grid>
       </Grid>
       <Grid
-        md={6}
+        md={5}
         item
         container
-        spacing={0}
+        width="min-width"
         alignItems="center"
-        justifyContent="center"
-        width="fit-content"
+        justifyContent="flex-start"
         marginBottom="50px"
       >
         <Grid
-          md={4}
+          md={5}
           container
           item
           direction="column"
@@ -237,7 +230,7 @@ export default function Skills() {
           </Grid>
         </Grid>
         <Grid
-          md={4}
+          md={5}
           container
           item
           direction="column"
@@ -283,7 +276,7 @@ export default function Skills() {
         </Grid>
 
         <Grid
-          md={4}
+          md={5}
           container
           item
           direction="column"
@@ -331,7 +324,7 @@ export default function Skills() {
         </Grid>
 
         <Grid
-          md={4}
+          md={5}
           container
           item
           direction="column"
@@ -341,7 +334,7 @@ export default function Skills() {
           marginTop={"50px"}
           boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
           borderRadius={"10px"}
-          padding="40px"
+          padding="30px"
           justifyContent="center"
           alignContent="center"
           backgroundColor="#212121"
