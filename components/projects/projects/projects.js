@@ -6,7 +6,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 
 export default function Projects() {
-  const [value, setValue] = React.useState("one");
+  const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -30,7 +30,7 @@ export default function Projects() {
       <Grid
         item
         container
-        md={7}
+        md={10}
         margin="auto"
         justifyContent={"space-around"}
         padding="20px"
@@ -38,14 +38,15 @@ export default function Projects() {
         <Tabs
           value={value}
           onChange={handleChange}
-          textColor="secondary"
+          textColor="black"
           indicatorColor="secondary"
-          aria-label="secondary tabs example"
+          centered
+          className={styles.subTitle}
         >
-          <Tab value="one" label="All" />
-          <Tab value="two" label="React-js" />
-          <Tab value="three" label="Next-js" />
-          <Tab value="four" label="Javascript" />
+          <Tab label="All" className={styles.subTitle} />
+          <Tab label="React-js" className={styles.subTitle} />
+          <Tab label="Next-js" className={styles.subTitle} />
+          <Tab label="Javascript" className={styles.subTitle} />
         </Tabs>
       </Grid>
       <Grid item container md={10} backgroundColor="red" margin="auto">

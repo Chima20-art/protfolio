@@ -62,7 +62,7 @@ export default function Skills() {
                 container
                 paddingTop="10px"
                 paddingBottom="20px"
-                width="500px"
+                width="400px"
                 direction="row"
                 justifyContent="space-between"
               >
@@ -72,12 +72,17 @@ export default function Skills() {
               <Grid
                 item
                 container
-                width="500px"
-                height="3px"
+                width="400px"
+                height="4px"
                 backgroundColor="gray"
                 marginBottom="20px"
               >
-                <Grid item width="460px" height="3px" backgroundColor="red" />
+                <Grid
+                  item
+                  width="360px"
+                  height="5px"
+                  backgroundColor="#FDC534"
+                />
               </Grid>
             </Grid>
             <Grid container item direction="column" md={2} width="500px">
@@ -87,7 +92,7 @@ export default function Skills() {
                   container
                   paddingTop="10px"
                   paddingBottom="20px"
-                  width="500px"
+                  width="400px"
                   direction="row"
                   justifyContent="space-between"
                 >
@@ -97,17 +102,48 @@ export default function Skills() {
                 <Grid
                   item
                   container
-                  width="500px"
+                  width="400px"
                   height="3px"
                   backgroundColor="gray"
                   marginBottom="20px"
                 >
                   <Grid
                     item
-                    width="460px"
-                    height="3px"
-                    backgroundColor="red"
+                    width="360px"
+                    height="5px"
+                    backgroundColor="#FDC534"
                     marginBottom="100px"
+                  />
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid container item direction="column" md={2} width="400px">
+              <Grid container item direction="column">
+                <Grid
+                  item
+                  container
+                  paddingTop="10px"
+                  paddingBottom="20px"
+                  width="400px"
+                  direction="row"
+                  justifyContent="space-between"
+                >
+                  <div>React</div>
+                  <div>80%</div>
+                </Grid>
+                <Grid
+                  item
+                  container
+                  width="400px"
+                  height="4px"
+                  backgroundColor="gray"
+                  marginBottom="20px"
+                >
+                  <Grid
+                    item
+                    width="330px"
+                    height="5px"
+                    backgroundColor="#FDC534"
                   />
                 </Grid>
               </Grid>
@@ -119,33 +155,7 @@ export default function Skills() {
                   container
                   paddingTop="10px"
                   paddingBottom="20px"
-                  width="500px"
-                  direction="row"
-                  justifyContent="space-between"
-                >
-                  <div>React</div>
-                  <div>80%</div>
-                </Grid>
-                <Grid
-                  item
-                  container
-                  width="500px"
-                  height="3px"
-                  backgroundColor="gray"
-                  marginBottom="20px"
-                >
-                  <Grid item width="430px" height="3px" backgroundColor="red" />
-                </Grid>
-              </Grid>
-            </Grid>
-            <Grid container item direction="column" md={2} width="500px">
-              <Grid container item direction="column">
-                <Grid
-                  item
-                  container
-                  paddingTop="10px"
-                  paddingBottom="20px"
-                  width="500px"
+                  width="400px"
                   direction="row"
                   justifyContent="space-between"
                 >
@@ -155,12 +165,17 @@ export default function Skills() {
                 <Grid
                   item
                   container
-                  width="500px"
-                  height="3px"
+                  width="400px"
+                  height="4px"
                   backgroundColor="gray"
                   marginBottom="20px"
                 >
-                  <Grid item width="430px" height="3px" backgroundColor="red" />
+                  <Grid
+                    item
+                    width="340px"
+                    height="5px"
+                    backgroundColor="#FDC534"
+                  />
                 </Grid>
               </Grid>
             </Grid>
