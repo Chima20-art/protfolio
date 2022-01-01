@@ -6,9 +6,10 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Image from "next/dist/client/image";
 import { useState } from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function Projects(props) {
-  const imgArr = [
+  const AllImgArr = [
     "/Nordic-rose.png",
     "/pomodoro.png",
     "/landing-page.png",
@@ -16,6 +17,9 @@ export default function Projects(props) {
     "/DSI.png",
     "/map.png",
   ];
+
+  const reactArr = ["/landing-page.png", "/DSI.png", "/map.png"];
+  const nextArr = ["/Nordic-rose.png"];
   const [state, setState] = useState("all");
   const [value, setValue] = React.useState(0);
 
@@ -78,11 +82,17 @@ export default function Projects(props) {
         </Tabs>
       </Grid>
       <Grid item container md={10} margin="auto">
-        {imgArr.map((image) => (
-          <Grid key="hh" item md={4}>
-            <Image src={image} width="400px" height="300px" alt="rose" />
-          </Grid>
-        ))}
+        {state == "all" || state == "javascript"
+          ? AllImgArr.map((image) => (
+              <Grid key="hh" item md={4}>
+                <Image src={image} width="400px" height="300px" alt="rose" />
+              </Grid>
+            ))
+          : reactArr.map((image) => (
+              <Grid key="hh" item md={4}>
+                <Image src={image} width="400px" height="300px" alt="rose" />
+              </Grid>
+            ))}
       </Grid>
     </Grid>
   );
