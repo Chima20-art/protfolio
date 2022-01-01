@@ -4,6 +4,7 @@ import Box from "@mui/material/Box";
 import styles from "./projects.module.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
+import Image from "next/dist/client/image";
 
 export default function Projects() {
   const [value, setValue] = React.useState(0);
@@ -49,8 +50,45 @@ export default function Projects() {
           <Tab label="Javascript" className={styles.subTitle} />
         </Tabs>
       </Grid>
-      <Grid item container md={10} backgroundColor="red" margin="auto">
-        dhrf
+      <Grid item container md={10} margin="auto">
+        <Grid item md={4}>
+          <Image
+            src="/Nordic-rose.png"
+            width="400px"
+            height="300px"
+            alt="rose"
+          />
+        </Grid>
+        <Grid item md={4}>
+          <Image
+            src="/pomodoro.png"
+            width="400px"
+            height="300px"
+            alt="pomodoro"
+          />
+        </Grid>
+        <Grid item md={4}>
+          <Image src="/DSI.png" width="400px" height="300px" alt="dsi" />
+        </Grid>
+        <Grid item md={4}>
+          <Image
+            src="/landing-page.png"
+            width="400px"
+            height="300px"
+            alt="dsi"
+          />
+        </Grid>
+        <Grid item md={4}>
+          <Image src="/map.png" width="400px" height="300px" alt="pomodoro" />
+        </Grid>
+        <Grid item md={4}>
+          <Image
+            src="/etch-a-sketch.png"
+            width="400px"
+            height="300px"
+            alt="dsi"
+          />
+        </Grid>
       </Grid>
     </Grid>
   );
