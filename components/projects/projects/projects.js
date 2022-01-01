@@ -6,7 +6,15 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Image from "next/dist/client/image";
 
-export default function Projects() {
+export default function Projects(props) {
+  const imgArr = [
+    "/Nordic-rose.png",
+    "/pomodoro.png",
+    "/landing-page.png",
+    "/etch-a-sketch.png",
+    "/DSI.png",
+    "/map.png",
+  ];
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -51,44 +59,11 @@ export default function Projects() {
         </Tabs>
       </Grid>
       <Grid item container md={10} margin="auto">
-        <Grid item md={4}>
-          <Image
-            src="/Nordic-rose.png"
-            width="400px"
-            height="300px"
-            alt="rose"
-          />
-        </Grid>
-        <Grid item md={4}>
-          <Image
-            src="/pomodoro.png"
-            width="400px"
-            height="300px"
-            alt="pomodoro"
-          />
-        </Grid>
-        <Grid item md={4}>
-          <Image src="/DSI.png" width="400px" height="300px" alt="dsi" />
-        </Grid>
-        <Grid item md={4}>
-          <Image
-            src="/landing-page.png"
-            width="400px"
-            height="300px"
-            alt="dsi"
-          />
-        </Grid>
-        <Grid item md={4}>
-          <Image src="/map.png" width="400px" height="300px" alt="pomodoro" />
-        </Grid>
-        <Grid item md={4}>
-          <Image
-            src="/etch-a-sketch.png"
-            width="400px"
-            height="300px"
-            alt="dsi"
-          />
-        </Grid>
+        {imgArr.map((image) => (
+          <Grid key="hh" item md={4}>
+            <Image src={image} width="400px" height="300px" alt="rose" />
+          </Grid>
+        ))}
       </Grid>
     </Grid>
   );
