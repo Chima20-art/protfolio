@@ -5,6 +5,7 @@ import styles from "./projects.module.css";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Image from "next/dist/client/image";
+import { useState } from "react";
 
 export default function Projects(props) {
   const imgArr = [
@@ -15,6 +16,7 @@ export default function Projects(props) {
     "/DSI.png",
     "/map.png",
   ];
+  const [state, setState] = useState("all");
   const [value, setValue] = React.useState(0);
 
   const handleChange = (event, newValue) => {
@@ -52,10 +54,27 @@ export default function Projects(props) {
           centered
           className={styles.subTitle}
         >
-          <Tab label="All" className={styles.subTitle} />
-          <Tab label="React-js" className={styles.subTitle} />
-          <Tab label="Next-js" className={styles.subTitle} />
-          <Tab label="Javascript" className={styles.subTitle} />
+          <Tab
+            label="All"
+            className={styles.subTitle}
+            onClick={() => setState("all")}
+          />
+          <Tab
+            label="React-js"
+            className={styles.subTitle}
+            onClick={() => setState("react")}
+          />
+          <Tab
+            label="Next-js"
+            className={styles.subTitle}
+            onClick={() => setState("next")}
+          />
+          <Tab
+            label="Javascript"
+            className={styles.subTitle}
+            onClick={() => setState("javascript")}
+          />
+          {console.log(state)}
         </Tabs>
       </Grid>
       <Grid item container md={10} margin="auto">
