@@ -6,7 +6,6 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Image from "next/dist/client/image";
 import { useState } from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 export default function Projects(props) {
   const AllImgArr = [
@@ -88,7 +87,13 @@ export default function Projects(props) {
                 <Image src={image} width="400px" height="300px" alt="rose" />
               </Grid>
             ))
-          : reactArr.map((image) => (
+          : state == "react"
+          ? reactArr.map((image) => (
+              <Grid key="hh" item md={4}>
+                <Image src={image} width="400px" height="300px" alt="rose" />
+              </Grid>
+            ))
+          : nextArr.map((image) => (
               <Grid key="hh" item md={4}>
                 <Image src={image} width="400px" height="300px" alt="rose" />
               </Grid>
