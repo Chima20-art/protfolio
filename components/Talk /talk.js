@@ -42,13 +42,22 @@ const BootstrapGreenButton = styled(Button)({
 
 export default function Talk() {
   return (
-    <Grid contain item md={12} backgroundColor="red" direction={"column"}>
+    <Grid
+      contain
+      item
+      md={12}
+      backgroundColor="black"
+      direction={"column"}
+      padding="100px"
+      marginTop="100px"
+    >
       <Grid
         container
         direction="row"
         justifyContent={"center"}
         item
         className={styles.title}
+        padding="30px"
       >
         Let's talk !
       </Grid>
@@ -59,16 +68,17 @@ export default function Talk() {
         md={6}
         justifyContent="center"
         textAlign={"center"}
+        marginTop="30px"
+        marginBottom="80px"
       >
         <Grid
           item
           container
           direction={"column"}
-          backgroundColor="green"
           justifyContent={"center"}
           md={2}
         >
-          <Grid item backgroundColor="yellow" className={styles.information}>
+          <Grid item className={styles.informationTitle}>
             {" "}
             Phone me :
           </Grid>
@@ -78,7 +88,7 @@ export default function Talk() {
           </Grid>
         </Grid>
         <Grid item container direction={"column"} md={2}>
-          <Grid item backgroundColor="yellow" className={styles.information}>
+          <Grid item className={styles.informationTitle}>
             {" "}
             Mail me:
           </Grid>
@@ -94,7 +104,7 @@ export default function Talk() {
           md={2}
           className={styles.information}
         >
-          <Grid item backgroundColor="yellow" className={styles.information}>
+          <Grid item className={styles.informationTitle}>
             {" "}
             follow me
           </Grid>
@@ -104,7 +114,9 @@ export default function Talk() {
         </Grid>
       </Grid>
       <Grid item container direction="row" justifyContent={"center"}>
-        <BootstrapGreenButton>Hire me </BootstrapGreenButton>
+        <BootstrapGreenButton className={styles.informationTitle}>
+          Hire me{" "}
+        </BootstrapGreenButton>
       </Grid>
     </Grid>
   );
