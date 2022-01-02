@@ -1,5 +1,41 @@
 import { Grid } from "@mui/material";
 import Image from "next/dist/client/image";
+import { Button } from "@mui/material";
+import { styled } from "@mui/material/styles";
+
+const BootstrapGreenButton = styled(Button)({
+  boxShadow: "none",
+  textTransform: "none",
+  fontSize: 14,
+  padding: "15px 15px",
+  border: "1px solid",
+  borderColor: "rgb(174, 180, 180)",
+  lineHeight: 1.5,
+  backgroundColor: "#FFDD04",
+  color: "white",
+
+  fontFamily: [
+    "-apple-system",
+    "BlinkMacSystemFont",
+    '"Segoe UI"',
+    "Roboto",
+    '"Helvetica Neue"',
+    "Arial",
+    "sans-serif",
+    '"Apple Color Emoji"',
+    '"Segoe UI Emoji"',
+    '"Segoe UI Symbol"',
+  ].join(","),
+  "&:hover": {
+    backgroundColor: "283543",
+    backgroundColor: "#FFDD04",
+    boxShadow: "none",
+  },
+  "&:active": {
+    borderColor: "#283543",
+    boxShadow: "none",
+  },
+});
 
 export default function Talk() {
   return (
@@ -41,6 +77,9 @@ export default function Talk() {
           </Grid>
           <Grid item>linkedin/chaïmae-michich </Grid>
         </Grid>
+      </Grid>
+      <Grid item>
+        <BootstrapGreenButton>Hire me</BootstrapGreenButton>
       </Grid>
     </Grid>
   );
