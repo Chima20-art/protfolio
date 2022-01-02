@@ -7,6 +7,7 @@ import About from "../about/About";
 import JobCard from "../JobCard/JobCard";
 import Skills from "../Skills/skills";
 import Projects from "../projects/projects/projects";
+import Talk from "../Talk /talk";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -166,6 +167,7 @@ export default function Home() {
       <About />
       <Skills />
       <Projects />
+      <Talk />
     </Grid>
   );
 }

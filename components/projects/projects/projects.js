@@ -18,7 +18,7 @@ export default function Projects(props) {
   ];
 
   const reactArr = ["/landing-page.png", "/DSI.png", "/map.png"];
-  const nextArr = ["/Nordic-rose.png"];
+  const nextArr = ["/Nordic-rose.png", "/protfolio.png"];
   const [state, setState] = useState("all");
   const [value, setValue] = React.useState(0);
 
