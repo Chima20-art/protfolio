@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import About from "../about/About";
 import JobCard from "../JobCard/JobCard";
-import Skills from "../Skills/skills";
+import Skills from "../skills/skills";
 import Projects from "../projects/projects/projects";
 import Talk from "../Talk /talk";
 

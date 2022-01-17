@@ -3,7 +3,6 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import Header from "../components/header/header.js";
 import Home from "../components/home/home.js";
-import Skills from "../components/Skills/skills";
 
 export default function Homy() {
   return (
