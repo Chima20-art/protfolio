@@ -59,7 +59,7 @@ export default function Talk() {
         className={styles.title}
         padding="30px"
       >
-        Let's talk !
+        Let s talk !
       </Grid>
       <Grid
         item

@@ -95,11 +95,10 @@ export default function Home() {
           width="fit-content"
           className={styles.content}
           md={7}
-          width="600px"
           spacing={4}
         >
           <Grid item md={2} spacing={0} className={styles.title}>
-            Hi! I'm Chaimae Michich -
+            Hi! Im Chaimae Michich -
           </Grid>
           <Grid item md={2} spacing={0} className={styles.subTitle}>
             {" "}

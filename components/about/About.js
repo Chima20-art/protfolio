@@ -59,7 +59,7 @@ export default function About() {
             ethic to literally change the world. I am passionate about building
             excellent software that improves the lives of those around me.  I
             have serious passion for UI effects, animations and creating
-            intuitive, dynamic user experiences. Let's make something special.{" "}
+            intuitive, dynamic user experiences. Lets make something special.{" "}
           </Grid>
         </Grid>
       </Grid>
