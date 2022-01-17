@@ -360,7 +360,7 @@ export default function Skills() {
             textAlign="center"
             className={styles.paragraphCardDynamic}
           >
-            Websites don't have to be static, I love making pages come to life.
+            Websites dont have to be static, I love making pages come to life.
           </Grid>
         </Grid>
       </Grid>
