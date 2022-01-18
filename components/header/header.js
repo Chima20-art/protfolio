@@ -77,7 +77,7 @@ export default function Header() {
         },
       }}
     >
-      <Grid container direction="row" md={12}>
+      <Grid container direction="row" md={12} height={"8vh"}>
         <Grid item container direction="row" justifyContent="center" md={2}>
           <Image
             item
