@@ -6,7 +6,7 @@ import Home from "../components/home/home.js";
 
 export default function Homy() {
   return (
-    <div className={styles.container}>
+    <div>
       <Header className={styles.header} />
       <Home />
     </div>

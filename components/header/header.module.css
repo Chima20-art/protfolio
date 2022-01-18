@@ -14,16 +14,13 @@
   object-fit: contain;
   cursor: pointer;
 }
-.blue {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+
 .contactMeButton {
   background-color: black;
   color: white;
   border: white;
-  height: 45px;
-  width: fit-content;
+  height: 55px;
+  width: 200px;
 }
 
 .contactMeButton:hover {

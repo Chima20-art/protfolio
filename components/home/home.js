@@ -19,6 +19,8 @@ const BootstrapGreenButton = styled(Button)({
   lineHeight: 1.5,
   backgroundColor: "#FFDD04",
   color: "white",
+  height: "60px",
+  width: "150px",
 
   fontFamily: [
     "-apple-system",
@@ -53,6 +55,8 @@ const BootstrapBlackButton = styled(Button)({
   lineHeight: 1.5,
   backgroundColor: "#333232",
   color: "white",
+  height: "60px",
+  width: "150px",
 
   fontFamily: [
     "-apple-system",
@@ -82,46 +86,68 @@ export default function Home() {
     <Grid container direction="row" height="100vh">
       <Grid
         container
-        direction="column"
         justifyContent="center"
+        margin="auto"
         className={styles.contai}
         md={12}
       >
         <Grid
           container
+          item
           direction="column"
+          margin={"auto"}
           textAlign="start"
           justifyContent="center"
-          width="fit-content"
-          className={styles.content}
-          md={7}
-          spacing={4}
+          width="600px"
+          height="600px"
+          md={6}
         >
-          <Grid item md={2} spacing={0} className={styles.title}>
+          <Grid
+            container
+            justifyContent={"center"}
+            item
+            md={2}
+            spacing={0}
+            className={styles.title}
+          >
             Hi! Im Chaimae Michich -
           </Grid>
-          <Grid item md={2} spacing={0} className={styles.subTitle}>
+          <Grid
+            container
+            item
+            md={2}
+            spacing={0}
+            className={styles.subTitle}
+            justifyContent="center"
+          >
             {" "}
             JAVASCRIPT DEVELOPER
           </Grid>
-          <Grid item md={2} width="580px" className={styles.paragraph}>
-            {" "}
-            Product Designer and Digital Creative Director working in Design
-            field for 13 years so far, specialized in UI/UX,Branding and Digital
-            designs.
-          </Grid>
-          <Grid item container direction="row" md={2} spacing={2}>
+
+          <Grid item container direction="row" md={2}>
             <Grid
               item
               container
               direction="column"
-              justifyContent="space-around"
+              justifyContent="center"
               md={6}
             >
-              <Grid item md={3} className={styles.sTitle}>
+              <Grid
+                item
+                container
+                justifyContent={"center"}
+                md={3}
+                className={styles.sTitle}
+              >
                 Email:
               </Grid>
-              <Grid item md={3} className={styles.paragraph}>
+              <Grid
+                item
+                container
+                justifyContent={"center"}
+                md={3}
+                className={styles.paragraph}
+              >
                 michichchaimae@gmail.com
               </Grid>
             </Grid>
@@ -129,23 +155,35 @@ export default function Home() {
               item
               container
               direction="column"
-              justifyContent="space-around"
+              justifyContent="center"
               md={6}
             >
-              <Grid item md={3} className={styles.sTitle}>
+              <Grid
+                item
+                md={3}
+                className={styles.sTitle}
+                container
+                justifyContent={"center"}
+              >
                 Github:
               </Grid>
-              <Grid item md={3} className={styles.paragraph}>
+              <Grid
+                item
+                md={3}
+                className={styles.paragraph}
+                container
+                justifyContent={"center"}
+              >
                 /Chima20.art
               </Grid>
             </Grid>
           </Grid>
           <Grid item container md={2} direction="row">
-            <Grid item md={6}>
+            <Grid item md={6} container justifyContent={"center"}>
               <BootstrapGreenButton>Downald CV</BootstrapGreenButton>
             </Grid>
-            <Grid item md={6}>
-              <BootstrapBlackButton>Downald CV</BootstrapBlackButton>
+            <Grid item md={6} container justifyContent={"center"}>
+              <BootstrapBlackButton>Hire me now</BootstrapBlackButton>
             </Grid>
           </Grid>
         </Grid>

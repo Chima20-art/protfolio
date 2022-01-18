@@ -16,11 +16,12 @@ const useStyles = makeStyles((theme) => ({
 const BootstrapButton = styled(Button)({
   boxShadow: "none",
   textTransform: "none",
-  fontSize: 14,
+  fontSize: 18,
   padding: "3px 3px",
   border: "none",
   lineHeight: 1.5,
   backgroundColor: "none",
+  width: "100px",
 
   fontFamily: [
     "-apple-system",
@@ -76,146 +77,88 @@ export default function Header() {
         },
       }}
     >
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-between"
-        className={classes.header}
-      >
-        <Grid item container spacing={0} md={8}>
-          <Grid
+      <Grid container direction="row" md={12}>
+        <Grid item container direction="row" justifyContent="center" md={2}>
+          <Image
             item
-            container
-            direction="row"
-            justifyContent="space-between"
-            md={3}
-          >
-            <Image
-              item
-              src="/Michich (5).png"
-              width={200}
-              height={70}
-              alt="My logo"
-              className={styles.img}
-            />
-          </Grid>
-
-          <Grid
-            container
-            item
-            md={8}
-            direction="row"
-            justifyContent="flex-start"
-            alignItems="center"
-            spacing={0.5}
-          >
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Home
-            </BootstrapButton>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Services
-            </BootstrapButton>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              About
-            </BootstrapButton>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Projects
-            </BootstrapButton>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Skills
-            </BootstrapButton>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Contacts
-            </BootstrapButton>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Pages
-            </BootstrapButton>
-          </Grid>
+            src="/Michich (5).png"
+            width={250}
+            height={80}
+            alt="My logo"
+            className={styles.img}
+          />
         </Grid>
-        <Grid
-          item
-          container
-          direction="row"
-          md={4}
-          margin-right="0px"
-          alignItems="center"
-          justifyContent="flex-end"
-          spacing={2}
-        >
-          <Grid
-            container
-            item
-            md={2}
-            direction="row"
-            justifyContent="space-between"
-            alignItems="center"
-            spacing={3}
-            className={styles.back}
-            margin="auto"
-          >
-            <Image
-              src="/instagram (1).png"
-              width={20}
-              height={20}
-              alt="instagram"
-              className={styles.mediaVectors}
-            />
-            <Image
-              src="/facebook (1).png"
-              width={18}
-              height={18}
-              alt="facebook"
-              className={styles.mediaVectors}
-            />
-            <Image
-              src="/linkedin-logo.png"
-              width={16}
-              height={16}
-              alt="linkedIn"
-              className={styles.mediaVectors}
-            />
-          </Grid>
 
-          <Grid
-            container
-            item
-            md={6}
-            justifyContent="center"
-            alignItems="center"
-            className={styles.blue}
+        <Grid
+          container
+          item
+          md={8}
+          direction="row"
+          justifyContent="flex-start"
+          alignItems="center"
+        >
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
           >
-            <Button variant="outlined" className={styles.contactMeButton}>
-              Contact Me
-            </Button>
-          </Grid>
+            Home
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
+            Services
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
+            About
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
+            Projects
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
+            Skills
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
+            Contacts
+          </BootstrapButton>
+          <BootstrapButton
+            size="small"
+            variant="text"
+            className={styles.pageButton}
+          >
+            Pages
+          </BootstrapButton>
+        </Grid>
+
+        <Grid
+          container
+          item
+          md={2}
+          justifyContent="center"
+          alignItems="center"
+          className={styles.blue}
+        >
+          <Button variant="outlined" className={styles.contactMeButton}>
+            Contact Me
+          </Button>
         </Grid>
       </Grid>
 
