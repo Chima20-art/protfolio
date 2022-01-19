@@ -3,11 +3,8 @@ import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
-import About from "../about/About";
+
 import JobCard from "../JobCard/JobCard";
-import Skills from "../skills/skills";
-import Projects from "../projects/projects/projects";
-import Talk from "../Talk /talk";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -17,8 +14,8 @@ const BootstrapGreenButton = styled(Button)({
   border: "1px solid",
   borderColor: "rgb(174, 180, 180)",
   lineHeight: 1.5,
-  backgroundColor: "#FFDD04",
-  color: "white",
+
+  color: "black",
   height: "60px",
   width: "150px",
 
@@ -36,7 +33,7 @@ const BootstrapGreenButton = styled(Button)({
   ].join(","),
   "&:hover": {
     backgroundColor: "283543",
-    backgroundColor: "#FFDD04",
+
     boxShadow: "none",
   },
   "&:active": {
@@ -107,84 +104,24 @@ export default function Home() {
             justifyContent={"center"}
             item
             md={2}
-            spacing={0}
             className={styles.title}
           >
-            Hi! Im Chaimae Michich -
+            Hello! Im Chaimae Michich .
           </Grid>
           <Grid
             container
             item
             md={2}
-            spacing={0}
+            marginTop="0px"
             className={styles.subTitle}
             justifyContent="center"
           >
             {" "}
-            JAVASCRIPT DEVELOPER
+            I am a Javascript developer.
           </Grid>
 
-          <Grid item container direction="row" md={2}>
-            <Grid
-              item
-              container
-              direction="column"
-              justifyContent="center"
-              md={6}
-            >
-              <Grid
-                item
-                container
-                justifyContent={"center"}
-                md={3}
-                className={styles.sTitle}
-              >
-                Email:
-              </Grid>
-              <Grid
-                item
-                container
-                justifyContent={"center"}
-                md={3}
-                className={styles.paragraph}
-              >
-                michichchaimae@gmail.com
-              </Grid>
-            </Grid>
-            <Grid
-              item
-              container
-              direction="column"
-              justifyContent="center"
-              md={6}
-            >
-              <Grid
-                item
-                md={3}
-                className={styles.sTitle}
-                container
-                justifyContent={"center"}
-              >
-                Github:
-              </Grid>
-              <Grid
-                item
-                md={3}
-                className={styles.paragraph}
-                container
-                justifyContent={"center"}
-              >
-                /Chima20.art
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid item container md={2} direction="row">
-            <Grid item md={6} container justifyContent={"center"}>
-              <BootstrapGreenButton>Downald CV</BootstrapGreenButton>
-            </Grid>
-            <Grid item md={6} container justifyContent={"center"}>
-              <BootstrapBlackButton>Hire me now</BootstrapBlackButton>
-            </Grid>
+          <Grid item container md={2} direction="row" justifyContent={"center"}>
+            <BootstrapGreenButton>Downald CV</BootstrapGreenButton>
           </Grid>
         </Grid>
       </Grid>
@@ -201,10 +138,6 @@ export default function Home() {
         />
         <JobCard title="Freelancer" description="Hire me now." />
       </Grid>
-      <About />
-      <Skills />
-      <Projects />
-      <Talk />
     </Grid>
   );
 }
