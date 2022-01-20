@@ -23,8 +23,17 @@
   font-weight: 830;
   font-size: 32pt;
 }
+.RalewayFont {
+  font-family: "M PLUS Code Latin", sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 16pt;
+  cursor: pointer;
+}
 .highlight {
-  color: pink;
+  color: rgb(207, 40, 207);
+  font-weight: 900;
 }
 .subTitle {
   font-family: "M PLUS Code Latin", sans-serif;
@@ -53,4 +62,17 @@
   font-family: "M PLUS Code Latin", sans-serif;
   font-size: 14px;
   color: rgb(122, 126, 126);
+}
+.contactMeButton {
+  background-color: black;
+  color: white;
+  border: white;
+  height: 55px;
+  width: 200px;
+  margin-top: 50px;
+}
+
+.contactMeButton:hover {
+  background-color: black;
+  border: white;
 }
