@@ -3,6 +3,8 @@ import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 import JobCard from "../JobCard/JobCard";
 
@@ -80,33 +82,40 @@ const BootstrapBlackButton = styled(Button)({
 });
 export default function Home() {
   return (
-    <Grid container direction="column" height="100vh" md={12}>
+    <Grid
+      container
+      direction="column"
+      height="92vh"
+      md={12}
+      justifyContent={"center"}
+    >
       <Grid
         container
-        direction={"row"}
+        direction={"column"}
         justifyContent={"center"}
         item
         className={styles.title}
         margin="auto"
         width={"50vw"}
-        height={"20vh"}
+        backgroundColor="red"
+        textAlign={"center"}
       >
-        Hello! Im&nbsp;
-        <span className={styles.highlight}> Chaimae Michich.</span>
-        Im a front-end web developer.
-      </Grid>
-      <Grid item container direction="row" justifyContent="center">
-        <JobCard
-          title="Javascript developer"
-          description="Creative websites for you."
-          MarginTop="40px"
-        />
-        <JobCard
-          title="UI/UX Designer"
-          description="Creative websites for you"
-          MarginTop="20px"
-        />
-        <JobCard title="Freelancer" description="Hire me now." />
+        <Grid item backgroundColor="yellow">
+          Hello, Im&nbsp;
+          <span className={styles.highlight}> Chaimae Michich.</span>
+        </Grid>
+        <Grid item backgroundColor="green">
+          Im a front-end web developer.
+        </Grid>
+        <Grid item>
+          <Button
+            backgroundColor="yellow"
+            variant="outlined"
+            className={styles.contactMeButton}
+          >
+            View my work
+          </Button>
+        </Grid>
       </Grid>
     </Grid>
   );
