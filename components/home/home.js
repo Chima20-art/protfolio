@@ -80,52 +80,22 @@ const BootstrapBlackButton = styled(Button)({
 });
 export default function Home() {
   return (
-    <Grid container direction="row" height="100vh">
+    <Grid container direction="column" height="100vh" md={12}>
       <Grid
         container
-        justifyContent="center"
+        direction={"row"}
+        justifyContent={"center"}
+        item
+        className={styles.title}
         margin="auto"
-        className={styles.contai}
-        md={12}
+        width={"50vw"}
+        height={"20vh"}
       >
-        <Grid
-          container
-          item
-          direction="column"
-          margin={"auto"}
-          textAlign="start"
-          justifyContent="center"
-          width="600px"
-          height="600px"
-          md={6}
-        >
-          <Grid
-            container
-            justifyContent={"center"}
-            item
-            md={2}
-            className={styles.title}
-          >
-            Hello! Im Chaimae Michich .
-          </Grid>
-          <Grid
-            container
-            item
-            md={2}
-            marginTop="0px"
-            className={styles.subTitle}
-            justifyContent="center"
-          >
-            {" "}
-            I am a Javascript developer.
-          </Grid>
-
-          <Grid item container md={2} direction="row" justifyContent={"center"}>
-            <BootstrapGreenButton>Downald CV</BootstrapGreenButton>
-          </Grid>
-        </Grid>
+        Hello! Im&nbsp;
+        <span className={styles.highlight}> Chaimae Michich.</span>
+        Im a front-end web developer.
       </Grid>
-      <Grid container direction="row" justifyContent="center">
+      <Grid item container direction="row" justifyContent="center">
         <JobCard
           title="Javascript developer"
           description="Creative websites for you."

@@ -1,17 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Code+Latin:wdth,wght@100,300;102.2,381&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&family=Raleway:wght@300&display=swap");
+
 .contai {
   height: 92vh;
   width: 100vw;
   background-repeat: unset;
 }
+.blue1e {
+  background-color: bisque;
+}
+.bluee {
+  background-color: aqua;
+}
 .title {
-  font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
-  font-weight: 530;
-  font-size: 45px;
-  margin-bottom: 0px;
+  font-family: "Nanum Gothic", sans-serif;
+  font-family: "Raleway", sans-serif;
+
+  font-weight: 830;
+  font-size: 32pt;
+}
+.highlight {
+  color: pink;
 }
 .subTitle {
   font-family: "M PLUS Code Latin", sans-serif;
