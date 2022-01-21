@@ -1,13 +1,13 @@
 import Head from "next/head";
 import Image from "next/image";
-import styles from "../styles/Home.module.css";
-import Header from "../components/header/header.js";
-import Home from "../components/home/home.js";
-import About from "../components/about/About";
+import styles from "./home/home.module.css";
+import Header from "./header/header.js";
+import Home from "./home/home.js";
+import About from "./about/About";
 
-import Skills from "../components/skills/skills";
-import Projects from "../components/projects/projects/projects";
-import Talk from "../components/Talk /talk";
+import Skills from "./skills/skills";
+import Projects from ".//projects/projects";
+import Talk from "./Talk /talk";
 
 export default function Homy() {
   return (
