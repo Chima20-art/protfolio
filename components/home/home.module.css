@@ -9,11 +9,10 @@
   width: 100vw;
   background-repeat: unset;
 }
-.blue1e {
-  background-color: bisque;
+.remove {
+  display: none;
 }
-.bluee {
-  background-color: aqua;
+.leave {
 }
 .title {
   font-family: "M PLUS Code Latin", sans-serif;

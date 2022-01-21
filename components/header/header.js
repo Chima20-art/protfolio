@@ -10,13 +10,13 @@ import Box from "@mui/material/Box";
 import Divider from "@mui/material/Divider";
 
 const useStyles = makeStyles((theme) => ({
-  header: {},
+  header: { backgroundColor: "red" },
 }));
 
 const BootstrapButton = styled(Button)({
   boxShadow: "none",
   textTransform: "none",
-  fontSize: 18,
+  fontSize: 15,
   padding: "3px 3px",
   border: "none",
   lineHeight: 1.5,

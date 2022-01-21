@@ -7,6 +7,8 @@ import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 
 import JobCard from "../JobCard/JobCard";
+import { useState } from "react";
+import { color } from "@mui/system";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -80,7 +82,10 @@ const BootstrapBlackButton = styled(Button)({
     boxShadow: "none",
   },
 });
+
 export default function Home() {
+  const [clicked, setClicked] = useState("notclicked");
+
   return (
     <Grid
       container
@@ -107,14 +112,31 @@ export default function Home() {
         <Grid item backgroundColor="green">
           Im a front-end web developer.
         </Grid>
-        <Grid item>
-          <Button
-            backgroundColor="yellow"
-            variant="outlined"
-            className={styles.contactMeButton}
-          >
-            View my work
-          </Button>
+        <Grid
+          item
+          container
+          height="52px"
+          backgroundColor="white"
+          border="solid 4px"
+          justifyContent={"center"}
+          textAlign={"center"}
+          alignContent={"center"}
+          padding="30px"
+          margin="auto"
+          width={"fit-content"}
+          cursor={"pointer"}
+          className={styles.RalewayFont}
+          onClick={() => setClicked("clicked")}
+        >
+          <Grid item>View My Work &nbsp; </Grid>
+          <ArrowForwardIcon
+            item
+            className={clicked === "clicked" ? styles.remove : styles.leave}
+          />
+          <ArrowDownwardIcon
+            item
+            className={clicked === "clicked" ? styles.leave : styles.remove}
+          />
         </Grid>
       </Grid>
     </Grid>
