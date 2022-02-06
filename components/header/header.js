@@ -6,6 +6,7 @@ import { makeStyles } from "@mui/styles";
 import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
+import Link from "next/dist/client/link";
 
 import Divider from "@mui/material/Divider";
 
@@ -78,10 +79,17 @@ export default function Header() {
       }}
     >
       <Grid container direction="row" md={12} height={"8vh"}>
-        <Grid item container direction="row" justifyContent="center" md={2}>
+        <Grid
+          item
+          container
+          direction="row"
+          justifyContent="center"
+          alignContent={"center"}
+          md={2}
+        >
           <Image
             item
-            src="/Michich (5).png"
+            src="/Michich.png"
             width={250}
             height={80}
             alt="My logo"
@@ -97,13 +105,16 @@ export default function Header() {
           justifyContent="flex-start"
           alignItems="center"
         >
-          <BootstrapButton
-            size="small"
-            variant="text"
-            className={styles.pageButton}
-          >
-            Home
-          </BootstrapButton>
+          <Link href={"/"}>
+            <BootstrapButton
+              size="small"
+              variant="text"
+              className={styles.pageButton}
+            >
+              Home
+            </BootstrapButton>
+          </Link>
+
           <BootstrapButton
             size="small"
             variant="text"
@@ -111,13 +122,16 @@ export default function Header() {
           >
             Services
           </BootstrapButton>
-          <BootstrapButton
-            size="small"
-            variant="text"
-            className={styles.pageButton}
-          >
-            About
-          </BootstrapButton>
+          <Link href={"/about/about"}>
+            <BootstrapButton
+              size="small"
+              variant="text"
+              className={styles.pageButton}
+            >
+              About
+            </BootstrapButton>
+          </Link>
+
           <BootstrapButton
             size="small"
             variant="text"

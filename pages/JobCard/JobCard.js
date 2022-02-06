@@ -13,8 +13,6 @@ export default function JobCard(props) {
       boxShadow="3"
       borderRadius="5px"
       padding="5px"
-      marginLeft="30px"
-      marginBottom="100px"
       marginTop={props.MarginTop}
     >
       <Grid

@@ -17,41 +17,50 @@ export default function About() {
         <Grid
           item
           container
+          md={"6"}
+          display="flex"
           direction="row"
-          md={6}
-          backgroundColor="red"
-          justify="center"
-          padding="0px auto"
+          justifyContent={"center"}
+          alignItems={"center"}
+          width={"fit-content"}
         >
-          <Grid item container direction="row" md={1}>
-            <Divider orientation="vertical" variant="middle" flexItem>
-              <div className={styles.vertical}>About me</div>
-            </Divider>
-          </Grid>
-          <Grid item container direction="column" md={11} spacing={1}>
+          <Divider
+            orientation="vertical"
+            variant="middle"
+            flexItem
+            className={styles.divider}
+          >
+            <div className={styles.vertical}>About me</div>
+          </Divider>
+
+          <Grid
+            item
+            container
+            direction="column"
+            width={"fit-content"}
+            marginLeft={"0px"}
+          >
             <Grid
               item
-              md={1}
               className={styles.title}
               margin="auto"
               marginLeft="0px"
-              marginBottom="0px"
+              marginBottom="10px"
             >
               Need creative Website ?
             </Grid>
             <Grid
               item
-              md={1}
               className={styles.title}
               margin="auto"
               marginLeft="0px"
               marginTop="0px"
+              marginBottom={"30px"}
             >
               I can help you{" "}
             </Grid>
             <Grid
               item
-              md={6}
               className={styles.paragraph}
               width="500px"
               margin="auto"

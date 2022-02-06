@@ -5,8 +5,7 @@ import Button from "@mui/material/Button";
 import { styled } from "@mui/material/styles";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-
-import JobCard from "../JobCard/JobCard";
+import Link from "next/link";
 import { useState } from "react";
 import { color } from "@mui/system";
 
@@ -90,7 +89,7 @@ export default function Home() {
     <Grid
       container
       direction="column"
-      height="92vh"
+      height="100vh"
       md={12}
       justifyContent={"center"}
     >
@@ -102,16 +101,13 @@ export default function Home() {
         className={styles.title}
         margin="auto"
         width={"50vw"}
-        backgroundColor="red"
         textAlign={"center"}
       >
-        <Grid item backgroundColor="yellow">
+        <Grid item>
           Hello, Im&nbsp;
           <span className={styles.highlight}> Chaimae Michich.</span>
         </Grid>
-        <Grid item backgroundColor="green">
-          Im a front-end web developer.
-        </Grid>
+        <Grid item>Im a front-end web developer.</Grid>
         <Grid
           item
           container
@@ -125,10 +121,12 @@ export default function Home() {
           margin="auto"
           width={"fit-content"}
           cursor={"pointer"}
+          marginTop={"70px"}
           className={styles.RalewayFont}
           onClick={() => setClicked("clicked")}
         >
           <Grid item>View My Work &nbsp; </Grid>
+
           <ArrowForwardIcon
             item
             className={clicked === "clicked" ? styles.remove : styles.leave}
