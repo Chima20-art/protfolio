@@ -10,7 +10,7 @@ export default function About() {
   return (
     <Grid container direction="column" height="100vh">
       <Grid item container marginTop={"0px"}>
-        <Header item className={styles.header} />
+        <Header item />
       </Grid>
 
       <Grid item container direction="row" margin="auto">
@@ -77,28 +77,22 @@ export default function About() {
           </Grid>
         </Grid>
         <Grid container md={6}>
-          <Grid
-            item
-            container
-            direction="column"
-            justifyContent="center"
-            alignContent={"center"}
-          >
+          <Grid item container direction="column">
             <JobCard
               title="Javascript developer"
               description="Creative websites for you."
-              MarginLeft="0px !important"
+              marginL="50px"
             />
             <JobCard
               title="UI/UX Designer"
               description="Creative websites for you"
-              margin="auto"
+              Margin="auto"
             />
             <JobCard
               backgroundColor="red"
               title="Freelancer"
               description="Hire me now."
-              marginRight="0px"
+              Right="0px"
             />
           </Grid>
         </Grid>
