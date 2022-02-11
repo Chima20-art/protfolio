@@ -14,6 +14,7 @@ export default function JobCard(props) {
       borderRadius="5px"
       padding="5px"
       marginLeft={props.marginL}
+      justifySelf={props.Justify}
       right={props.Right}
       margin={props.Margin}
     >
