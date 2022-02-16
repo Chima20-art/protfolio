@@ -14,9 +14,10 @@ export default function JobCard(props) {
       borderRadius="5px"
       padding="5px"
       marginLeft={props.marginL}
-      justifySelf={props.Justify}
+      alignSelf={props.Justify}
       right={props.Right}
       margin={props.Margin}
+      backgroundColor={props.color}
     >
       <Grid
         item
