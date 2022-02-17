@@ -20,7 +20,6 @@ export default function About() {
 
       <Grid
         maxWidth={"1400px"}
-        backgroundColor="red"
         justifyContent={"center"}
         item
         container
@@ -29,8 +28,7 @@ export default function About() {
         height="50%"
       >
         <Grid
-          md="5"
-          backgroundColor="blue"
+          md="4"
           item
           container
           justifyContent="space-around"
@@ -54,7 +52,6 @@ export default function About() {
           </Grid>
         </Grid>
         <Grid
-          backgroundColor="yellow"
           md="5"
           item
           container
