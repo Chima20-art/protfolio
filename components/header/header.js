@@ -58,27 +58,8 @@ export default function Header() {
 <Grid container spacing={${spacing}}>
 `;
   return (
-    <Box
-      md={{
-        boxShadow: 3,
-        bgcolor: "background.paper",
-        m: 1,
-        p: 1,
-        display: "flex",
-        alignItems: "center",
-        width: "fit-content",
-        border: (theme) => `1px solid ${theme.palette.divider}`,
-        borderRadius: 1,
-        color: "text.secondary",
-        "& svg": {
-          m: 1.5,
-        },
-        "& hr": {
-          mx: 0.5,
-        },
-      }}
-    >
-      <Grid container direction="row" md={12}>
+    <Grid md={12}>
+      <Grid container direction="row">
         <Grid
           item
           container
@@ -177,6 +158,6 @@ export default function Header() {
       </Grid>
 
       <Divider />
-    </Box>
+    </Grid>
   );
 }
