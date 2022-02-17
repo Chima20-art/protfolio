@@ -48,7 +48,12 @@ export default function About() {
             />
           </Grid>
           <Grid item alignSelf={"flex-end"}>
-            <JobCard title="Freelancer" description="Hire me now." />
+            <JobCard
+              title="Freelancer"
+              description="Hire me now."
+              background_color="black"
+              textColor="white"
+            />
           </Grid>
         </Grid>
         <Grid

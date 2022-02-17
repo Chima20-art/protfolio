@@ -17,7 +17,8 @@ export default function JobCard(props) {
       alignSelf={props.Justify}
       right={props.Right}
       margin={props.Margin}
-      backgroundColor={props.color}
+      backgroundColor={props.background_color}
+      color={props.textColor}
     >
       <Grid
         item
