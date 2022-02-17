@@ -19,14 +19,43 @@ export default function About() {
       </Grid>
 
       <Grid
+        maxWidth={"1400px"}
+        backgroundColor="red"
+        justifyContent={"center"}
         item
         container
         direction="row"
         margin="auto"
-        justifyContent={"space-around"}
         height="50%"
       >
         <Grid
+          md="5"
+          backgroundColor="blue"
+          item
+          container
+          justifyContent="space-around"
+          alignItems={"center"}
+          direction="column"
+        >
+          <Grid item alignSelf={"flex-start"}>
+            <JobCard
+              title="Javascript developer"
+              description="Creative websites for you."
+            />
+          </Grid>
+          <Grid item>
+            <JobCard
+              title="UI/UX Designer"
+              description="Creative websites for you"
+            />
+          </Grid>
+          <Grid item alignSelf={"flex-end"}>
+            <JobCard title="Freelancer" description="Hire me now." />
+          </Grid>
+        </Grid>
+        <Grid
+          backgroundColor="yellow"
+          md="5"
           item
           container
           width="fit-content"
@@ -35,16 +64,6 @@ export default function About() {
           justifyContent={"center"}
           alignItems={"center"}
         >
-          <Grid
-            item
-            container
-            width="fit-content"
-            margin="0px 50px"
-            justifyContent={"center"}
-            alignContent="center"
-          >
-            <Image src="/Chaimae (6).png" width="250px" height="450px" />
-          </Grid>
           <Divider
             orientation="vertical"
             variant="middle"
@@ -96,32 +115,6 @@ export default function About() {
               make something special.{" "}
             </Grid>
           </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid
-        backgroundColor="blue"
-        item
-        container
-        margin={"auto"}
-        justifyContent="space-around"
-        alignItems={"center"}
-        direction="row"
-      >
-        <Grid item>
-          <JobCard
-            title="Javascript developer"
-            description="Creative websites for you."
-          />
-        </Grid>
-        <Grid item>
-          <JobCard
-            title="UI/UX Designer"
-            description="Creative websites for you"
-          />
-        </Grid>
-        <Grid item>
-          <JobCard title="Freelancer" description="Hire me now." />
         </Grid>
       </Grid>
     </Grid>
