@@ -12,7 +12,8 @@
 .remove {
   display: none;
 }
-.leave {
+.pointer {
+  cursor: pointer;
 }
 .title {
   font-family: "M PLUS Code Latin", sans-serif;

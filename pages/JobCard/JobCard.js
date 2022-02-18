@@ -19,6 +19,7 @@ export default function JobCard(props) {
       margin={props.Margin}
       backgroundColor={props.background_color}
       color={props.textColor}
+      className={styles.pointer}
     >
       <Grid
         item

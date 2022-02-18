@@ -103,15 +103,6 @@ export default function Header() {
           >
             Services
           </BootstrapButton>
-          <Link href={"/about/about"}>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              About
-            </BootstrapButton>
-          </Link>
 
           <BootstrapButton
             size="small"
