@@ -95,22 +95,25 @@ export default function Header() {
               Home
             </BootstrapButton>
           </Link>
+          <Link href={"/about"}>
+            <BootstrapButton
+              size="small"
+              variant="text"
+              className={styles.pageButton}
+            >
+              Services
+            </BootstrapButton>
+          </Link>
+          <Link href={"/projects"}>
+            <BootstrapButton
+              size="small"
+              variant="text"
+              className={styles.pageButton}
+            >
+              Projects
+            </BootstrapButton>
+          </Link>
 
-          <BootstrapButton
-            size="small"
-            variant="text"
-            className={styles.pageButton}
-          >
-            Services
-          </BootstrapButton>
-
-          <BootstrapButton
-            size="small"
-            variant="text"
-            className={styles.pageButton}
-          >
-            Projects
-          </BootstrapButton>
           <BootstrapButton
             size="small"
             variant="text"

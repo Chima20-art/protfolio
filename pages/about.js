@@ -3,8 +3,8 @@ import Image from "next/image";
 import Divider from "@mui/material/Divider";
 
 import styles from "./about.module.css";
-import Header from "../../components/header/header";
-import JobCard from "../JobCard/JobCard";
+import Header from "../components/header/header";
+import JobCard from "./JobCard/JobCard";
 
 export default function About() {
   return (
