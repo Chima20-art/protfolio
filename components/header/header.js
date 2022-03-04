@@ -104,16 +104,6 @@ export default function Header() {
               Services
             </BootstrapButton>
           </Link>
-          <Link href={"/projects"}>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Projects
-            </BootstrapButton>
-          </Link>
-
           <Link href={"/skills"}>
             <BootstrapButton
               size="small"
@@ -121,6 +111,15 @@ export default function Header() {
               className={styles.pageButton}
             >
               Skills
+            </BootstrapButton>
+          </Link>{" "}
+          <Link href={"/projects"}>
+            <BootstrapButton
+              size="small"
+              variant="text"
+              className={styles.pageButton}
+            >
+              Projects
             </BootstrapButton>
           </Link>
           <Link href="/talk">
