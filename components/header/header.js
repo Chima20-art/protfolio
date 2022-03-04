@@ -123,21 +123,15 @@ export default function Header() {
               Skills
             </BootstrapButton>
           </Link>
-
-          <BootstrapButton
-            size="small"
-            variant="text"
-            className={styles.pageButton}
-          >
-            Contacts
-          </BootstrapButton>
-          <BootstrapButton
-            size="small"
-            variant="text"
-            className={styles.pageButton}
-          >
-            Pages
-          </BootstrapButton>
+          <Link href="/talk">
+            <BootstrapButton
+              size="small"
+              variant="text"
+              className={styles.pageButton}
+            >
+              Contacts
+            </BootstrapButton>
+          </Link>
         </Grid>
 
         <Grid

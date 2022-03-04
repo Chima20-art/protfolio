@@ -6,7 +6,7 @@ import Home from "./home/home.js";
 import About from "./about";
 import Skills from "./skills";
 import Projects from "./projects";
-import Talk from "./Talk /talk";
+import Talk from "./talk";
 
 export default function Homy() {
   return (

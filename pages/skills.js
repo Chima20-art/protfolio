@@ -5,10 +5,14 @@ import Image from "next/image";
 import { Box } from "@mui/system";
 import { shadows } from "@mui/system";
 import { grey } from "@mui/material/colors";
+import Header from "../components/header/header";
 
 export default function Skills() {
   return (
     <Grid container height="100vh">
+      <Grid item container>
+        <Header item />
+      </Grid>
       <Grid
         container
         md={11}
