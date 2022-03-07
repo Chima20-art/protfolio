@@ -82,6 +82,14 @@ const BootstrapBlackButton = styled(Button)({
   },
 });
 
+/*const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+  return (
+    <a href={href} onClick={onClick} ref={ref}>
+      Click Me
+    </a>
+  )
+}); */
+
 export default function Home() {
   const [clicked, setClicked] = useState("notclicked");
 
@@ -108,34 +116,37 @@ export default function Home() {
           <span className={styles.highlight}> Chaimae Michich.</span>
         </Grid>
         <Grid item>Im a front-end web developer.</Grid>
-        <Grid
-          item
-          container
-          height="52px"
-          backgroundColor="white"
-          border="solid 4px"
-          justifyContent={"center"}
-          textAlign={"center"}
-          alignContent={"center"}
-          padding="30px"
-          margin="auto"
-          width={"fit-content"}
-          cursor={"pointer"}
-          marginTop={"70px"}
-          className={styles.RalewayFont}
-          onClick={() => setClicked("clicked")}
-        >
-          <Grid item>View My Work &nbsp; </Grid>
 
-          <ArrowForwardIcon
+        <Link href="/about" passHref>
+          <Grid
             item
-            className={clicked === "clicked" ? styles.remove : styles.leave}
-          />
-          <ArrowDownwardIcon
-            item
-            className={clicked === "clicked" ? styles.leave : styles.remove}
-          />
-        </Grid>
+            container
+            height="52px"
+            backgroundColor="white"
+            border="solid 4px"
+            justifyContent={"center"}
+            textAlign={"center"}
+            alignContent={"center"}
+            padding="30px"
+            margin="auto"
+            width={"fit-content"}
+            cursor={"pointer"}
+            marginTop={"70px"}
+            className={styles.RalewayFont}
+            onClick={() => setClicked("clicked")}
+          >
+            <Grid item>View My Work &nbsp; </Grid>
+
+            <ArrowForwardIcon
+              item
+              className={clicked === "clicked" ? styles.remove : styles.leave}
+            />
+            <ArrowDownwardIcon
+              item
+              className={clicked === "clicked" ? styles.leave : styles.remove}
+            />
+          </Grid>
+        </Link>
       </Grid>
     </Grid>
   );
