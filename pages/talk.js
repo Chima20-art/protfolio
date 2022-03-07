@@ -4,6 +4,9 @@ import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import styles from "./talk.module.css";
 import Header from "../components/header/header";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 /* dgs*/
 
@@ -87,38 +90,76 @@ export default function Talk() {
             marginBottom="80px"
           >
             <Grid item container direction={"column"} md={2}>
-              <Grid item className={styles.informationTitle}>
-                {" "}
-                Phone me :
+              <Grid
+                item
+                container
+                justifyContent={"center"}
+                className={styles.informationTitle}
+              >
+                <Grid item justifyContent={"center"} margin="0px 15px">
+                  <LocalPhoneIcon />
+                </Grid>
+                <Grid
+                  item
+                  display="flex"
+                  justifyContent={"center"}
+                  direction="column"
+                >
+                  Phone me :
+                </Grid>
               </Grid>
               <Grid item className={styles.information}>
                 {" "}
                 +380983571966
               </Grid>
             </Grid>
+
             <Grid item container direction={"column"} md={2}>
-              <Grid item className={styles.informationTitle}>
-                {" "}
-                Mail me:
+              <Grid
+                item
+                container
+                justifyContent={"center"}
+                className={styles.informationTitle}
+              >
+                <Grid item justifyContent={"center"} margin="0px 15px">
+                  <EmailIcon />
+                </Grid>
+                <Grid
+                  item
+                  display="flex"
+                  justifyContent={"center"}
+                  direction="column"
+                >
+                  Mail me:
+                </Grid>
               </Grid>
               <Grid item className={styles.information}>
                 {" "}
                 michichchaimae@gmail.com
               </Grid>
             </Grid>
-            <Grid
-              item
-              container
-              direction={"column"}
-              md={2}
-              className={styles.information}
-            >
-              <Grid item className={styles.informationTitle}>
-                {" "}
-                follow me
+            <Grid item container direction={"column"} md={2}>
+              <Grid
+                item
+                container
+                justifyContent={"center"}
+                className={styles.informationTitle}
+              >
+                <Grid item justifyContent={"center"} margin="0px 15px">
+                  <LinkedInIcon />
+                </Grid>
+                <Grid
+                  item
+                  display="flex"
+                  justifyContent={"center"}
+                  direction="column"
+                >
+                  follow me
+                </Grid>
               </Grid>
               <Grid item className={styles.information}>
-                linkedin/chaïmae-michich{" "}
+                {" "}
+                linkedin/chaïmae-michich
               </Grid>
             </Grid>
           </Grid>
@@ -133,7 +174,7 @@ export default function Talk() {
               backgroundColor="green"
               className={styles.informationTitle}
             >
-              Hire me{" "}
+              Hire me
             </BootstrapGreenButton>
           </Grid>
         </Grid>
