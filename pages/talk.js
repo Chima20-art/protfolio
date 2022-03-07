@@ -20,7 +20,7 @@ const BootstrapGreenButton = styled(Button)({
   border: "1px solid",
   borderColor: "rgb(174, 180, 180)",
   lineHeight: 1.5,
-  backgroundColor: "#FFDD04",
+  backgroundColor: "#E0B3BA",
   color: "white",
 
   fontFamily: [
@@ -37,7 +37,7 @@ const BootstrapGreenButton = styled(Button)({
   ].join(","),
   "&:hover": {
     backgroundColor: "283543",
-    backgroundColor: "#FFDD04",
+    backgroundColor: "#E0B3BA",
     boxShadow: "none",
   },
   "&:active": {
