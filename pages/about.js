@@ -11,7 +11,7 @@ export default function About() {
     <Grid
       container
       direction="column"
-      height="100vh"
+      height="91vh"
       justifyContent={"space-around"}
     >
       <Grid item container marginTop={"0px"}>

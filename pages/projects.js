@@ -34,7 +34,7 @@ export default function Projects(props) {
       alignContent="space-between"
       height="100vh"
     >
-      <Grid item container b>
+      <Grid item container>
         <Header item />
       </Grid>
 

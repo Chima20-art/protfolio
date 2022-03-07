@@ -5,6 +5,8 @@ import { styled } from "@mui/material/styles";
 import styles from "./talk.module.css";
 import Header from "../components/header/header";
 
+/* dgs*/
+
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
   textTransform: "none",
@@ -54,75 +56,86 @@ export default function Talk() {
       <Grid item container>
         <Header item />
       </Grid>
-      <Grid item container backgroundColor="black" height="60vh">
-        <Grid
-          container
-          direction="row"
-          justifyContent={"center"}
-          item
-          className={styles.title}
-          padding="30px"
-        >
-          Let s talk !
-        </Grid>
-        <Grid
-          item
-          container
-          direction={"row"}
-          justifyContent="center"
-          textAlign={"center"}
-          marginTop="30px"
-          marginBottom="80px"
-        >
-          <Grid item container direction={"column"} md={2}>
-            <Grid item className={styles.informationTitle}>
-              {" "}
-              Phone me :
-            </Grid>
-            <Grid item className={styles.information}>
-              {" "}
-              +380983571966
-            </Grid>
+      <Grid
+        item
+        container
+        backgroundColor="black"
+        height="91vh"
+        justifyContent={"center"}
+        alignItems="center"
+      >
+        <Grid item container height={"50vh"}>
+          <Grid
+            container
+            direction="column"
+            justifyContent={"center"}
+            display="flex"
+            textAlign={"center"}
+            item
+            className={styles.title}
+            padding="5px"
+          >
+            Let s talk !
           </Grid>
-          <Grid item container direction={"column"} md={2}>
-            <Grid item className={styles.informationTitle}>
-              {" "}
-              Mail me:
+          <Grid
+            item
+            container
+            direction={"row"}
+            justifyContent="center"
+            textAlign={"center"}
+            marginTop="30px"
+            marginBottom="80px"
+          >
+            <Grid item container direction={"column"} md={2}>
+              <Grid item className={styles.informationTitle}>
+                {" "}
+                Phone me :
+              </Grid>
+              <Grid item className={styles.information}>
+                {" "}
+                +380983571966
+              </Grid>
             </Grid>
-            <Grid item className={styles.information}>
-              {" "}
-              michichchaimae@gmail.com
+            <Grid item container direction={"column"} md={2}>
+              <Grid item className={styles.informationTitle}>
+                {" "}
+                Mail me:
+              </Grid>
+              <Grid item className={styles.information}>
+                {" "}
+                michichchaimae@gmail.com
+              </Grid>
+            </Grid>
+            <Grid
+              item
+              container
+              direction={"column"}
+              md={2}
+              className={styles.information}
+            >
+              <Grid item className={styles.informationTitle}>
+                {" "}
+                follow me
+              </Grid>
+              <Grid item className={styles.information}>
+                linkedin/chaïmae-michich{" "}
+              </Grid>
             </Grid>
           </Grid>
           <Grid
             item
             container
-            direction={"column"}
-            md={2}
-            className={styles.information}
+            display={"flex"}
+            direction="row"
+            justifyContent="center"
           >
-            <Grid item className={styles.informationTitle}>
-              {" "}
-              follow me
-            </Grid>
-            <Grid item className={styles.information}>
-              linkedin/chaïmae-michich{" "}
-            </Grid>
+            <BootstrapGreenButton
+              backgroundColor="green"
+              className={styles.informationTitle}
+            >
+              Hire me{" "}
+            </BootstrapGreenButton>
           </Grid>
-        </Grid>
-        <Grid
-          item
-          container
-          display={"flex"}
-          direction="row"
-          justifyContent="center"
-        >
-          <BootstrapGreenButton
-            backgroundColor="green"
-            className={styles.informationTitle}
-          >
-            Hire me{" "}
-          </BootstrapGreenButton>
         </Grid>
       </Grid>
     </Grid>

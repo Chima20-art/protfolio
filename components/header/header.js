@@ -59,7 +59,7 @@ export default function Header() {
 `;
   return (
     <Grid md={12}>
-      <Grid container direction="row">
+      <Grid container direction="row" height={"9vh"}>
         <Grid
           item
           container
