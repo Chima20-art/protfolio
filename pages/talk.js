@@ -1,4 +1,4 @@
-import { Grid } from "@mui/material";
+import { autocompleteClasses, Grid } from "@mui/material";
 import Image from "next/dist/client/image";
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -11,7 +11,7 @@ const BootstrapGreenButton = styled(Button)({
   fontSize: 14,
   width: "150px",
   height: "45px",
-  padding: "15px 15px",
+  margin: "auto",
   border: "1px solid",
   borderColor: "rgb(174, 180, 180)",
   lineHeight: 1.5,
@@ -110,8 +110,17 @@ export default function Talk() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid item container direction="row" justifyContent={"center"}>
-          <BootstrapGreenButton className={styles.informationTitle}>
+        <Grid
+          item
+          container
+          display={"flex"}
+          direction="row"
+          justifyContent="center"
+        >
+          <BootstrapGreenButton
+            backgroundColor="green"
+            className={styles.informationTitle}
+          >
             Hire me{" "}
           </BootstrapGreenButton>
         </Grid>
