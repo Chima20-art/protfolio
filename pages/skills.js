@@ -80,7 +80,7 @@ export default function Skills() {
                     item
                     width="360px"
                     height="5px"
-                    backgroundColor="#FDC534"
+                    backgroundColor="#E07485"
                   />
                 </Grid>
               </Grid>
@@ -110,7 +110,7 @@ export default function Skills() {
                       item
                       width="360px"
                       height="5px"
-                      backgroundColor="#FDC534"
+                      backgroundColor="#E07485"
                       marginBottom="100px"
                     />
                   </Grid>
@@ -142,7 +142,7 @@ export default function Skills() {
                       item
                       width="330px"
                       height="5px"
-                      backgroundColor="#FDC534"
+                      backgroundColor="#E07485"
                     />
                   </Grid>
                 </Grid>
@@ -173,7 +173,7 @@ export default function Skills() {
                       item
                       width="340px"
                       height="5px"
-                      backgroundColor="#FDC534"
+                      backgroundColor="#E07485"
                     />
                   </Grid>
                 </Grid>

@@ -9,6 +9,10 @@
 .pageButton {
   color: black;
 }
+.selectedPageButton {
+  background-color: #e0d2d4;
+  color: black;
+}
 
 .mediaVectors {
   object-fit: contain;

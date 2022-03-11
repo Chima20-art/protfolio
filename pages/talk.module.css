@@ -21,3 +21,22 @@
   color: white;
   margin: auto;
 }
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 40vh;
+  height: 40vh;
+  justify-content: center;
+}
+.normalHolder {
+  width: 500px;
+  height: 39px;
+}
+.bigHolder {
+  background-color: aquamarine;
+
+  text-align: flex start;
+  top: 0px;
+  width: 500px;
+  height: 150px;
+}

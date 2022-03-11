@@ -7,6 +7,7 @@ import { Grid } from "@mui/material";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Link from "next/dist/client/link";
+import { useState } from "react";
 
 import Divider from "@mui/material/Divider";
 
@@ -23,7 +24,6 @@ const BootstrapButton = styled(Button)({
   lineHeight: 1.5,
   backgroundColor: "none",
   width: "100px",
-
   fontFamily: [
     "-apple-system",
     "BlinkMacSystemFont",
@@ -37,8 +37,8 @@ const BootstrapButton = styled(Button)({
     '"Segoe UI Symbol"',
   ].join(","),
   "&:hover": {
-    backgroundColor: "283543",
-    borderColor: "#283543",
+    backgroundColor: "#E0D2D4",
+    borderColor: "#E0C3C7",
     boxShadow: "none",
   },
   "&:active": {
@@ -47,6 +47,7 @@ const BootstrapButton = styled(Button)({
 });
 
 export default function Header() {
+  const [clicked, setClicked] = useState("false");
   const classes = useStyles();
   const [spacing, setSpacing] = React.useState(2);
 
@@ -87,22 +88,34 @@ export default function Header() {
           alignItems="center"
         >
           <Link href={"/"}>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Home
-            </BootstrapButton>
+            <Grid onClick={() => setClicked(!clicked)}>
+              <BootstrapButton
+                size="small"
+                variant="text"
+                className={
+                  clicked == clicked
+                    ? styles.pageButton
+                    : styles.selectedPageButton
+                }
+              >
+                Home
+              </BootstrapButton>
+            </Grid>
           </Link>
           <Link href={"/about"}>
-            <BootstrapButton
-              size="small"
-              variant="text"
-              className={styles.pageButton}
-            >
-              Services
-            </BootstrapButton>
+            <Grid onClick={() => setClicked(!clicked)}>
+              <BootstrapButton
+                size="small"
+                variant="text"
+                className={
+                  clicked == clicked
+                    ? styles.pageButton
+                    : styles.selectedPageButton
+                }
+              >
+                Services
+              </BootstrapButton>
+            </Grid>
           </Link>
           <Link href={"/skills"}>
             <BootstrapButton
@@ -132,19 +145,20 @@ export default function Header() {
             </BootstrapButton>
           </Link>
         </Grid>
-
-        <Grid
-          container
-          item
-          md={2}
-          justifyContent="center"
-          alignItems="center"
-          className={styles.blue}
-        >
-          <Button variant="outlined" className={styles.contactMeButton}>
-            Contact Me
-          </Button>
-        </Grid>
+        <Link href="/talk" passHref>
+          <Grid
+            container
+            item
+            md={2}
+            justifyContent="center"
+            alignItems="center"
+            className={styles.blue}
+          >
+            <Button variant="outlined" className={styles.contactMeButton}>
+              Contact Me
+            </Button>
+          </Grid>
+        </Link>
       </Grid>
 
       <Divider />

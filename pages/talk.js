@@ -62,123 +62,154 @@ export default function Talk() {
       <Grid
         item
         container
-        backgroundColor="black"
         height="91vh"
         justifyContent={"center"}
         alignItems="center"
+        display={"flex"}
+        direction={"row"}
       >
-        <Grid item container height={"50vh"}>
-          <Grid
-            container
-            direction="column"
-            justifyContent={"center"}
-            display="flex"
-            textAlign={"center"}
-            item
-            className={styles.title}
-            padding="5px"
-          >
-            Let s talk !
-          </Grid>
-          <Grid
-            item
-            container
-            direction={"row"}
-            justifyContent="center"
-            textAlign={"center"}
-            marginTop="30px"
-            marginBottom="80px"
-          >
-            <Grid item container direction={"column"} md={2}>
-              <Grid
-                item
-                container
-                justifyContent={"center"}
-                className={styles.informationTitle}
-              >
-                <Grid item justifyContent={"center"} margin="0px 15px">
-                  <LocalPhoneIcon />
-                </Grid>
-                <Grid
-                  item
-                  display="flex"
-                  justifyContent={"center"}
-                  direction="column"
-                >
-                  Phone me :
-                </Grid>
-              </Grid>
-              <Grid item className={styles.information}>
-                {" "}
-                +380983571966
-              </Grid>
-            </Grid>
+        <form method="POST" className={styles.form}>
+          <input
+            className={styles.normalHolder}
+            id="name"
+            placeholder="Name"
+            type="text"
+            autoComplete="name"
+            required
+          />
 
-            <Grid item container direction={"column"} md={2}>
-              <Grid
-                item
-                container
-                justifyContent={"center"}
-                className={styles.informationTitle}
-              >
-                <Grid item justifyContent={"center"} margin="0px 15px">
-                  <EmailIcon />
-                </Grid>
-                <Grid
-                  item
-                  display="flex"
-                  justifyContent={"center"}
-                  direction="column"
-                >
-                  Mail me:
-                </Grid>
-              </Grid>
-              <Grid item className={styles.information}>
-                {" "}
-                michichchaimae@gmail.com
-              </Grid>
-            </Grid>
-            <Grid item container direction={"column"} md={2}>
-              <Grid
-                item
-                container
-                justifyContent={"center"}
-                className={styles.informationTitle}
-              >
-                <Grid item justifyContent={"center"} margin="0px 15px">
-                  <LinkedInIcon />
-                </Grid>
-                <Grid
-                  item
-                  display="flex"
-                  justifyContent={"center"}
-                  direction="column"
-                >
-                  follow me
-                </Grid>
-              </Grid>
-              <Grid item className={styles.information}>
-                {" "}
-                linkedin/chaïmae-michich
-              </Grid>
-            </Grid>
-          </Grid>
-          <Grid
-            item
-            container
-            display={"flex"}
-            direction="row"
-            justifyContent="center"
-          >
-            <BootstrapGreenButton
-              backgroundColor="green"
-              className={styles.informationTitle}
-            >
-              Hire me
-            </BootstrapGreenButton>
-          </Grid>
-        </Grid>
+          <input
+            className={styles.normalHolder}
+            id="email"
+            placeholder="Email"
+            type="text"
+            autoComplete="email"
+            required
+          />
+
+          <input
+            className={styles.bigHolder}
+            id="message"
+            placeholder="write yor messages here"
+            type="text"
+            autoComplete="message"
+          />
+
+          <button type="submit">Register</button>
+        </form>
       </Grid>
     </Grid>
   );
 }
+
+/* <Grid item container height={"50vh"} backgroundColor="yellow">
+<Grid
+container
+direction="column"
+justifyContent={"center"}
+display="flex"
+textAlign={"center"}
+item
+className={styles.title}
+padding="5px"
+>
+Let s talk !
+</Grid>
+<Grid
+item
+container
+direction={"row"}
+justifyContent="center"
+textAlign={"center"}
+marginTop="30px"
+marginBottom="80px"
+>
+<Grid item container direction={"column"} md={2}>
+  <Grid
+    item
+    container
+    justifyContent={"center"}
+    className={styles.informationTitle}
+  >
+    <Grid item justifyContent={"center"} margin="0px 15px">
+      <LocalPhoneIcon />
+    </Grid>
+    <Grid
+      item
+      display="flex"
+      justifyContent={"center"}
+      direction="column"
+    >
+      Phone me :
+    </Grid>
+  </Grid>
+  <Grid item className={styles.information}>
+    {" "}
+    +380983571966
+  </Grid>
+</Grid>
+
+<Grid item container direction={"column"} md={2}>
+  <Grid
+    item
+    container
+    justifyContent={"center"}
+    className={styles.informationTitle}
+  >
+    <Grid item justifyContent={"center"} margin="0px 15px">
+      <EmailIcon />
+    </Grid>
+    <Grid
+      item
+      display="flex"
+      justifyContent={"center"}
+      direction="column"
+    >
+      Mail me:
+    </Grid>
+  </Grid>
+  <Grid item className={styles.information}>
+    {" "}
+    michichchaimae@gmail.com
+  </Grid>
+</Grid>
+<Grid item container direction={"column"} md={2}>
+  <Grid
+    item
+    container
+    justifyContent={"center"}
+    className={styles.informationTitle}
+  >
+    <Grid item justifyContent={"center"} margin="0px 15px">
+      <LinkedInIcon />
+    </Grid>
+    <Grid
+      item
+      display="flex"
+      justifyContent={"center"}
+      direction="column"
+    >
+      follow me
+    </Grid>
+  </Grid>
+  <Grid item className={styles.information}>
+    {" "}
+    linkedin/chaïmae-michich
+  </Grid>
+</Grid>
+</Grid>
+<Grid
+item
+container
+display={"flex"}
+direction="row"
+justifyContent="center"
+>
+<BootstrapGreenButton
+  backgroundColor="green"
+  className={styles.informationTitle}
+>
+  Hire me
+</BootstrapGreenButton>
+</Grid>
+</Grid>*/
