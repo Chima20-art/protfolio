@@ -7,6 +7,7 @@ import Header from "../components/header/header";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { useState } from "react";
 
 /* dgs*/
 
@@ -47,6 +48,11 @@ const BootstrapGreenButton = styled(Button)({
 });
 
 export default function Talk() {
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [submitted, setSubmitted] = useState(false);
+
   return (
     <Grid
       contain
@@ -74,8 +80,9 @@ export default function Talk() {
             id="name"
             placeholder="Name"
             type="text"
-            autoComplete="name"
-            required
+            onChange={(e) => {
+              setName(e.target.value);
+            }}
           />
 
           <input
@@ -83,8 +90,9 @@ export default function Talk() {
             id="email"
             placeholder="Email"
             type="text"
-            autoComplete="email"
-            required
+            onChange={(e) => {
+              setEmail(e.target.value);
+            }}
           />
 
           <input
@@ -92,7 +100,9 @@ export default function Talk() {
             id="message"
             placeholder="write yor messages here"
             type="text"
-            autoComplete="message"
+            onChange={(e) => {
+              setMessage(e.target.value);
+            }}
           />
 
           <button type="submit">Register</button>
