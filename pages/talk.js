@@ -53,6 +53,33 @@ export default function Talk() {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Sending");
+    let data = {
+      name,
+      email,
+      message,
+    };
+    fetch("/api/contact", {
+      method: "POST",
+      headers: {
+        Accept: "application/json, text/plain, */*",
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    }).then((res) => {
+      console.log("Response received");
+      if (res.status === 200) {
+        console.log("Response succeeded!");
+        setSubmitted(true);
+        setName("");
+        setEmail("");
+        setBody("");
+      }
+    });
+  };
+
   return (
     <Grid
       contain
@@ -105,7 +132,14 @@ export default function Talk() {
             }}
           />
 
-          <button type="submit">Register</button>
+          <button
+            type="submit"
+            onClick={(e) => {
+              handleSubmit(e);
+            }}
+          >
+            Register
+          </button>
         </form>
       </Grid>
     </Grid>
