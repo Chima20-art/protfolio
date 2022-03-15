@@ -54,8 +54,8 @@ export default function Talk() {
   const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = (e) => {
-    e.preventDefault();
     console.log("Sending");
+    e.preventDefault();
     let data = {
       name,
       email,
