@@ -100,13 +100,13 @@ export default function Talk() {
         alignItems="center"
         display={"flex"}
         direction={"row"}
+        backgroundColor="black"
       >
         <form method="POST" className={styles.form}>
           <input
             className={styles.normalHolder}
             id="name"
             placeholder="Name"
-            type="text"
             onChange={(e) => {
               setName(e.target.value);
             }}
@@ -116,7 +116,6 @@ export default function Talk() {
             className={styles.normalHolder}
             id="email"
             placeholder="Email"
-            type="text"
             onChange={(e) => {
               setEmail(e.target.value);
             }}
@@ -125,7 +124,7 @@ export default function Talk() {
           <input
             className={styles.bigHolder}
             id="message"
-            placeholder="write yor messages here"
+            placeholder="Your message "
             type="text"
             onChange={(e) => {
               setMessage(e.target.value);
@@ -134,11 +133,12 @@ export default function Talk() {
 
           <button
             type="submit"
+            className={styles.submitButton}
             onClick={(e) => {
               handleSubmit(e);
             }}
           >
-            Register
+            SUBMIT
           </button>
         </form>
       </Grid>
