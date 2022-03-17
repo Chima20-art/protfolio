@@ -99,48 +99,60 @@ export default function Talk() {
         justifyContent={"center"}
         alignItems="center"
         display={"flex"}
-        direction={"row"}
+        direction={"column"}
         backgroundColor="black"
       >
-        <form method="POST" className={styles.form}>
-          <input
-            className={styles.normalHolder}
-            id="name"
-            placeholder="Name"
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
-          />
+        <Grid item color={"white"} fontWeight="600" fontSize={"20px"}>
+          {" "}
+          Have a question or want to work together ?{" "}
+        </Grid>
+        <Grid
+          item
+          display="flex"
+          flexDirection={"column"}
+          justifyContent="center"
+          alignItems="center"
+        >
+          <form method="POST" className={styles.form}>
+            <input
+              className={styles.normalHolder}
+              id="name"
+              placeholder="Name"
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
 
-          <input
-            className={styles.normalHolder}
-            id="email"
-            placeholder="Email"
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
-          />
+            <input
+              className={styles.normalHolder}
+              id="email"
+              placeholder="Email"
+              onChange={(e) => {
+                setEmail(e.target.value);
+              }}
+            />
 
-          <input
-            className={styles.bigHolder}
-            id="message"
-            placeholder="Your message "
-            type="text"
-            onChange={(e) => {
-              setMessage(e.target.value);
-            }}
-          />
+            <input
+              className={styles.bigHolder}
+              id="message"
+              placeholder="Your message "
+              type="text"
+              onChange={(e) => {
+                setMessage(e.target.value);
+              }}
+            />
 
-          <button
-            type="submit"
-            className={styles.submitButton}
-            onClick={(e) => {
-              handleSubmit(e);
-            }}
-          >
-            SUBMIT
-          </button>
-        </form>
+            <button
+              type="submit"
+              className={styles.submitButton}
+              onClick={(e) => {
+                handleSubmit(e);
+              }}
+            >
+              SUBMIT
+            </button>
+          </form>
+        </Grid>
       </Grid>
     </Grid>
   );

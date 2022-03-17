@@ -24,9 +24,10 @@
 .form {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: start;
   width: 50vh;
-  height: 50vh;
+  height: 40vh;
 }
 .normalHolder {
   height: 39px;
