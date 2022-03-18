@@ -8,6 +8,10 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import Link from "next/link";
 import { useState } from "react";
 import { color } from "@mui/system";
+import About from "../about";
+import Skills from "../skills";
+import Projects from "../projects";
+import Talk from "../talk";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -97,57 +101,71 @@ export default function Home() {
     <Grid
       container
       direction="column"
-      height="100vh"
       md={12}
       justifyContent={"center"}
+      backgroundColor="yellow"
     >
       <Grid
+        height="100vh"
         container
         direction={"column"}
         justifyContent={"center"}
+        alignItems="center"
         item
         className={styles.title}
         margin="auto"
-        width={"50vw"}
+        width={"60vw"}
         textAlign={"center"}
       >
-        <Grid item>
-          Hello, Im&nbsp;
-          <span className={styles.highlight}> Chaimae Michich.</span>
-        </Grid>
-        <Grid item>Im a front-end web developer.</Grid>
-
-        <Link href="/about" passHref>
-          <Grid
-            item
-            container
-            height="52px"
-            backgroundColor="white"
-            border="solid 4px"
-            justifyContent={"center"}
-            textAlign={"center"}
-            alignContent={"center"}
-            padding="30px"
-            margin="auto"
-            width={"fit-content"}
-            cursor={"pointer"}
-            marginTop={"70px"}
-            className={styles.RalewayFont}
-            onClick={() => setClicked("clicked")}
-          >
-            <Grid item>View My Work &nbsp; </Grid>
-
-            <ArrowForwardIcon
-              item
-              className={clicked === "clicked" ? styles.remove : styles.leave}
-            />
-            <ArrowDownwardIcon
-              item
-              className={clicked === "clicked" ? styles.leave : styles.remove}
-            />
+        <Grid
+          item
+          container
+          direction={"column"}
+          justifyContent={"center"}
+          alignItems="center"
+        >
+          <Grid item>
+            Hello, Im&nbsp;
+            <span className={styles.highlight}> Chaimae Michich.</span>
           </Grid>
-        </Link>
+          <Grid item>Im a front-end web developer.</Grid>
+
+          <Link href="/about" passHref>
+            <Grid
+              item
+              container
+              height="52px"
+              backgroundColor="white"
+              border="solid 4px"
+              justifyContent={"center"}
+              textAlign={"center"}
+              alignContent={"center"}
+              padding="30px"
+              margin="auto"
+              width={"fit-content"}
+              cursor={"pointer"}
+              marginTop={"70px"}
+              className={styles.RalewayFont}
+              onClick={() => setClicked("clicked")}
+            >
+              <Grid item>View My Work &nbsp; </Grid>
+
+              <ArrowForwardIcon
+                item
+                className={clicked === "clicked" ? styles.remove : styles.leave}
+              />
+              <ArrowDownwardIcon
+                item
+                className={clicked === "clicked" ? styles.leave : styles.remove}
+              />
+            </Grid>
+          </Link>
+        </Grid>
       </Grid>
+      <About />
+      <Skills />
+      <Projects />
+      <Talk />
     </Grid>
   );
 }

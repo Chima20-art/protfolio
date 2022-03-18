@@ -14,6 +14,9 @@ export default function About() {
       height="100vh"
       justifyContent={"space-around"}
     >
+      <Grid item height={"9vh"}>
+        <Header />
+      </Grid>
       <Grid
         maxWidth={"1400px"}
         justifyContent={"center"}
