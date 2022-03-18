@@ -11,13 +11,9 @@ export default function About() {
     <Grid
       container
       direction="column"
-      height="91vh"
+      height="100vh"
       justifyContent={"space-around"}
     >
-      <Grid item container marginTop={"0px"}>
-        <Header item />
-      </Grid>
-
       <Grid
         maxWidth={"1400px"}
         justifyContent={"center"}

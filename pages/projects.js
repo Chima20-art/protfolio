@@ -35,10 +35,6 @@ export default function Projects(props) {
       height="100vh"
     >
       <Grid item container>
-        <Header item />
-      </Grid>
-
-      <Grid item container>
         <Grid
           item
           container

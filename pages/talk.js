@@ -89,9 +89,6 @@ export default function Talk() {
       display={"flex"}
       justifyContent={"space-between"}
     >
-      <Grid item container>
-        <Header item />
-      </Grid>
       <Grid
         item
         container

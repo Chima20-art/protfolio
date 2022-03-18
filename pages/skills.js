@@ -10,9 +10,6 @@ import Header from "../components/header/header";
 export default function Skills() {
   return (
     <Grid container height="100vh">
-      <Grid item container>
-        <Header item />
-      </Grid>
       <Grid
         container
         md={11}
