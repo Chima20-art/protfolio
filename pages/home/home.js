@@ -158,8 +158,8 @@ export default function Home() {
       </Grid>
       <About ID="about" />
       <Skills ID="skills" />
-      <Projects />
-      <Talk />
+      <Projects ID="projects" />
+      <Talk ID="talk" />
     </Grid>
   );
 }

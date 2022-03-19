@@ -47,7 +47,7 @@ const BootstrapGreenButton = styled(Button)({
   },
 });
 
-export default function Talk() {
+export default function Talk(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -88,6 +88,7 @@ export default function Talk() {
       direction="column"
       display={"flex"}
       justifyContent={"space-between"}
+      id={props.ID}
     >
       <Grid
         item

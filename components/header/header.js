@@ -126,7 +126,7 @@ export default function Header() {
               Skills
             </BootstrapButton>
           </Link>{" "}
-          <Link href={"/projects"}>
+          <Link href={"#projects"}>
             <BootstrapButton
               size="small"
               variant="text"
@@ -135,7 +135,7 @@ export default function Header() {
               Projects
             </BootstrapButton>
           </Link>
-          <Link href="/talk">
+          <Link href="#talk">
             <BootstrapButton
               size="small"
               variant="text"

@@ -33,6 +33,7 @@ export default function Projects(props) {
       direction="row "
       alignContent="space-between"
       height="100vh"
+      id={props.ID}
     >
       <Grid item container>
         <Grid
