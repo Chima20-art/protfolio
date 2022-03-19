@@ -6,13 +6,14 @@ import styles from "./about.module.css";
 import Header from "../components/header/header";
 import JobCard from "./JobCard/JobCard";
 
-export default function About() {
+export default function About(props) {
   return (
     <Grid
       container
       direction="column"
       height="100vh"
       justifyContent={"space-around"}
+      id={props.ID}
     >
       <Grid item height={"9vh"}>
         <Header />

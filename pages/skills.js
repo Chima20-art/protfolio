@@ -7,9 +7,9 @@ import { shadows } from "@mui/system";
 import { grey } from "@mui/material/colors";
 import Header from "../components/header/header";
 
-export default function Skills() {
+export default function Skills(props) {
   return (
-    <Grid container height="100vh">
+    <Grid container height="100vh" id={props.ID}>
       <Grid
         container
         md={11}

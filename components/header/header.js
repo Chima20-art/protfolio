@@ -117,7 +117,7 @@ export default function Header() {
               </BootstrapButton>
             </Grid>
           </Link>
-          <Link href={"/skills"}>
+          <Link href={"#skills"}>
             <BootstrapButton
               size="small"
               variant="text"

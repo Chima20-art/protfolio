@@ -124,7 +124,7 @@ export default function Home() {
           </Grid>
           <Grid item>Im a front-end web developer.</Grid>
 
-          <Link href="/about" passHref>
+          <Link href="#about" passHref>
             <Grid
               item
               container
@@ -156,8 +156,8 @@ export default function Home() {
           </Link>
         </Grid>
       </Grid>
-      <About />
-      <Skills />
+      <About ID="about" />
+      <Skills ID="skills" />
       <Projects />
       <Talk />
     </Grid>
