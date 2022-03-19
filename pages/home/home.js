@@ -98,13 +98,7 @@ export default function Home() {
   const [clicked, setClicked] = useState("notclicked");
 
   return (
-    <Grid
-      container
-      direction="column"
-      md={12}
-      justifyContent={"center"}
-      backgroundColor="yellow"
-    >
+    <Grid container direction="column" md={12} justifyContent={"center"}>
       <Grid
         height="100vh"
         container
