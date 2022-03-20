@@ -19,6 +19,18 @@ export default function Skills(props) {
         alignContent="center"
         height={"fit-content"}
       >
+        <Grid
+          item
+          container
+          display={"flex"}
+          flex-direction="row"
+          justifyContent={"center"}
+          alignItems="center"
+          textAlign={"center"}
+          className={styles.mainTitle}
+        >
+          Services
+        </Grid>
         <Grid item container direction="row" md={5} marginBottom="50px">
           <Grid container direction="row" item md={1}>
             <Divider orientation="vertical" flexItem>

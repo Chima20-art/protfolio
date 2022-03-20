@@ -12,7 +12,7 @@ export default function About(props) {
       container
       direction="column"
       height="100vh"
-      justifyContent={"space-around"}
+      justifyContent={"space-between"}
       id={props.ID}
     >
       <Grid item height={"9vh"}>
@@ -25,6 +25,7 @@ export default function About(props) {
         display={"flex"}
         flex-direction="column"
         height={"70vh"}
+        marginBottom="0px"
       >
         <Grid
           item
@@ -32,14 +33,12 @@ export default function About(props) {
           display={"flex"}
           flex-direction="row"
           justifyContent={"center"}
-          alignItems="center"
+          alignItems="flex-end"
           textAlign={"center"}
-          color="#444649"
-          fontSize={"30px"}
-          fontWeight="bold"
-          className={styles.underlined}
+          className={styles.mainTitle}
+          marginBottom="20px"
         >
-          SERVICES
+          Services
         </Grid>
 
         <Grid
@@ -47,7 +46,6 @@ export default function About(props) {
           item
           container
           direction="row"
-          margin="auto"
           height="70%"
         >
           <Grid
