@@ -12,6 +12,7 @@ import About from "../about";
 import Skills from "../skills";
 import Projects from "../projects";
 import Talk from "../talk";
+import { motion } from "framer-motion";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -111,12 +112,27 @@ export default function Home() {
         width={"60vw"}
         textAlign={"center"}
       >
-        <Grid
+        <motion.Grid
           item
           container
           direction={"column"}
           justifyContent={"center"}
           alignItems="center"
+          initial="hidden"
+          animate="visible"
+          variants={{
+            hidden: {
+              scale: 0.8,
+              opacity: 0,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: 0.4,
+              },
+            },
+          }}
         >
           <Grid item>
             Hello, Im&nbsp;
@@ -154,7 +170,7 @@ export default function Home() {
               />
             </Grid>
           </Link>
-        </Grid>
+        </motion.Grid>
       </Grid>
       <About ID="about" />
       <Skills ID="skills" />

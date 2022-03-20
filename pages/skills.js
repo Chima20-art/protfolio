@@ -29,7 +29,7 @@ export default function Skills(props) {
           textAlign={"center"}
           className={styles.mainTitle}
         >
-          Services
+          Skills
         </Grid>
         <Grid item container direction="row" md={5} marginBottom="50px">
           <Grid container direction="row" item md={1}>
