@@ -28,3 +28,7 @@
 .divider {
   margin-right: 40px;
 }
+.underlined {
+  text-decoration: underline 3.5px;
+  text-underline-offset: 5px;
+}
