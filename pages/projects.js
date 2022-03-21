@@ -7,6 +7,7 @@ import Tab from "@mui/material/Tab";
 import Image from "next/dist/client/image";
 import { useState } from "react";
 import Header from "../components/header/header";
+import { motion } from "framer-motion";
 
 export default function Projects(props) {
   const AllImgArr = [
@@ -92,21 +93,22 @@ export default function Projects(props) {
         <Grid item container md={10} margin="auto">
           {state == "all" || state == "javascript"
             ? AllImgArr.map((image) => (
-                <Grid key="hh" item md={4}>
+                <Grid key="projectImage" container item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))
             : state == "react"
             ? reactArr.map((image) => (
-                <Grid key="hh" item md={4}>
+                <Grid key="hjg" item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))
             : nextArr.map((image) => (
-                <Grid key="hh" item md={4}>
+                <Grid key="jhv" item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))}
+          )
         </Grid>
       </Grid>
     </Grid>
