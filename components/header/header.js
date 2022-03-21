@@ -153,11 +153,7 @@ export default function Header() {
             justifyContent="center"
             alignItems="center"
             className={styles.blue}
-          >
-            <Button variant="outlined" className={styles.contactMeButton}>
-              Contact Me
-            </Button>
-          </Grid>
+          ></Grid>
         </Link>
       </Grid>
 
