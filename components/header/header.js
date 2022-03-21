@@ -102,7 +102,7 @@ export default function Header() {
               </BootstrapButton>
             </Grid>
           </Link>
-          <Link href={"/about"}>
+          <Link href={"#about"}>
             <Grid onClick={() => setClicked(!clicked)}>
               <BootstrapButton
                 size="small"
