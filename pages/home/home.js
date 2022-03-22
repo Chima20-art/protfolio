@@ -111,7 +111,7 @@ export default function Home() {
         className={styles.title}
         margin="auto"
         textAlign={"center"}
-        backgroundColor="#74154D"
+        backgroundColor="#B8227A"
       >
         <motion.Grid
           item
@@ -146,8 +146,8 @@ export default function Home() {
               item
               container
               height="52px"
-              backgroundColor="white"
-              border="solid 4px"
+              backgroundColor="#B8227A"
+              border="solid 4px white"
               justifyContent={"center"}
               textAlign={"center"}
               alignContent={"center"}
@@ -159,9 +159,12 @@ export default function Home() {
               className={styles.RalewayFont}
               onClick={() => setClicked("clicked")}
             >
-              <Grid item>View My Work &nbsp; </Grid>
+              <Grid item color="white">
+                View My Work &nbsp;{" "}
+              </Grid>
 
               <ArrowForwardIcon
+                color="#ffff"
                 item
                 className={clicked === "clicked" ? styles.remove : styles.leave}
               />
