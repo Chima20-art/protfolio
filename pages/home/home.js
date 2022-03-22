@@ -102,6 +102,7 @@ export default function Home() {
     <Grid container direction="column" md={12} justifyContent={"center"}>
       <Grid
         height="100vh"
+        width="100vw"
         container
         direction={"column"}
         justifyContent={"center"}
@@ -109,8 +110,8 @@ export default function Home() {
         item
         className={styles.title}
         margin="auto"
-        width={"60vw"}
         textAlign={"center"}
+        backgroundColor="#74154D"
       >
         <motion.Grid
           item

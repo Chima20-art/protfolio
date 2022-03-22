@@ -93,18 +93,18 @@ export default function Projects(props) {
         <Grid item container md={10} margin="auto">
           {state == "all" || state == "javascript"
             ? AllImgArr.map((image) => (
-                <Grid key="projectImage" container item md={4}>
+                <Grid key={image} container item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))
             : state == "react"
             ? reactArr.map((image) => (
-                <Grid key="hjg" item md={4}>
+                <Grid key={image} item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))
             : nextArr.map((image) => (
-                <Grid key="jhv" item md={4}>
+                <Grid key={image} item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))}
