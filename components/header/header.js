@@ -71,7 +71,7 @@ export default function Header() {
         >
           <Image
             item
-            src="/Michich.png"
+            src="/Michich-2.png"
             width={250}
             height={80}
             alt="My logo"
