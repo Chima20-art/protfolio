@@ -42,7 +42,8 @@
   cursor: pointer;
 }
 .mainTitle {
-  text-underline-offset: 5px;
+  text-decoration: underline 3.5px "white";
+  text-underline-offset: 2px;
   font-size: 40px;
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;

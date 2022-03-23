@@ -100,7 +100,10 @@ export default function Talk(props) {
         direction={"column"}
         backgroundColor="black"
       >
-        <Grid item color={"white"} fontWeight="600" fontSize={"20px"}>
+        <Grid item color="#fff" className={styles.mainTitle}>
+          Contact
+        </Grid>
+        <Grid item fontWeight="600" fontSize={"20px"} color="#b8239f">
           {" "}
           Have a question or want to work together ?{" "}
         </Grid>
