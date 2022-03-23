@@ -117,9 +117,6 @@ export default function Header() {
                     : styles.pageButton
                 }
               >
-                {isSelected == true
-                  ? console.log("it's selected")
-                  : console.log("nope")}
                 Services
               </BootstrapButton>
             </Grid>
