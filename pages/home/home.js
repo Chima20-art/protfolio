@@ -108,10 +108,9 @@ export default function Home() {
         justifyContent={"center"}
         alignItems="center"
         item
-        className={styles.title}
+        className={styles.title1}
         margin="auto"
         textAlign={"center"}
-        backgroundColor="#B8227A"
       >
         <motion.Grid
           item
@@ -119,6 +118,7 @@ export default function Home() {
           direction={"column"}
           justifyContent={"center"}
           alignItems="center"
+          color="white"
           initial="hidden"
           animate="visible"
           variants={{
@@ -135,18 +135,22 @@ export default function Home() {
             },
           }}
         >
-          <Grid item>
+          <Grid item color="white">
             Hello, Im&nbsp;
             <span className={styles.highlight}> Chaimae Michich.</span>
           </Grid>
-          <Grid item>Im a front-end web developer.</Grid>
+          <Grid item color="white">
+            Im a web developer.
+          </Grid>
+          <Grid item color="white">
+            Welcome to my world 👋.
+          </Grid>
 
           <Link href="#about" passHref>
             <Grid
               item
               container
               height="52px"
-              backgroundColor="#B8227A"
               border="solid 4px white"
               justifyContent={"center"}
               textAlign={"center"}
@@ -158,6 +162,7 @@ export default function Home() {
               marginTop={"70px"}
               className={styles.RalewayFont}
               onClick={() => setClicked("clicked")}
+              color="white"
             >
               <Grid item color="white">
                 View My Work &nbsp;{" "}

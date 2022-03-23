@@ -15,11 +15,13 @@
 .pointer {
   cursor: pointer;
 }
-.title {
+.title1 {
   font-family: "M PLUS Code Latin", sans-serif;
   font-family: "Nanum Gothic", sans-serif;
   font-family: "Raleway", sans-serif;
-
+  background-image: url("https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif");
+  height: 100vh;
+  width: 100vw;
   font-weight: 830;
   font-size: 32pt;
 }
@@ -32,7 +34,7 @@
   cursor: pointer;
 }
 .highlight {
-  color: #fff;
+  color: #b8239f;
   font-weight: 900;
 }
 .subTitle {
