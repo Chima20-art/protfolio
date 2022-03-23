@@ -47,14 +47,17 @@ const BootstrapButton = styled(Button)({
 });
 
 export default function Header() {
-  const [clicked, setClicked] = useState("false");
+  const [isSelected, setIsSelected] = useState("");
   const classes = useStyles();
   const [spacing, setSpacing] = React.useState(2);
+  const [activeButton, setActiveButton] = useState("");
 
   const handleChange = (event) => {
     setSpacing(Number(event.target.value));
   };
-
+  const handleSelected = (a) => {
+    setIsSelected(a);
+  };
   const jsx = `
 <Grid container spacing={${spacing}}>
 `;
@@ -88,31 +91,35 @@ export default function Header() {
           alignItems="center"
         >
           <Link href={"/"}>
-            <Grid onClick={() => setClicked(!clicked)}>
+            <Grid>
               <BootstrapButton
                 size="small"
                 variant="text"
                 className={
-                  clicked == clicked
-                    ? styles.pageButton
-                    : styles.selectedPageButton
+                  isSelected == "home"
+                    ? styles.selectedPageButton
+                    : styles.pageButton
                 }
+                onClick={() => setIsSelected("home")}
               >
                 Home
               </BootstrapButton>
             </Grid>
           </Link>
           <Link href={"#about"}>
-            <Grid onClick={() => setClicked(!clicked)}>
+            <Grid onClick={() => setIsSelected("services")}>
               <BootstrapButton
                 size="small"
                 variant="text"
                 className={
-                  clicked == clicked
-                    ? styles.pageButton
-                    : styles.selectedPageButton
+                  isSelected == "services"
+                    ? styles.selectedPageButton
+                    : styles.pageButton
                 }
               >
+                {isSelected == true
+                  ? console.log("it's selected")
+                  : console.log("nope")}
                 Services
               </BootstrapButton>
             </Grid>
@@ -121,7 +128,12 @@ export default function Header() {
             <BootstrapButton
               size="small"
               variant="text"
-              className={styles.pageButton}
+              onClick={() => setIsSelected("skills")}
+              className={
+                isSelected == "skills"
+                  ? styles.selectedPageButton
+                  : styles.pageButton
+              }
             >
               Skills
             </BootstrapButton>
@@ -130,7 +142,12 @@ export default function Header() {
             <BootstrapButton
               size="small"
               variant="text"
-              className={styles.pageButton}
+              onClick={() => setIsSelected("projects")}
+              className={
+                isSelected == "projects"
+                  ? styles.selectedPageButton
+                  : styles.pageButton
+              }
             >
               Projects
             </BootstrapButton>
@@ -139,7 +156,12 @@ export default function Header() {
             <BootstrapButton
               size="small"
               variant="text"
-              className={styles.pageButton}
+              onClick={() => setIsSelected("contact")}
+              className={
+                isSelected == "contact"
+                  ? styles.selectedPageButton
+                  : styles.pageButton
+              }
             >
               Contacts
             </BootstrapButton>
