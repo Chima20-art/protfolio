@@ -62,7 +62,7 @@ export default function Header() {
 <Grid container spacing={${spacing}}>
 `;
   return (
-    <Grid md={12}>
+    <Grid md={12} backgroundColor="#161616">
       <Grid container direction="row" height={"9vh"}>
         <Grid
           item
@@ -175,8 +175,6 @@ export default function Header() {
           ></Grid>
         </Link>
       </Grid>
-
-      <Divider />
     </Grid>
   );
 }
