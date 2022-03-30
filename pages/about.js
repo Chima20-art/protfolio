@@ -15,10 +15,6 @@ export default function About(props) {
       justifyContent={"space-between"}
       id={props.ID}
     >
-      <Grid item height={"9vh"}>
-        <Header />
-      </Grid>
-
       <Grid
         item
         container
