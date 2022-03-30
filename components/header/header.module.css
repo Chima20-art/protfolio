@@ -1,3 +1,6 @@
+.header {
+  z-index: 1;
+}
 .img {
   object-fit: contain;
 }
@@ -7,10 +10,10 @@
   background-color: rgb(8, 8, 8);
 }
 .pageButton {
-  color: black;
+  color: white;
 }
 .selectedPageButton {
-  background-color: #e0d2d4;
+  background-color: #585051;
   color: black;
 }
 

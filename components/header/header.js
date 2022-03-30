@@ -62,7 +62,7 @@ export default function Header() {
 <Grid container spacing={${spacing}}>
 `;
   return (
-    <Grid md={12} backgroundColor="#161616">
+    <Grid md={12} backgroundColor="#161616" className={styles.header}>
       <Grid container direction="row" height={"9vh"}>
         <Grid
           item

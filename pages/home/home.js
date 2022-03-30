@@ -13,6 +13,7 @@ import Skills from "../skills";
 import Projects from "../projects";
 import Talk from "../talk";
 import { motion } from "framer-motion";
+import Header from "../../components/header/header";
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: "none",
@@ -181,6 +182,7 @@ export default function Home() {
           </Link>
         </motion.Grid>
       </Grid>
+      <Header />
       <About ID="about" />
       <Skills ID="skills" />
       <Projects ID="projects" />

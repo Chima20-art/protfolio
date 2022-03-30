@@ -93,7 +93,7 @@ export default function Talk(props) {
       <Grid
         item
         container
-        height="100vh"
+        height="75vh"
         justifyContent={"center"}
         alignItems="center"
         display={"flex"}
@@ -154,6 +154,10 @@ export default function Talk(props) {
             </button>
           </form>
         </Grid>
+      </Grid>
+      <Grid item container backgroundColor="#2B2B2B" height="30vh">
+        {" "}
+        ljnefbjfne
       </Grid>
     </Grid>
   );
