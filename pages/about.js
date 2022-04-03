@@ -10,9 +10,9 @@ export default function About(props) {
     <Grid
       container
       direction="column"
-      height="100vh"
-      justifyContent={"space-between"}
       id={props.ID}
+      height="91vh"
+      justifyContent={"flex-end"}
     >
       <Grid
         item
