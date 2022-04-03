@@ -1,7 +1,6 @@
 import Grid from "@mui/material/Grid";
 import Image from "next/image";
 import Divider from "@mui/material/Divider";
-
 import styles from "./about.module.css";
 import Header from "../components/header/header";
 import JobCard from "./JobCard/JobCard";

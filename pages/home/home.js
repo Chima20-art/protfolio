@@ -100,7 +100,13 @@ export default function Home() {
   const [clicked, setClicked] = useState("notclicked");
 
   return (
-    <Grid container direction="column" md={12} justifyContent={"center"}>
+    <Grid
+      container
+      direction="column"
+      md={12}
+      justifyContent={"center"}
+      className={styles.parent}
+    >
       <Grid
         height="100vh"
         width="100vw"
@@ -182,11 +188,6 @@ export default function Home() {
           </Link>
         </motion.Grid>
       </Grid>
-      <Header />
-      <About ID="about" />
-      <Skills ID="skills" />
-      <Projects ID="projects" />
-      <Talk ID="talk" />
     </Grid>
   );
 }

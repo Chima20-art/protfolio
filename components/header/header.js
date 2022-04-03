@@ -46,7 +46,7 @@ const BootstrapButton = styled(Button)({
   },
 });
 
-export default function Header() {
+export default function Header(props) {
   const [isSelected, setIsSelected] = useState("");
   const classes = useStyles();
   const [spacing, setSpacing] = React.useState(2);
@@ -62,7 +62,7 @@ export default function Header() {
 <Grid container spacing={${spacing}}>
 `;
   return (
-    <Grid md={12} backgroundColor="#161616" className={styles.header}>
+    <Grid md={12} className={props.Class}>
       <Grid container direction="row" height={"9vh"}>
         <Grid
           item

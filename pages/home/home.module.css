@@ -78,3 +78,10 @@
   background-color: black;
   border: white;
 }
+
+.header {
+    background-color: #161616;
+    position: sticky; 
+   top: 0px;
+  }
+

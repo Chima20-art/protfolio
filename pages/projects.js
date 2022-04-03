@@ -90,7 +90,7 @@ export default function Projects(props) {
             {console.log(state)}
           </Tabs>
         </Grid>
-        <Grid item container md={10} margin="auto">
+        <Grid item container md={10} margin="auto" z-index="-1">
           {state == "all" || state == "javascript"
             ? AllImgArr.map((image) => (
                 <Grid key={image} container item md={4}>
