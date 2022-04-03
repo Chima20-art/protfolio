@@ -9,12 +9,17 @@ import Header from "../components/header/header";
 
 export default function Skills(props) {
   return (
-    <Grid container height="100vh" id={props.ID}>
+    <Grid
+      container
+      height="91vh"
+      id={props.ID}
+      justifyContent="center"
+      alignContent={"center"}
+    >
       <Grid
         container
         md={11}
         direction="row"
-        margin="auto"
         justifyContent={"center"}
         alignContent="center"
         height={"fit-content"}
