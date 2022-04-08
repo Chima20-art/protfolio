@@ -7,6 +7,7 @@ import Header from "../components/header/header";
 import EmailIcon from "@mui/icons-material/Email";
 import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import InstagramIcon from "@mui/icons-material/Instagram";
 import { useState } from "react";
 
 /* dgs*/
@@ -53,6 +54,13 @@ export default function Talk(props) {
   const [message, setMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
+  const imageArray = [
+    {
+      image: "",
+      url: "",
+    },
+  ];
+
   const handleSubmit = (e) => {
     console.log("Sending");
     e.preventDefault();
@@ -93,7 +101,7 @@ export default function Talk(props) {
       <Grid
         item
         container
-        height="75vh"
+        height="79vh"
         justifyContent={"center"}
         alignItems="center"
         display={"flex"}
@@ -155,10 +163,7 @@ export default function Talk(props) {
           </form>
         </Grid>
       </Grid>
-      <Grid item container backgroundColor="#2B2B2B" height="30vh">
-        {" "}
-        ljnefbjfne
-      </Grid>
+      <Grid item container backgroundColor="#2B2B2B" height="21vh"></Grid>
     </Grid>
   );
 }

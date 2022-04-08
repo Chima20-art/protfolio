@@ -31,10 +31,11 @@ export default function Projects(props) {
     <Grid
       item
       container
-      direction="row "
-      alignContent="space-between"
+      direction="column "
       height="100vh"
       id={props.ID}
+      justifyContent="flex-end"
+      marginBottom="20px"
     >
       <Grid item container>
         <Grid
