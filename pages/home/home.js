@@ -175,15 +175,8 @@ export default function Home() {
                 View My Work &nbsp;{" "}
               </Grid>
 
-              <ArrowForwardIcon
-                color="#ffff"
-                item
-                className={clicked === "clicked" ? styles.remove : styles.leave}
-              />
-              <ArrowDownwardIcon
-                item
-                className={clicked === "clicked" ? styles.leave : styles.remove}
-              />
+              <ArrowForwardIcon color="#ffff" item className={styles.on} />
+              <ArrowDownwardIcon item className={styles.off} />
             </Grid>
           </Link>
         </motion.Grid>
