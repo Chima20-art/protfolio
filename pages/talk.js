@@ -9,6 +9,7 @@ import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { useState } from "react";
+import ScrollButton from "../components/header/scrollButton";
 
 /* dgs*/
 
@@ -48,6 +49,7 @@ const BootstrapGreenButton = styled(Button)({
   },
 });
 
+<meta charset="UTF-8" />;
 export default function Talk(props) {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -126,19 +128,23 @@ export default function Talk(props) {
             <input
               className={styles.normalHolder}
               id="name"
+              type="name"
               placeholder="Name"
               onChange={(e) => {
                 setName(e.target.value);
               }}
+              required
             />
 
             <input
               className={styles.normalHolder}
               id="email"
+              type="email"
               placeholder="Email"
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
+              required
             />
 
             <input
@@ -149,6 +155,7 @@ export default function Talk(props) {
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
+              required
             />
 
             <button
@@ -163,7 +170,9 @@ export default function Talk(props) {
           </form>
         </Grid>
       </Grid>
-      <Grid item container backgroundColor="#2B2B2B" height="21vh"></Grid>
+      <Grid item container backgroundColor="#2B2B2B" height="21vh">
+        <ScrollButton />
+      </Grid>
     </Grid>
   );
 }
