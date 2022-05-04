@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import styles from "./scrollButton.module.css";
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
 
@@ -24,10 +25,11 @@ const ScrollButton = () => {
   window.addEventListener("scroll", toggleVisible);
 
   return (
-    <button
+    <KeyboardArrowUpIcon
+      className={styles.KeyboardArrowUpIcon}
       onClick={scrollToTop}
       style={{ display: visible ? "inline" : "none" }}
-    ></button>
+    ></KeyboardArrowUpIcon>
   );
 };
 
