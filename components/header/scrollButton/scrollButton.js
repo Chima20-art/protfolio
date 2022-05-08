@@ -1,4 +1,7 @@
 import React, { useState } from "react";
+import dynamic from "next/dynamic";
+import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
+import styles from "./scrollButton.module.css";
 
 const ScrollButton = () => {
   const [visible, setVisible] = useState(false);
@@ -20,11 +23,12 @@ const ScrollButton = () => {
 		in place of 'smooth' */
     });
   };
-
-  window.addEventListener("scroll", toggleVisible);
+  if (typeof window !== "undefined") {
+    window.addEventListener("scroll", toggleVisible);
+  }
 
   return (
-    <button
+    <ArrowUpwardIcon
       className={styles.KeyboardArrowUpIcon}
       onClick={scrollToTop}
       style={{ display: visible ? "inline" : "none" }}

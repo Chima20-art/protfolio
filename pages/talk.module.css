@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
 .title {
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
@@ -87,4 +90,23 @@
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
   font-weight: 530;
+}
+.white{
+color:#fff;
+}
+.name{
+  display: flex;
+  direction: row;
+  justify-content: center;
+color: #8f9aa7;
+font-family: 'Raleway', sans-serif;
+font-size: "8pt";
+}
+.contactIcon{
+  cursor: pointer;
+}
+.pinkName{
+  color: aqua;
+  font-family: 'Raleway', sans-serif;
+font-size: "8pt";
 }

@@ -1,4 +1,4 @@
-import { autocompleteClasses, Grid } from "@mui/material";
+import { autocompleteClasses, Grid, Link } from "@mui/material";
 import Image from "next/dist/client/image";
 import { Button } from "@mui/material";
 import { styled } from "@mui/material/styles";
@@ -113,7 +113,7 @@ export default function Talk(props) {
         <Grid item color="#fff" className={styles.mainTitle}>
           Contact
         </Grid>
-        <Grid item fontWeight="600" fontSize={"20px"} color="#b8239f">
+        <Grid item fontWeight="600" fontSize={"20px"} color="aqua">
           {" "}
           Have a question or want to work together ?{" "}
         </Grid>
@@ -124,7 +124,13 @@ export default function Talk(props) {
           justifyContent="center"
           alignItems="center"
         >
-          <form method="POST" className={styles.form}>
+          <form
+            method="POST"
+            className={styles.form}
+            onSubmit={(e) => {
+              handleSubmit(e);
+            }}
+          >
             <input
               className={styles.normalHolder}
               id="name"
@@ -158,20 +164,72 @@ export default function Talk(props) {
               required
             />
 
-            <button
-              type="submit"
-              className={styles.submitButton}
-              onClick={(e) => {
-                handleSubmit(e);
-              }}
-            >
+            <button type="submit" className={styles.submitButton}>
               SUBMIT
             </button>
           </form>
         </Grid>
       </Grid>
-      <Grid item container backgroundColor="#2B2B2B" height="21vh">
+      <Grid
+        item
+        container
+        direction="column"
+        backgroundColor="#2B2B2B"
+        height="21vh"
+      >
         <ScrollButton />
+        <Grid
+          container
+          width="200px"
+          height="30px"
+          direction="row"
+          justifyContent="space-between"
+          margin={"auto"}
+        >
+          <Grid
+            item
+            container
+            width="40px"
+            height="40px"
+            direction={"column"}
+            justifyContent={"center"}
+            alignItems="center"
+            backgroundColor="#8f9aa7"
+            className={styles.contactIcon}
+          >
+            <EmailIcon item height="150px" className={styles.white} />
+          </Grid>
+          <Grid
+            item
+            container
+            width="40px"
+            height="40px"
+            direction={"column"}
+            justifyContent={"center"}
+            alignItems="center"
+            backgroundColor="#8f9aa7"
+            className={styles.contactIcon}
+          >
+            <LinkedInIcon item margin="20px" className={styles.white} />
+          </Grid>
+          <Grid
+            item
+            container
+            width="40px"
+            height="40px"
+            direction={"column"}
+            justifyContent={"center"}
+            alignItems="center"
+            backgroundColor="#8f9aa7"
+            className={styles.contactIcon}
+          >
+            {" "}
+            <InstagramIcon item margin="20px" className={styles.white} />
+          </Grid>
+        </Grid>
+        <Grid className={styles.name} marginBottom="10px">
+          Chaimae Michich <span className={styles.pinkName}> &nbsp; @2022</span>{" "}
+        </Grid>
       </Grid>
     </Grid>
   );
