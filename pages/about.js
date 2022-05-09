@@ -11,7 +11,7 @@ export default function About(props) {
       container
       direction="column"
       id={props.ID}
-      height="91vh"
+      height="100vh"
       justifyContent={"flex-end"}
     >
       <Grid

@@ -11,18 +11,19 @@ export default function Skills(props) {
   return (
     <Grid
       container
-      height="91vh"
+      height="100vh"
       id={props.ID}
       justifyContent="center"
-      alignContent={"center"}
+      alignContent={"flex-end"}
     >
       <Grid
+        backgroundColor="white"
         container
         md={11}
         direction="row"
-        justifyContent={"center"}
-        alignContent="center"
         height={"fit-content"}
+        justifyContent="center"
+        alignItems={"center"}
       >
         <Grid
           item
