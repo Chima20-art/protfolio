@@ -82,11 +82,12 @@ export default function Talk(props) {
       console.log("Response received");
       if (res.status === 200) {
         console.log("Response succeeded!");
-        setSubmitted(true);
-        setName("");
-        setEmail("");
-        setBody("");
       }
+
+      setSubmitted(true);
+      setName("");
+      setEmail("");
+      setMessage("");
     });
   };
 
@@ -135,6 +136,7 @@ export default function Talk(props) {
               className={styles.normalHolder}
               id="name"
               type="name"
+              value={name}
               placeholder="Name"
               onChange={(e) => {
                 setName(e.target.value);
@@ -147,6 +149,7 @@ export default function Talk(props) {
               id="email"
               type="email"
               placeholder="Email"
+              value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
               }}
@@ -158,6 +161,7 @@ export default function Talk(props) {
               id="message"
               placeholder="Your message "
               type="text"
+              value={message}
               onChange={(e) => {
                 setMessage(e.target.value);
               }}
