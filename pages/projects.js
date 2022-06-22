@@ -32,10 +32,10 @@ export default function Projects(props) {
       item
       container
       direction="column "
-      height="100vh"
+      height="92vh"
       id={props.ID}
       justifyContent="flex-end"
-      backgroundColor="red"
+     
     >
       <Grid item container backgroundColor="white">
         <Grid
