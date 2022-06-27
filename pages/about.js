@@ -4,6 +4,7 @@ import Divider from "@mui/material/Divider";
 import styles from "./about.module.css";
 import Header from "../components/header/header";
 import JobCard from "./JobCard/JobCard";
+import { Typography } from "@mui/material";
 
 export default function About(props) {
   return (
@@ -13,6 +14,7 @@ export default function About(props) {
       id={props.ID}
       height="100vh"
       justifyContent={"flex-end"}
+    
     >
       <Grid
         item
@@ -20,7 +22,8 @@ export default function About(props) {
         display={"flex"}
         flex-direction="column"
         height={"70vh"}
-        marginBottom="0px"
+        margin="auto"
+       
       >
         <Grid
           item
@@ -50,6 +53,7 @@ export default function About(props) {
             justifyContent="space-around"
             alignItems={"center"}
             direction="column"
+           
           >
             <Grid item alignSelf={"flex-start"}>
               <JobCard
@@ -79,17 +83,21 @@ export default function About(props) {
             width="fit-content"
             display="flex"
             direction="row"
-            justifyContent={"center"}
+            justifyContent={"space-between"}
             alignItems={"center"}
+            padding="100px"
           >
+            
             <Divider
               orientation="vertical"
               variant="middle"
               flexItem
-              className={styles.divider}
+              md="1"
             >
               <div className={styles.vertical}>About me</div>
             </Divider>
+           
+           
 
             <Grid
               item
