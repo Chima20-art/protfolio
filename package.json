@@ -13,6 +13,7 @@
     "@mui/icons-material": "^5.5.0",
     "@mui/material": "^5.1.1",
     "@mui/styles": "^5.1.1",
+    "@yunoek/react-page-scroller": "^2.2.1",
     "dotenv": "^16.0.0",
     "framer-motion": "^6.2.8",
     "next": "^12.1.0",

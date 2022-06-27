@@ -10,11 +10,13 @@ import Header from "../components/header/header";
 export default function Skills(props) {
   return (
     <Grid
+   
       container
       height="100vh"
       id={props.ID}
       justifyContent="center"
-      alignContent={"flex-end"}
+      alignItems={"center"}
+    
     >
       <Grid
         backgroundColor="white"
@@ -24,6 +26,7 @@ export default function Skills(props) {
         height={"fit-content"}
         justifyContent="center"
         alignItems={"center"}
+        padding="100px 0px 100px 0px"
       >
         <Grid
           item

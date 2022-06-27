@@ -20,6 +20,7 @@ export default function a(req, res) {
       html: `<div>${req.body.message}</div><p>Sent from:
       ${req.body.email}</p>`,
     };
+    console.log(mailData);
     transporter.sendMail(mailData, function (err, info) {
       if (err) console.log(err);
       else console.log(info);
@@ -28,6 +29,7 @@ export default function a(req, res) {
       status: "ok",
     });
   } catch (error) {
+    console.log(error);
     res.status(500).json({
       status: "error",
     });
