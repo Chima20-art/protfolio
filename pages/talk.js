@@ -93,18 +93,20 @@ export default function Talk(props) {
 
   return (
     <Grid
-      contain
-      item
-      height="100vh"
-      direction="column"
+      container
+      height="90vh"
       display={"flex"}
-      justifyContent={"space-between"}
+      direction="column"
+      justifyContent={"flex-end"}
+      textAlign="end"
       id={props.ID}
+      
+     
     >
       <Grid
         item
         container
-        height="79vh"
+        height="69vh"
         justifyContent={"center"}
         alignItems="center"
         display={"flex"}
@@ -180,6 +182,7 @@ export default function Talk(props) {
         direction="column"
         backgroundColor="#2B2B2B"
         height="21vh"
+       justifySelf={"end"}
       >
         <ScrollButton />
         <Grid

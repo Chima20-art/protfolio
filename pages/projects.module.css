@@ -12,3 +12,42 @@
   margin-left: 50px;
   margin-right: 50px;
 }
+.card{
+ cursor:pointer;
+ width:400px;
+  height:300px;
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.card:hover > .cardContent{
+ display: flex;
+ flex-direction: column;
+ padding:40px;
+ text-align: center;
+background-color: white;
+}
+
+
+
+.cardContent{
+
+
+position: relative;
+ top: 0;
+ left: 0;
+ color: red;
+ background-color: blue;
+ width: 400px;
+ height:300px;
+ margin-bottom: -300px;
+ z-index: 100;
+ display: none;
+ 
+}
+.cardImage{
+  width:400px;
+  height:300px;
+}

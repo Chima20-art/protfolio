@@ -1,28 +1,55 @@
-import * as React from "react";
-import Grid from "@mui/material/Grid";
-import Box from "@mui/material/Box";
-import styles from "./projects.module.css";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Image from "next/dist/client/image";
-import { useState } from "react";
-import Header from "../components/header/header";
-import { motion } from "framer-motion";
+import * as React from 'react';
+import Grid from '@mui/material/Grid';
+import Box from '@mui/material/Box';
+import styles from './projects.module.css';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Image from 'next/dist/client/image';
+import { useState } from 'react';
+import Header from '../components/header/header';
+import { motion } from 'framer-motion';
+import { Button, Typography } from '@mui/material';
 
 export default function Projects(props) {
-  const AllImgArr = [
-    "/Nordic-rose.png",
-    "/pomodoro.png",
-    "/landing-page.png",
-    "/etch-a-sketch.png",
-    "/DSI.png",
-    "/map.png",
+  const projects = [
+    {
+      title: 'Nordic rose',
+      stack: 'Nextjs/Sanity',
+      category: 'Management of an online blog',
+      githubURl: 'https://github.com/Chima20-art/blog-Next',
+      description:
+        'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
+      mainImg: '/Nordic-rose.png',
+      screenShots: [],
+    },
+    {
+      title: 'Pomodoro',
+      stack: 'React/JS',
+      category: 'Online timer',
+      githubURl: 'https://github.com/Chima20-art/pomodoro',
+      description:
+        'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
+      mainImg: '/Nordic-rose.png',
+      screenShots: [],
+    },
   ];
 
-  const reactArr = ["/landing-page.png", "/DSI.png", "/map.png"];
-  const nextArr = ["/Nordic-rose.png", "/protfolio.png"];
-  const [state, setState] = useState("all");
+  const AllImgArr = [
+    '/Nordic-rose.png',
+    '/pomodoro.png',
+    '/landing-page.png',
+    '/etch-a-sketch.png',
+    '/DSI.png',
+    '/map.png',
+  ];
+
+  const reactArr = ['/landing-page.png', '/DSI.png', '/map.png'];
+  const nextArr = ['/Nordic-rose.png', '/protfolio.png'];
+  const [state, setState] = useState('all');
   const [value, setValue] = React.useState(0);
+  const [isHovering, setIsHovering] = useState(false);
+  const onMouseOver = () => setIsHovering(true);
+  const onMouseLeave = () => setIsHovering(false);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);
@@ -35,7 +62,6 @@ export default function Projects(props) {
       height="92vh"
       id={props.ID}
       justifyContent="flex-end"
-     
     >
       <Grid item container backgroundColor="white">
         <Grid
@@ -44,12 +70,12 @@ export default function Projects(props) {
           md={10}
           padding="20px"
           margin="auto"
-          justifyContent={"center"}
-          alignContent={"flex-end"}
+          justifyContent={'center'}
+          alignContent={'flex-end'}
           className={styles.title}
         >
-          {" "}
-          Projects{" "}
+          {' '}
+          Projects{' '}
         </Grid>
 
         <Grid
@@ -57,7 +83,7 @@ export default function Projects(props) {
           container
           md={10}
           margin="auto"
-          justifyContent={"space-around"}
+          justifyContent={'space-around'}
           padding="20px"
         >
           <Tabs
@@ -71,34 +97,73 @@ export default function Projects(props) {
             <Tab
               label="All"
               className={styles.subTitle}
-              onClick={() => setState("all")}
+              onClick={() => setState('all')}
             />
             <Tab
               label="React-js"
               className={styles.subTitle}
-              onClick={() => setState("react")}
+              onClick={() => setState('react')}
             />
             <Tab
               label="Next-js"
               className={styles.subTitle}
-              onClick={() => setState("next")}
+              onClick={() => setState('next')}
             />
             <Tab
               label="Javascript"
               className={styles.subTitle}
-              onClick={() => setState("javascript")}
+              onClick={() => setState('javascript')}
             />
             {console.log(state)}
           </Tabs>
         </Grid>
         <Grid item container md={10} margin="auto" z-index="-1">
-          {state == "all" || state == "javascript"
-            ? AllImgArr.map((image) => (
-                <Grid key={image} container item md={4}>
-                  <Image src={image} width="400px" height="300px" alt="rose" />
+          {state == 'all' || state == 'javascript'
+            ? projects.map((project) => (
+                <Grid
+                  key={project}
+                  container
+                  item
+                  md={4}
+                  className={styles.card}
+                >
+                  <Grid className={styles.cardContent}>
+                    <Typography sx={{ color: 'black', fontSize: '30px' }}>
+                      {project.title}
+                    </Typography>
+                    <Typography sx={{ color: '#E31B6D', fontSize: '20px' }}>
+                      {project.stack}
+                    </Typography>
+                    <Button
+                      variant="outlined"
+                      sx={{
+                        bottom: '0px',
+                        border: ' 3px solid #E31B6D',
+                        color: 'black',
+                        borderRadius: '0px',
+                        '&:hover': {
+                          border: ' 3px solid #E31B6D',
+                          boxShadow: 'none',
+                          backgroundColor: '#E31B6D',
+                        },
+
+                        width: '200px',
+                        margin: 'auto',
+                      }}
+                    >
+                      LEARN MORE
+                    </Button>
+                  </Grid>
+                  <Image
+                    className={styles.cardImage}
+                    src={project.mainImg}
+                    width="400px"
+                    height="300px"
+                    alt="rose"
+                  />
                 </Grid>
               ))
-            : state == "react"
+            : state == 'react'
             ? reactArr.map((image) => (
                 <Grid key={image} item md={4}>
                   <Image src={image} width="400px" height="300px" alt="rose" />
@@ -109,7 +174,6 @@ export default function Projects(props) {
                   <Image src={image} width="400px" height="300px" alt="rose" />
                 </Grid>
               ))}
-          )
         </Grid>
       </Grid>
     </Grid>
