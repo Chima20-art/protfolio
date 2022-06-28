@@ -6,9 +6,7 @@ import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Image from 'next/dist/client/image';
 import { useState } from 'react';
-import Header from '../components/header/header';
-import { motion } from 'framer-motion';
-import { Button, Typography } from '@mui/material';
+import { Button, Typography, Modal } from '@mui/material';
 
 export default function Projects(props) {
   const projects = [
@@ -42,15 +40,30 @@ export default function Projects(props) {
     '/DSI.png',
     '/map.png',
   ];
+  const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: 400,
+    bgcolor: 'background.paper',
+    border: '2px solid #000',
+    boxShadow: 24,
+    p: 4,
+  };
 
   const reactArr = ['/landing-page.png', '/DSI.png', '/map.png'];
   const nextArr = ['/Nordic-rose.png', '/protfolio.png'];
   const [state, setState] = useState('all');
   const [value, setValue] = React.useState(0);
-  const [isHovering, setIsHovering] = useState(false);
-  const onMouseOver = () => setIsHovering(true);
-  const onMouseLeave = () => setIsHovering(false);
+  const [open, setOpen] = useState(false);
 
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => {
+    console.log('handleClose');
+    setOpen(false);
+    console.log('open', open);
+  };
   const handleChange = (event, newValue) => {
     setValue(newValue);
   };
@@ -63,6 +76,22 @@ export default function Projects(props) {
       id={props.ID}
       justifyContent="flex-end"
     >
+      <Modal
+        open={open}
+        onClose={handleClose}
+        aria-labelledby="modal-modal-title"
+        aria-describedby="modal-modal-description"
+      >
+        <Box sx={style}>
+          <Typography id="modal-modal-title" variant="h6" component="h2">
+            Text in a modal
+          </Typography>
+          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+          </Typography>
+          <Button onClick={handleClose}>Close Modal</Button>
+        </Box>
+      </Modal>
       <Grid item container backgroundColor="white">
         <Grid
           item
@@ -136,6 +165,7 @@ export default function Projects(props) {
                     </Typography>
                     <Button
                       variant="outlined"
+                      onClick={handleOpen}
                       sx={{
                         bottom: '0px',
                         border: ' 3px solid #E31B6D',
@@ -145,13 +175,14 @@ export default function Projects(props) {
                           border: ' 3px solid #E31B6D',
                           boxShadow: 'none',
                           backgroundColor: '#E31B6D',
+                          color: 'white',
                         },
 
                         width: '200px',
                         margin: 'auto',
                       }}
                     >
-                      LEARN MORE
+                      Learn more
                     </Button>
                   </Grid>
                   <Image
