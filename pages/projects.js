@@ -42,14 +42,14 @@ export default function Projects(props) {
   ];
   const style = {
     position: 'absolute',
-    top: '50%',
+    top: '25%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: 400,
+    width: '47vw',
+    height: '100vh',
     bgcolor: 'background.paper',
     border: '2px solid #000',
     boxShadow: 24,
-    p: 4,
   };
 
   const reactArr = ['/landing-page.png', '/DSI.png', '/map.png'];
@@ -57,7 +57,6 @@ export default function Projects(props) {
   const [state, setState] = useState('all');
   const [value, setValue] = React.useState(0);
   const [open, setOpen] = useState(false);
-
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     console.log('handleClose');
@@ -76,17 +75,26 @@ export default function Projects(props) {
       id={props.ID}
       justifyContent="flex-end"
     >
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-          <Typography id="modal-modal-title" variant="h6" component="h2">
-            Text in a modal
+      <Modal open={open} onClose={handleClose}>
+        <Box sx={style} container direction="column">
+          <Grid
+            container
+            item
+            sx={{ width: '100%', height: '60%', backgroundColor: 'red' }}
+          >
+            <Image
+              src="/Nordic-rose.png"
+              layout="fill"
+              alt="nordic rose"
+              objectFit="contain"
+            />
+          </Grid>
+
+          <Typography item backgroundColor="blue" marginTop={'250px'}>
+            Nordic Rose
           </Typography>
-          <Typography id="modal-modal-description" sx={{ mt: 2 }}>
+
+          <Typography item id="modal-modal-description" sx={{ mt: 2 }}>
             Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
           </Typography>
           <Button onClick={handleClose}>Close Modal</Button>
