@@ -42,8 +42,9 @@ export default function Projects(props) {
   ];
   const style = {
     position: 'absolute',
-    top: '25%',
+    marginTop: '20%',
     left: '50%',
+    top: '50px',
     transform: 'translate(-50%, -50%)',
     width: '47vw',
     height: '100vh',
@@ -80,24 +81,69 @@ export default function Projects(props) {
           <Grid
             container
             item
-            sx={{ width: '100%', height: '60%', backgroundColor: 'red' }}
+            sx={{
+              position: 'relative',
+              width: '100%',
+              height: '75%',
+              backgroundColor: 'red',
+            }}
           >
-            <Image
-              src="/Nordic-rose.png"
-              layout="fill"
-              alt="nordic rose"
-              objectFit="contain"
-            />
+            <Image src="/Nordic-rose.png" layout="fill" alt="nordic rose" />
           </Grid>
+          <Box sx={{ padding: '45px 95px 25px 25px' }}>
+            <Typography item sx={{ fontSize: '22pt', lineHeight: '30pt' }}>
+              Nordic Rose
+            </Typography>
+            <Typography
+              item
+              id="modal-modal-description"
+              sx={{
+                fontSize: '11pt',
+                color: ' #c0c0c0',
+                textTransform: 'uppercase',
+                fontWeight: 'bold',
+                paddingBottom: '15px',
+                borderBottom: 'solid 1px #c0c0c0 ',
+              }}
+            >
+              Online blog{' '}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: '11pt',
+                padding: '15px 0px',
+                lineHeight: '18pt',
+                color: '#444',
+                marginBottom: '15px',
+              }}
+            >
+              ChowNow is a commission-free online ordering system and food
+              ordering app helping restaurants feed their hungry customers.
+            </Typography>
+            <Button
+              variant="outlined"
+              onClick={handleClose}
+              sx={{
+                width: '147px',
+                height: '38px',
+                bottom: '0px',
+                border: ' 3px solid #E31B6D',
+                color: 'white',
+                backgroundColor: '#E31B6D',
+                borderRadius: '0px',
+                '&:hover': {
+                  border: ' 3px solid #E31B6D',
+                  boxShadow: 'none',
+                  backgroundColor: '#E31B6D',
+                  color: 'white',
+                },
 
-          <Typography item backgroundColor="blue" marginTop={'250px'}>
-            Nordic Rose
-          </Typography>
-
-          <Typography item id="modal-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
-          </Typography>
-          <Button onClick={handleClose}>Close Modal</Button>
+                margin: 'auto',
+              }}
+            >
+              Close
+            </Button>
+          </Box>
         </Box>
       </Modal>
       <Grid item container backgroundColor="white">
@@ -185,7 +231,6 @@ export default function Projects(props) {
                           backgroundColor: '#E31B6D',
                           color: 'white',
                         },
-
                         width: '200px',
                         margin: 'auto',
                       }}
