@@ -20,10 +20,9 @@ export default function Projects(props) {
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/Nordic-rose.png',
       screenShots: [
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
+        { original: '/Nordic-rose.png' },
+        { original: '/Nordic-rose.png' },
+        { original: '/Nordic-rose.png' },
       ],
     },
     {
@@ -35,10 +34,9 @@ export default function Projects(props) {
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/pomodoro.png',
       screenShots: [
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
+        { original: '/pomodoro.png' },
+        { original: '/pomodoro.png' },
+        { original: '/pomodoro.png' },
       ],
     },
     {
@@ -50,10 +48,9 @@ export default function Projects(props) {
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/landing-page.png',
       screenShots: [
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
+        { original: '/landing-page.png' },
+        { original: '/landing-page.png' },
+        { original: '/landing-page.png' },
       ],
     },
     {
@@ -65,10 +62,9 @@ export default function Projects(props) {
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/DSI.png',
       screenShots: [
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
+        { original: '/DSI.png' },
+        { original: '/DSI.png' },
+        { original: '/DSI.png' },
       ],
     },
     {
@@ -80,10 +76,9 @@ export default function Projects(props) {
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/etch-a-sketch.png',
       screenShots: [
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
-        '/Nordic-rose.png',
+        { original: '/etch-a-sketch.png' },
+        { original: '/etch-a-sketch.png' },
+        { original: '/etch-a-sketch.png' },
       ],
     },
   ];
@@ -114,7 +109,6 @@ export default function Projects(props) {
     top: '15%',
     transform: 'translate(-50%, -50%)',
     width: '47vw',
-    height: '95vh',
     backgroundColor: 'white',
     border: '2px solid #000',
     boxShadow: 24,
@@ -127,8 +121,6 @@ export default function Projects(props) {
   const [value, setValue] = React.useState(0);
   const [open, setOpen] = useState(false);
   const [data, setData] = useState({});
-  const [title, setTitle] = useState();
-  const [mainImg, setMainImg] = useState();
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     console.log('handleClose');
@@ -167,15 +159,15 @@ export default function Projects(props) {
             sx={{
               position: 'relative',
               width: '100%',
-              height: '55%',
+              height: '50%',
             }}
           >
             <ImageGallery
-              items={images}
+              items={data?.screenShots}
               showPlayButton={false}
               backgroundColor="red"
               showThumbnails="false"
-              showFullscreenButton="false"
+              showFullscreenButton={false}
             />
           </Grid>
           <Box sx={{ padding: '45px 95px 25px 25px' }}>
@@ -211,9 +203,9 @@ export default function Projects(props) {
               variant="outlined"
               onClick={handleClose}
               sx={{
-                width: '147px',
-                height: '38px',
+                width: 'fit-content',
                 bottom: '0px',
+                padding: '10px',
                 border: ' 3px solid #E31B6D',
                 color: 'white',
                 backgroundColor: '#E31B6D',
@@ -227,7 +219,7 @@ export default function Projects(props) {
                 margin: 'auto',
               }}
             >
-              Close
+              view website
             </Button>
           </Box>
         </Box>
