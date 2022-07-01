@@ -1,22 +1,22 @@
 export default function a(req, res) {
-  require("dotenv").config();
+  require('dotenv').config();
 
   try {
-    let nodemailer = require("nodemailer");
+    let nodemailer = require('nodemailer');
     const transporter = nodemailer.createTransport({
       port: 465,
-      host: "smtp.gmail.com",
+      host: 'smtp.gmail.com',
       auth: {
-        user: "chaimaemichich@gmail.com",
+        user: 'chaimaemichich@gmail.com',
         pass: process.env.password,
       },
       secure: true,
     });
     const mailData = {
-      from: "demo email",
-      to: "chaimaemichich@gmail.com",
+      from: 'demo email',
+      to: 'chaimaemichich@gmail.com',
       subject: `Message From ${req.body.name}`,
-      text: req.body.message + " | Sent from: " + req.body.email,
+      text: req.body.message + ' | Sent from: ' + req.body.email,
       html: `<div>${req.body.message}</div><p>Sent from:
       ${req.body.email}</p>`,
     };
@@ -26,12 +26,12 @@ export default function a(req, res) {
       else console.log(info);
     });
     res.status(200).json({
-      status: "ok",
+      status: 'ok',
     });
   } catch (error) {
     console.log(error);
     res.status(500).json({
-      status: "error",
+      status: 'error',
     });
   }
 }

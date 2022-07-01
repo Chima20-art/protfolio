@@ -149,7 +149,7 @@ export default function Projects(props) {
       direction="column "
       height="92vh"
       id={props.ID}
-      justifyContent="flex-end"
+      justifyContent="center"
     >
       <Modal open={open} onClose={handleClose}>
         <Box sx={style} container direction="column">
