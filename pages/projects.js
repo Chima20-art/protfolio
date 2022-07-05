@@ -8,6 +8,7 @@ import Image from 'next/dist/client/image';
 import { useState } from 'react';
 import { Button, Typography, Modal } from '@mui/material';
 import ImageGallery from 'react-image-gallery';
+import Link from 'next/link';
 
 export default function Projects(props) {
   const projects = [
@@ -15,7 +16,7 @@ export default function Projects(props) {
       title: 'Nordic rose',
       stack: 'Next/JS',
       category: 'Management of an online blog',
-      githubURl: 'https://github.com/Chima20-art/blog-Next',
+      githubURl: ' https://chaimae-blog.vercel.app ',
       description:
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/Nordic-rose.png',
@@ -199,28 +200,28 @@ export default function Projects(props) {
             >
               {data.description}
             </Typography>
-            <Button
-              variant="outlined"
-              onClick={handleClose}
-              sx={{
-                width: 'fit-content',
-                bottom: '0px',
-                padding: '10px',
-                border: ' 3px solid #E31B6D',
-                color: 'white',
-                backgroundColor: '#E31B6D',
-                borderRadius: '0px',
-                '&:hover': {
+            <Link href={data?.githubURl} passHref>
+              <Typography
+                sx={{
+                  width: 'fit-content',
+                  bottom: '0px',
+                  padding: '10px',
                   border: ' 3px solid #E31B6D',
-                  boxShadow: 'none',
-                  backgroundColor: '#E31B6D',
                   color: 'white',
-                },
-                margin: 'auto',
-              }}
-            >
-              view website
-            </Button>
+                  backgroundColor: '#E31B6D',
+                  borderRadius: '0px',
+                  '&:hover': {
+                    border: ' 3px solid #E31B6D',
+                    boxShadow: 'none',
+                    backgroundColor: '#E31B6D',
+                    color: 'white',
+                  },
+                  margin: 'auto',
+                }}
+              >
+                view website
+              </Typography>
+            </Link>
           </Box>
         </Box>
       </Modal>
