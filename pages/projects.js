@@ -84,7 +84,7 @@ export default function Projects(props) {
     },
     {
       title: 'Student Forum',
-      stack: 'JS',
+      stack: 'Next/JS',
       category: 'University students ideas forum innovation ',
       githubURl: 'https://student-forum.vercel.app',
       description:
