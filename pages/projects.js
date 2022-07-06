@@ -30,7 +30,7 @@ export default function Projects(props) {
       title: 'Pomodoro',
       stack: 'React/JS',
       category: 'Online timer',
-      githubURl: 'https://github.com/Chima20-art/pomodoro',
+      githubURl: 'https://pomodoro-chima20-art.vercel.app',
       description:
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/pomodoro.png',
@@ -58,7 +58,7 @@ export default function Projects(props) {
       title: 'DSI user interface',
       stack: 'React/JS',
       category: 'DSI website',
-      githubURl: 'https://github.com/Chima20-art/community',
+      githubURl: 'https://community-chima20-art.vercel.app/client',
       description:
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/DSI.png',
@@ -72,7 +72,7 @@ export default function Projects(props) {
       title: 'Etch a Sketch',
       stack: 'JS',
       category: 'etch a sketch game',
-      githubURl: 'https://github.com/Chima20-art/etch-a-sketch',
+      githubURl: 'https://etch-a-sketch-kohl.vercel.app',
       description:
         'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
       mainImg: '/etch-a-sketch.png',
@@ -80,6 +80,20 @@ export default function Projects(props) {
         { original: '/etch-a-sketch.png' },
         { original: '/etch-a-sketch.png' },
         { original: '/etch-a-sketch.png' },
+      ],
+    },
+    {
+      title: 'Student Forum',
+      stack: 'JS',
+      category: 'University students ideas forum innovation ',
+      githubURl: 'https://student-forum.vercel.app',
+      description:
+        'MyStand is a crowd-funding, media sharing website, that has you donating actions instead of money out of your pocket. Single page App built with Node.js on Sails and Angular 2.0. Features social media sharing and large scale crowd-funding.',
+      mainImg: '/studentforum1.png',
+      screenShots: [
+        { original: '/studentforum1.png' },
+        { original: '/studentforum1.png' },
+        { original: '/studentforum1.png' },
       ],
     },
   ];
