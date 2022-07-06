@@ -180,7 +180,6 @@ export default function Projects(props) {
             <ImageGallery
               items={data?.screenShots}
               showPlayButton={false}
-              backgroundColor="red"
               showThumbnails="false"
               showFullscreenButton={false}
             />
@@ -291,7 +290,14 @@ export default function Projects(props) {
             {console.log(state)}
           </Tabs>
         </Grid>
-        <Grid item container md={10} margin="auto" z-index="-1">
+        <Grid
+          item
+          container
+          md={10}
+          margin="auto"
+          z-index="-1"
+          justifyContent="center"
+        >
           {projects
             .filter((item) => {
               if (state == 'all') return true;
