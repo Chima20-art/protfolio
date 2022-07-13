@@ -10,7 +10,6 @@ import Projects from './projects';
 import Talk from './talk';
 import ReactPageScroller from '@yunoek/react-page-scroller';
 import { useState } from 'react';
-
 export default function Homy() {
   const [currentPage, setCurrentPage] = useState(0);
   const [hideHeader, setHideHeader] = useState(true);

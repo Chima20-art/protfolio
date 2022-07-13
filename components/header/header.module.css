@@ -7,10 +7,14 @@
   background-color: rgb(8, 8, 8);
 }
 .pageButton {
-  color: white;
+  color: black;
+}
+.pageButton:hover{
+
+  background-color: antiquewhite;
 }
 .selectedPageButton {
-  background-color: #585051;
+  background-color: "white";
   color: black;
 }
 

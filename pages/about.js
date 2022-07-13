@@ -1,10 +1,10 @@
-import Grid from "@mui/material/Grid";
-import Image from "next/image";
-import Divider from "@mui/material/Divider";
-import styles from "./about.module.css";
-import Header from "../components/header/header";
-import JobCard from "./JobCard/JobCard";
-import { Typography } from "@mui/material";
+import Grid from '@mui/material/Grid';
+import Image from 'next/image';
+import Divider from '@mui/material/Divider';
+import styles from './about.module.css';
+import Header from '../components/header/header';
+import JobCard from './JobCard/JobCard';
+import { Typography } from '@mui/material';
 
 export default function About(props) {
   return (
@@ -13,26 +13,24 @@ export default function About(props) {
       direction="column"
       id={props.ID}
       height="100vh"
-      justifyContent={"flex-end"}
-    
+      justifyContent={'flex-end'}
     >
       <Grid
         item
         container
-        display={"flex"}
+        display={'flex'}
         flex-direction="column"
-        height={"70vh"}
+        height={'70vh'}
         margin="auto"
-       
       >
         <Grid
           item
           container
-          display={"flex"}
+          display={'flex'}
           flex-direction="row"
-          justifyContent={"center"}
+          justifyContent={'center'}
           alignItems="flex-end"
-          textAlign={"center"}
+          textAlign={'center'}
           className={styles.mainTitle}
           marginBottom="20px"
         >
@@ -40,7 +38,7 @@ export default function About(props) {
         </Grid>
 
         <Grid
-          justifyContent={"center"}
+          justifyContent={'center'}
           item
           container
           direction="row"
@@ -51,11 +49,10 @@ export default function About(props) {
             item
             container
             justifyContent="space-around"
-            alignItems={"center"}
+            alignItems={'center'}
             direction="column"
-           
           >
-            <Grid item alignSelf={"flex-start"}>
+            <Grid item alignSelf={'flex-start'}>
               <JobCard
                 title="Javascript developer"
                 description="Creative websites for you."
@@ -67,7 +64,7 @@ export default function About(props) {
                 description="Creative websites for you"
               />
             </Grid>
-            <Grid item alignSelf={"flex-end"}>
+            <Grid item alignSelf={'flex-end'}>
               <JobCard
                 title="Freelancer"
                 description="Hire me now."
@@ -83,28 +80,20 @@ export default function About(props) {
             width="fit-content"
             display="flex"
             direction="row"
-            justifyContent={"space-between"}
-            alignItems={"center"}
+            justifyContent={'space-between'}
+            alignItems={'center'}
             padding="100px"
           >
-            
-            <Divider
-              orientation="vertical"
-              variant="middle"
-              flexItem
-              md="1"
-            >
+            <Divider orientation="vertical" variant="middle" flexItem md="1">
               <div className={styles.vertical}>About me</div>
             </Divider>
-           
-           
 
             <Grid
               item
               container
               direction="column"
-              width={"fit-content"}
-              marginLeft={"0px"}
+              width={'fit-content'}
+              marginLeft={'0px'}
             >
               <Grid
                 item
@@ -121,9 +110,9 @@ export default function About(props) {
                 margin="auto"
                 marginLeft="0px"
                 marginTop="0px"
-                marginBottom={"30px"}
+                marginBottom={'30px'}
               >
-                I can help you{" "}
+                I can help you{' '}
               </Grid>
               <Grid
                 item
@@ -138,7 +127,7 @@ export default function About(props) {
                 passionate about building excellent software that improves the
                 lives of those around me.  I have serious passion for UI
                 effects, animations and creating intuitive, dynamic user
-                experiences. Lets make something special.{" "}
+                experiences. Lets make something special.{' '}
               </Grid>
             </Grid>
           </Grid>

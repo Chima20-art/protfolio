@@ -84,16 +84,17 @@
     position: sticky; 
    top: 0px;
   }
-  .RalewayFont:hover{
+.RalewayFont:hover{
     background-color: #171717;
   }
   
-  .RalewayFont:hover .on{
+.RalewayFont:hover .forward{
 display: none;
   }
-  .off{
-    display:none
-  }
-.RalewayFont:hover .off{
-  display: flex;
+ 
+.RalewayFont .downward{
+  display: none;
+}
+.RalewayFont:hover .downward{
+  display:flex;
 }
