@@ -108,8 +108,6 @@ export default function Home() {
       className={styles.parent}
     >
       <Grid
-        height="100vh"
-        width="100vw"
         container
         direction={'column'}
         justifyContent={'center'}
@@ -142,15 +140,17 @@ export default function Home() {
             },
           }}
         >
-          <Grid item color="white">
-            Hello, Im&nbsp;
-            <span className={styles.highlight}> Chaimae Michich.</span>
-          </Grid>
-          <Grid item color="white">
-            Im a web developer.
-          </Grid>
-          <Grid item color="white">
-            Welcome to my world 👋.
+          <Grid
+            item
+            sx={{
+              color: {
+                xs: 'white',
+                md: 'green',
+              },
+            }}
+          >
+            Hello, Im&nbsp; Chaimae Michich Im a web developer. Welcome to my
+            world 👋.
           </Grid>
 
           <Link href="#about" passHref>
