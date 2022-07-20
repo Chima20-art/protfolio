@@ -19,6 +19,7 @@ export default function About(props) {
         item
         container
         display={'flex'}
+        direction="column"
         margin="auto"
       >
         <Grid
@@ -38,7 +39,6 @@ export default function About(props) {
         <Grid
           sx={{
             flexDirection: { sx: 'column', md: 'row' },
-            height: { md: '70%' },
           }}
           justifyContent={'center'}
           item

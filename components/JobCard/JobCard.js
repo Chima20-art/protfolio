@@ -8,7 +8,6 @@ export default function JobCard(props) {
   return (
     <Grid
       sx={{
-        margin: { xs: '20px 0px' },
         height: { md: '100px', xs: '88px' },
         width: { md: '300px', xs: '300px' },
       }}
@@ -26,20 +25,18 @@ export default function JobCard(props) {
       className={styles.pointer}
     >
       <Grid
-        sx={{ backgroundColor: 'green', margin: { xs: '2px', md: '17px' } }}
+        sx={{ margin: { xs: '2px', md: '17px' } }}
         item
         container
         direction="column"
         justifyContent="center"
         md={1}
-        xs={1}
         width="fit-content"
       >
-        <CheckCircleIcon sx={{ fontSize: { md: 'large', xs: '25px' } }} />
+        <CheckCircleIcon sx={{ fontSize: { md: 'large', xs: 'large' } }} />
       </Grid>
 
       <Grid
-        sx={{ backgroundColor: 'purple' }}
         item
         container
         direction="column"
