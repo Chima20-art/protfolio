@@ -5,9 +5,9 @@
 }
 .title {
   font-size: 36px;
-  font-style: "Bebas Neue", cursive;
+ 
   font-family: "M PLUS Code Latin", sans-serif;
-  font-weight: 530;
+  /*font-weight: 530;*/
 }
 .img {
   object-fit: contain;
@@ -16,7 +16,7 @@
 .paragraph {
   font-style: "Bebas Neue", cursive;
   font-family: "M PLUS Code Latin", sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   color: rgb(122, 126, 126);
   line-height: 27px;
 }

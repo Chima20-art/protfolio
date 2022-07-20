@@ -10,24 +10,22 @@ export default function About(props) {
   return (
     <Grid
       container
-      direction="column"
       id={props.ID}
-      height="100vh"
+      sx={{ height: { md: '100vh', xs: '100%' } }}
       justifyContent={'flex-end'}
     >
       <Grid
+        sx={{ height: { md: '70vh' } }}
         item
         container
         display={'flex'}
-        flex-direction="column"
-        height={'70vh'}
         margin="auto"
       >
         <Grid
           item
           container
           display={'flex'}
-          flex-direction="row"
+          direction="row"
           justifyContent={'center'}
           alignItems="flex-end"
           textAlign={'center'}
@@ -38,13 +36,16 @@ export default function About(props) {
         </Grid>
 
         <Grid
+          sx={{
+            flexDirection: { sx: 'column', md: 'row' },
+            height: { md: '70%' },
+          }}
           justifyContent={'center'}
           item
           container
-          direction="row"
-          height="70%"
         >
           <Grid
+            sx={{ display: { xs: 'none', md: 'flex' } }}
             md="4"
             item
             container
@@ -74,6 +75,9 @@ export default function About(props) {
             </Grid>
           </Grid>
           <Grid
+            sx={{
+              padding: { xs: '20px', md: '100px' },
+            }}
             md="5"
             item
             container
@@ -82,22 +86,37 @@ export default function About(props) {
             direction="row"
             justifyContent={'space-between'}
             alignItems={'center'}
-            padding="100px"
           >
-            <Divider orientation="vertical" variant="middle" flexItem md="1">
+            <Divider
+              orientation="vertical"
+              variant="middle"
+              flexItem
+              md="1"
+              sx={{ display: { xs: 'none', md: 'flex' } }}
+            >
               <div className={styles.vertical}>About me</div>
             </Divider>
 
             <Grid
+              sx={{
+                width: 'fit-content',
+
+                width: { xs: '100vw', md: 'fit-content' },
+                padding: '20px',
+              }}
               item
               container
               direction="column"
               width={'fit-content'}
-              marginLeft={'0px'}
+              margin="20px"
             >
               <Grid
                 item
-                className={styles.title}
+                sx={{
+                  fontSize: { md: '36px', xs: '26px' },
+                  fontWeight: { md: '530', xs: '530' },
+                  fontFamily: 'M PLUS Code Latin, sans-serif',
+                }}
                 margin="auto"
                 marginLeft="0px"
                 marginBottom="10px"
@@ -106,7 +125,11 @@ export default function About(props) {
               </Grid>
               <Grid
                 item
-                className={styles.title}
+                sx={{
+                  fontSize: { md: '34px', xs: '25px' },
+                  fontWeight: { md: '530', xs: '530' },
+                  fontFamily: 'M PLUS Code Latin, sans-serif',
+                }}
                 margin="auto"
                 marginLeft="0px"
                 marginTop="0px"
@@ -117,7 +140,7 @@ export default function About(props) {
               <Grid
                 item
                 className={styles.paragraph}
-                width="500px"
+                sx={{ width: { xs: '90vw', md: '500px' } }}
                 margin="auto"
                 marginLeft="0px"
               >

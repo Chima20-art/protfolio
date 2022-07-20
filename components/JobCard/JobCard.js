@@ -2,14 +2,18 @@ import styles from '../home/home.module.css';
 import Grid from '@mui/material/Grid';
 import CheckCircleIcon from '@mui/icons-material/CheckCircle';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { Typography } from '@mui/material';
 
 export default function JobCard(props) {
   return (
     <Grid
+      sx={{
+        margin: { xs: '20px 0px' },
+        height: { md: '100px', xs: '88px' },
+        width: { md: '300px', xs: '300px' },
+      }}
       container
       direction="row"
-      width="300px"
-      height="100px"
       boxShadow="3"
       borderRadius="5px"
       padding="5px"
@@ -22,28 +26,33 @@ export default function JobCard(props) {
       className={styles.pointer}
     >
       <Grid
+        sx={{ backgroundColor: 'green', margin: { xs: '2px', md: '17px' } }}
         item
         container
         direction="column"
         justifyContent="center"
         md={1}
+        xs={1}
         width="fit-content"
-        margin="17px"
       >
-        <CheckCircleIcon fontSize="large" />
+        <CheckCircleIcon sx={{ fontSize: { md: 'large', xs: '25px' } }} />
       </Grid>
 
       <Grid
+        sx={{ backgroundColor: 'purple' }}
         item
         container
         direction="column"
-        margin="auto"
         justifyContent="center"
         textAlign="flex-start"
         md={8}
+        xs={9}
       >
-        <div className={styles.cardsTitle}> {props.title}</div>
-        <div className={styles.cardsParagraph}> {props.description} </div>
+        <Typography className={styles.cardsTitle}> {props.title}</Typography>
+        <Typography className={styles.cardsParagraph}>
+          {' '}
+          {props.description}{' '}
+        </Typography>
       </Grid>
       <Grid
         item
