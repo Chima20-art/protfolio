@@ -96,7 +96,7 @@ const BootstrapBlackButton = styled(Button)({
   )
 }); */
 
-export default function Home({ clicked, setClicked }) {
+export default function Home({ setCurrentPage }) {
   return (
     <Grid
       container
@@ -151,34 +151,32 @@ export default function Home({ clicked, setClicked }) {
             world 👋.
           </Grid>
 
-          <Link href="#about" passHref>
-            <Grid
-              item
-              container
-              sx={{
-                color: 'white',
-                height: '10px',
-                padding: '30px',
-                border: { xs: 'solid 2px white', md: 'solid 4px white' },
-              }}
-              justifyContent={'center'}
-              textAlign={'center'}
-              alignContent={'center'}
-              margin="auto"
-              width={'fit-content'}
-              cursor={'pointer'}
-              marginTop={'70px'}
-              className={styles.RalewayFont}
-              onClick={() => setClicked(true)}
-              color="white"
-            >
-              <Grid item color="white">
-                View My Work &nbsp;{' '}
-              </Grid>
-              <ArrowForwardIcon color="#ffff" item className={styles.forward} />
-              <ArrowDownwardIcon item className={styles.downward} />
+          <Grid
+            item
+            container
+            sx={{
+              color: 'white',
+              height: '10px',
+              padding: '30px',
+              border: { xs: 'solid 2px white', md: 'solid 4px white' },
+            }}
+            justifyContent={'center'}
+            textAlign={'center'}
+            alignContent={'center'}
+            margin="auto"
+            width={'fit-content'}
+            cursor={'pointer'}
+            marginTop={'70px'}
+            className={styles.RalewayFont}
+            onClick={() => setCurrentPage(1)}
+            color="white"
+          >
+            <Grid item color="white">
+              View My Work &nbsp;{' '}
             </Grid>
-          </Link>
+            <ArrowForwardIcon color="#ffff" item className={styles.forward} />
+            <ArrowDownwardIcon item className={styles.downward} />
+          </Grid>
         </motion.Grid>
       </Grid>
     </Grid>

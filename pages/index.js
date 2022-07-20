@@ -40,7 +40,11 @@ export default function Homy(props) {
         onBeforePageScroll={onBeforePageScroll}
         customPageNumber={currentPage}
       >
-        <Home clicked={clicked} setClicked={setClicked} />
+        <Home
+          clicked={clicked}
+          setClicked={setClicked}
+          setCurrentPage={setCurrentPage}
+        />
         <About ID="about" />
         <Skills ID="skills" />
         <Projects ID="projects" />
