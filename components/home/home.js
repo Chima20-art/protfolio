@@ -8,12 +8,12 @@ import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 import Link from 'next/link';
 import { useState } from 'react';
 import { color } from '@mui/system';
-import About from '../about';
-import Skills from '../skills';
-import Projects from '../projects';
-import Talk from '../talk';
+import About from '../../pages/about';
+import Skills from '../../pages/skills';
+import Projects from '../../pages/projects';
+import Talk from '../../pages/talk';
 import { motion } from 'framer-motion';
-import Header from '../../components/header/header';
+import Header from '../header/header';
 
 const BootstrapGreenButton = styled(Button)({
   boxShadow: 'none',
@@ -96,9 +96,7 @@ const BootstrapBlackButton = styled(Button)({
   )
 }); */
 
-export default function Home() {
-  const [clicked, setClicked] = useState('notclicked');
-
+export default function Home({ clicked, setClicked }) {
   return (
     <Grid
       container
@@ -143,10 +141,10 @@ export default function Home() {
           <Grid
             item
             sx={{
-              color: {
-                xs: 'white',
-                md: 'green',
-              },
+              color: 'white',
+              width: { xs: '80vw', md: '50vw' },
+              fontSize: { xs: '24px', md: '44px' },
+              lineHeight: '40px',
             }}
           >
             Hello, Im&nbsp; Chaimae Michich Im a web developer. Welcome to my
@@ -157,24 +155,26 @@ export default function Home() {
             <Grid
               item
               container
-              height="52px"
-              border="solid 4px white"
+              sx={{
+                color: 'white',
+                height: '10px',
+                padding: '30px',
+                border: { xs: 'solid 2px white', md: 'solid 4px white' },
+              }}
               justifyContent={'center'}
               textAlign={'center'}
               alignContent={'center'}
-              padding="30px"
               margin="auto"
               width={'fit-content'}
               cursor={'pointer'}
               marginTop={'70px'}
               className={styles.RalewayFont}
-              onClick={() => setClicked('clicked')}
+              onClick={() => setClicked(true)}
               color="white"
             >
               <Grid item color="white">
                 View My Work &nbsp;{' '}
               </Grid>
-
               <ArrowForwardIcon color="#ffff" item className={styles.forward} />
               <ArrowDownwardIcon item className={styles.downward} />
             </Grid>

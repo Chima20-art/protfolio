@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Divider from '@mui/material/Divider';
 import styles from './about.module.css';
 import Header from '../components/header/header';
-import JobCard from './JobCard/JobCard';
+import JobCard from '../components/JobCard/JobCard';
 import { Typography } from '@mui/material';
 
 export default function About(props) {

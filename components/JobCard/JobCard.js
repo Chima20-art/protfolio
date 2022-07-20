@@ -1,7 +1,7 @@
-import styles from "../home/home.module.css";
-import Grid from "@mui/material/Grid";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
-import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import styles from '../home/home.module.css';
+import Grid from '@mui/material/Grid';
+import CheckCircleIcon from '@mui/icons-material/CheckCircle';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 export default function JobCard(props) {
   return (
