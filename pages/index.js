@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../components/home/home.module.css';
-import Header from '../components/header/header.js';
+import Header from '../components/header/appBar';
 import Home from '../components/home/home';
 import { motion } from 'framer-motion';
 import About from './about';
