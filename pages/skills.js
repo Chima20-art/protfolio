@@ -10,7 +10,6 @@ import Header from '../components/header/header';
 export default function Skills(props) {
   return (
     <Grid
-      sx={{ backgroundColor: 'blue' }}
       container
       height="100vh"
       id={props.ID}
@@ -28,7 +27,6 @@ export default function Skills(props) {
         padding="100px 0px 100px 0px"
       >
         <Grid
-          sx={{ backgroundColor: 'blue' }}
           item
           container
           display={'flex'}

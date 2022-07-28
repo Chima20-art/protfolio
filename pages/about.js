@@ -14,7 +14,6 @@ export default function About(props) {
       sx={{
         width: '100vw',
         height: { md: '100vh', xs: 'fit-content' },
-        backgroundColor: 'red',
       }}
       justifyContent={'flex-end'}
     >
