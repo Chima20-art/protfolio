@@ -1,41 +1,41 @@
-import { Grid } from "@mui/material";
-import Divider from "@mui/material/Divider";
-import styles from "./skills.module.css";
-import Image from "next/image";
-import { Box } from "@mui/system";
-import { shadows } from "@mui/system";
-import { grey } from "@mui/material/colors";
-import Header from "../components/header/header";
+import { Grid } from '@mui/material';
+import Divider from '@mui/material/Divider';
+import styles from './skills.module.css';
+import Image from 'next/image';
+import { Box } from '@mui/system';
+import { shadows } from '@mui/system';
+import { grey } from '@mui/material/colors';
+import Header from '../components/header/header';
 
 export default function Skills(props) {
   return (
     <Grid
-   
+      sx={{ backgroundColor: 'blue' }}
       container
       height="100vh"
       id={props.ID}
       justifyContent="center"
-      alignItems={"center"}
-    
+      alignItems={'center'}
     >
       <Grid
         backgroundColor="white"
         container
         md={11}
         direction="row"
-        height={"fit-content"}
+        height={'fit-content'}
         justifyContent="center"
-        alignItems={"center"}
+        alignItems={'center'}
         padding="100px 0px 100px 0px"
       >
         <Grid
+          sx={{ backgroundColor: 'blue' }}
           item
           container
-          display={"flex"}
+          display={'flex'}
           flex-direction="row"
-          justifyContent={"center"}
+          justifyContent={'center'}
           alignItems="center"
-          textAlign={"center"}
+          textAlign={'center'}
           className={styles.mainTitle}
         >
           Skills
@@ -217,7 +217,7 @@ export default function Skills(props) {
             backgroundColor="white"
             height="200px"
             boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
-            borderRadius={"10px"}
+            borderRadius={'10px'}
             justifyContent="space-around"
             alignContent="center"
           >
@@ -260,9 +260,9 @@ export default function Skills(props) {
             margin="20px"
             backgroundColor="white"
             height="200px"
-            marginTop={"50px"}
+            marginTop={'50px'}
             boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
-            borderRadius={"10px"}
+            borderRadius={'10px'}
             justifyContent="space-around"
             alignContent="center"
           >
@@ -293,7 +293,7 @@ export default function Skills(props) {
                 textAlign="center"
                 className={styles.paragraphCard}
               >
-                Strong preference for easy to use, intuitive UX/UI.{" "}
+                Strong preference for easy to use, intuitive UX/UI.{' '}
               </Grid>
             </Grid>
           </Grid>
@@ -308,7 +308,7 @@ export default function Skills(props) {
             backgroundColor="white"
             height="200px"
             boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
-            borderRadius={"10px"}
+            borderRadius={'10px'}
             justifyContent="space-around"
             alignContent="center"
           >
@@ -354,9 +354,9 @@ export default function Skills(props) {
             marginLeft="20px"
             marginRight="20px"
             height="200px"
-            marginTop={"50px"}
+            marginTop={'50px'}
             boxShadow="rgba(0, 0, 0, 0.16) 0px 1px 4px"
-            borderRadius={"10px"}
+            borderRadius={'10px'}
             padding="30px"
             justifyContent="center"
             alignContent="center"
@@ -369,7 +369,7 @@ export default function Skills(props) {
               direction="row"
               justifyContent="center"
               className={styles.title}
-              color={"white"}
+              color={'white'}
             >
               Dynamic
             </Grid>

@@ -11,7 +11,11 @@ export default function About(props) {
     <Grid
       container
       id={props.ID}
-      sx={{ height: { md: '100vh', xs: '100%' } }}
+      sx={{
+        width: '100vw',
+        height: { md: '100vh', xs: 'fit-content' },
+        backgroundColor: 'red',
+      }}
       justifyContent={'flex-end'}
     >
       <Grid
