@@ -1,99 +1,98 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Code+Latin:wdth,wght@100,300;102.2,381&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&family=Raleway:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=M+PLUS+Code+Latin:wdth,wght@100,300;102.2,381&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Code+Latin:wght@600&family=Nanum+Gothic&family=Raleway:wght@300&display=swap');
 
 .contai {
-  height: 92vh;
-  width: 100vw;
-  background-repeat: unset;
+    height: 92vh;
+    width: 100vw;
+    background-repeat: unset;
 }
 .remove {
-  display: none;
+    display: none;
 }
 .pointer {
-  cursor: pointer;
+    cursor: pointer;
 }
 .title1 {
-  font-family: "M PLUS Code Latin", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
-  font-family: "Raleway", sans-serif;
-  background-image: url("https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif");
-  height: 100vh;
-  width: 100vw;
-  
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    background-image: url('https://media.giphy.com/media/TxVVB6PfWMjE4/giphy.gif');
+    height: 100vh;
+    width: 100vw;
 }
 .RalewayFont {
-  font-family: "M PLUS Code Latin", sans-serif;
-  font-family: "Nanum Gothic", sans-serif;
-  font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 16pt;
-  cursor: pointer;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 16pt;
+    cursor: pointer;
 }
 .highlight {
-  color: #b8239f;
-  font-weight: 900;
+    color: #b8239f;
+    font-weight: 900;
 }
 .subTitle {
-  font-family: "M PLUS Code Latin", sans-serif;
-  font-weight: 600;
-  font-size: 45px;
-  color: #383533;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    color: #383533;
 }
 
 .paragraph {
-  font-family: "M PLUS Code Latin", sans-serif;
-  line-height: 30px;
-  color: rgb(122, 126, 126);
+    font-family: 'M PLUS Code Latin', sans-serif;
+    line-height: 30px;
+    color: rgb(122, 126, 126);
 }
 .sTitle {
-  font-weight: 600;
+    font-weight: 600;
 }
 .cardsTitle {
-  font-style: "Bebas Neue", cursive;
-  font-family: "M PLUS Code Latin", sans-serif;
-  font-weight: 530;
-  font-size: 17px;
+    font-style: 'Bebas Neue', cursive;
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-weight: 530;
+    font-size: 17px;
 
-  margin-bottom: 10px;
+    margin-bottom: 10px;
 }
 .cardsParagraph {
-  font-family: "M PLUS Code Latin", sans-serif;
-  font-size: 14px;
-  color: rgb(122, 126, 126);
+    font-family: 'M PLUS Code Latin', sans-serif;
+    font-size: 14px;
+    color: rgb(122, 126, 126);
 }
 .contactMeButton {
-  background-color: black;
-  color: white;
-  border: white;
-  height: 55px;
-  width: 200px;
-  margin-top: 50px;
+    background-color: black;
+    color: white;
+    border: white;
+    height: 55px;
+    width: 200px;
+    margin-top: 50px;
 }
 
 .contactMeButton:hover {
-  background-color: black;
-  border: white;
+    background-color: black;
+    border: white;
 }
 
 .header {
     background-color: #161616;
-    position: sticky; 
-   top: 0px;
-  }
-.RalewayFont:hover{
-    background-color: #171717;
-  }
-  
-.RalewayFont:hover .forward{
-display: none;
-  }
- 
-.RalewayFont .downward{
-  display: none;
+    position: sticky;
+    top: 0px;
 }
-.RalewayFont:hover .downward{
-  display:flex;
+.RalewayFont:hover {
+    background-color: #171717;
+}
+
+.RalewayFont:hover .forward {
+    display: none;
+}
+
+.RalewayFont .downward {
+    display: none;
+}
+.RalewayFont:hover .downward {
+    display: flex;
 }

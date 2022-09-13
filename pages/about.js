@@ -13,14 +13,16 @@ export default function About(props) {
             id={props.ID}
             sx={{
                 width: '100vw',
-                height: { md: '100vh', xs: 'fit-content' },
+                height: { md: 'fit-content', xs: 'fit-content' },
                 paddingTop: '80px',
+                backgroundColor: 'pink',
             }}
             justifyContent={'flex-end'}
         >
             <Grid
                 sx={{
                     height: { md: 'fit-content', xs: 'fit-content' },
+                    backgroundColor: 'red',
                 }}
                 item
                 container
@@ -35,8 +37,13 @@ export default function About(props) {
                     justifyContent={'center'}
                     alignItems="flex-end"
                     textAlign={'center'}
-                    className={styles.mainTitle}
+                    backgroundColor="blue"
                     marginBottom="20px"
+                    textUnderlineOffset="5px"
+                    fontSize="36px"
+                    fontStyle="'Bebas Neue', cursive"
+                    fontFamily="M PLUS Code Latin"
+                    fontWeight="bold"
                 >
                     Services
                 </Grid>
@@ -45,10 +52,13 @@ export default function About(props) {
                     sx={{
                         flexDirection: { xs: 'column', md: 'row' },
                         height: 'fit-content',
+
+                        padding: '0px',
                     }}
                     justifyContent={'center'}
                     item
                     container
+                    backgroundColor="yellow"
                 >
                     <Grid
                         sx={{
@@ -88,7 +98,6 @@ export default function About(props) {
                     <Grid
                         sx={{
                             padding: { xs: '20px', md: '100px' },
-
                             display: 'flex',
                             flexDirection: 'row',
                         }}
