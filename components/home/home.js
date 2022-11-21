@@ -147,11 +147,14 @@ export default function Home({ setCurrentPage }) {
                             lineHeight: '60px',
                         }}
                     >
-                        Hello, Im&nbsp;{' '}
+                        Hi! I'm&nbsp;{' '}
                         <span style={{ color: '#F184CA' }}>
                             Chaimae Michich
                         </span>{' '}
-                        Im a web developer. Welcome to my world 👋.
+                        I'm a Full Stack JavaScript developer, and I like making
+                        applications of different varieties. I help founders add
+                        value to society by crafting software using JavaScript
+                        tools Welcome to my world 👋.
                     </Grid>
 
                     <Grid
