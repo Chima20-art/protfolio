@@ -27,8 +27,7 @@
     font-family: 'M PLUS Code Latin', sans-serif;
     font-family: 'Nanum Gothic', sans-serif;
     font-family: 'Raleway', sans-serif;
-    font-weight: 400;
-    font-size: 16pt;
+
     cursor: pointer;
 }
 .highlight {
@@ -82,9 +81,6 @@
     position: sticky;
     top: 0px;
 }
-.RalewayFont:hover {
-    background-color: #171717;
-}
 
 .RalewayFont:hover .forward {
     display: none;
@@ -95,4 +91,5 @@
 }
 .RalewayFont:hover .downward {
     display: flex;
+    color: white;
 }

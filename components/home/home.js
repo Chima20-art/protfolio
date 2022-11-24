@@ -14,6 +14,7 @@ import Projects from '../../pages/projects'
 import Talk from '../../pages/talk'
 import { motion } from 'framer-motion'
 import Header from '../header/header'
+import { Typography } from '@mui/material'
 
 const BootstrapGreenButton = styled(Button)({
     boxShadow: 'none',
@@ -138,35 +139,52 @@ export default function Home({ setCurrentPage }) {
                         },
                     }}
                 >
-                    <Grid
-                        item
-                        sx={{
-                            color: 'white',
-                            width: { xs: '80vw', md: '50vw' },
-                            fontSize: { xs: '24px', md: '44px' },
-                            lineHeight: '60px',
-                        }}
-                    >
-                        Hi! I'm&nbsp;{' '}
-                        <span style={{ color: '#F184CA' }}>
-                            Chaimae Michich
-                        </span>{' '}
-                        I'm a Full Stack JavaScript developer, and I like making
-                        applications of different varieties. I help founders add
-                        value to society by crafting software using JavaScript
-                        tools Welcome to my world 👋.
+                    <Grid item sx={{ maxWidth: '70%', margin: 'auto' }}>
+                        <Typography
+                            sx={{
+                                color: 'white',
+
+                                fontSize: { xs: '21px', md: '32px' },
+                                lineHeight: '60px',
+                                letterSpacing: 3,
+                                fontWeight: 'bold',
+                            }}
+                        >
+                            {' '}
+                            Hi! I'm&nbsp;{' '}
+                            <span style={{ color: '#AA9CF5' }}>
+                                Chaimae Michich
+                            </span>{' '}
+                        </Typography>
+                        <Typography
+                            sx={{
+                                letterSpacing: 3,
+                                color: '#BFBECB',
+                                textAlign: 'center',
+                                fontSize: { xs: '18px', md: '16px' },
+                            }}
+                        >
+                            I'm a Full Stack JavaScript developer, and I like
+                            making applications of different varieties. I help
+                            founders add value to society by crafting software
+                            using JavaScript tools.
+                            <br /> Welcome to my world 👋.
+                        </Typography>
                     </Grid>
 
                     <Grid
                         item
                         container
                         sx={{
-                            color: 'white',
+                            borderColor: '#BFBECB',
                             height: '10px',
-                            padding: '30px',
+                            padding: '23px',
                             border: {
-                                xs: 'solid 2px white',
-                                md: 'solid 4px white',
+                                xs: 'solid 2px #AA9CF5',
+                                md: 'solid 2px #AA9CF5',
+                            },
+                            '&:hover': {
+                                background: '#AA9CF5',
                             },
                         }}
                         justifyContent={'center'}
@@ -175,20 +193,40 @@ export default function Home({ setCurrentPage }) {
                         margin="auto"
                         width={'fit-content'}
                         cursor={'pointer'}
-                        marginTop={'70px'}
+                        marginTop={'20px'}
                         className={styles.RalewayFont}
                         onClick={() => setCurrentPage(1)}
-                        color="white"
                     >
-                        <Grid item color="white">
+                        <Typography
+                            item
+                            color="#AA9CF5"
+                            sx={{
+                                fontSize: { xs: '12px', md: '14px' },
+                                fontWeight: 500,
+                                '&:hover': {
+                                    color: '#fff',
+                                },
+                            }}
+                        >
                             View My Work &nbsp;{' '}
-                        </Grid>
+                        </Typography>
                         <ArrowForwardIcon
-                            color="#ffff"
                             item
                             className={styles.forward}
+                            sx={{
+                                color: '#AA9CF5',
+                                fontSize: { xs: '14px', md: '18px' },
+                                textAlign: 'center',
+                            }}
                         />
-                        <ArrowDownwardIcon item className={styles.downward} />
+                        <ArrowDownwardIcon
+                            item
+                            className={styles.downward}
+                            sx={{
+                                color: '#AA9CF5',
+                                fontSize: { xs: '14px', md: '18px' },
+                            }}
+                        />
                     </Grid>
                 </motion.Grid>
             </Grid>
